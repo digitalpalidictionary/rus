@@ -1,5 +1,32 @@
 # Changelog
 
+## 2023-04-05
+Digital Pāḷi Dictionary is a feature-rich Pāḷi dictionary which runs in GoldenDict and MDict, or any other application which supports those formats.
+
+It is a work in progress, made available for testing and feedback purposes.
+
+More information about installation, setup and features can be found [on the website](https://digitalpalidictionary.github.io/)
+
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />
+
+**Change-log**:
+- 71 839 headwords, 26 513 complete, 17 064 partially complete, 28 262 incomplete entries
+- 744 roots, 3 124 root families, 29 346 words derived from roots
+- 338 562 deconstructed compounds
+- 1 447 251 unique inflected forms recognized
+- 1 016 487 cells of Pāḷi word data
+- 18 047 cells of Pāḷi root data
+- 100% dictionary recognition up to and including  [Aṅguttara Nikāya Book 7](https://digitalpalidictionary.github.io/features.html#100-dictionary-recognition-in-these-books)
+- Sandhi splitting and compound deconstruction now covers entire Vinaya, Sutta and Abhidhamma mūla and aṭṭhakathā
+- New database, GUI and  and exporter
+- Many small aesthetic enhancements
+- Sets are now searchable by name
+- Numerous corrections and additions based on user feedback.
+
+New words include akatapātarāsa, akammakāma, akālaññū, akkuddha, akkuddhasanta, aṅgulipabbamatta, ajitamāṇavapucchāniddesa, aññataraññataramethunasaṃyoga, aṭṭhaddhamāsasata, aṭṭhānisaṃsā, aticarituṃ, attavipatti, attasampatti, attūpama, atthakaraṇa 2, atthakāmānukampanta, addhamāsasata, adhigatapema, adhipatiya, ananujānanta, anicca 2, aniccapaṭisaṃvedī, animittavihārī, anujānanā, anujānanta 2, anupassana, anuppadānarata, anurodhavirodhasamāpanna, anuvilokayanta, anuviloketabba, anekaratana, antopūtika, apaneyya, apararatta, apahātumicchati, apahātuṃ, appaṭisaṃveditvā, appatiṭṭhāpita, appiyapasaṃsī, abbhānumodi, abyākatavatthu, abyākaraṇadhamma, ayopīṭha, ayomañca, ayyasama, araka, aratta, avatvā 2, avassanta, ādenta, ādhātukāma, ālepita, ālokayanta, āsavapariyādāna, itthākappa, itthicchanda, itthividhā,itthissara, issāsaṃyojana, ugga 5, uggañchitvāna, uggatasarīra, ujjaletabba, utusata, udakabubbuḷūpama, udakūpama, upanisīdituṃ, upādānagata, upārambhaka, upārambhakacitta, ummadantī, ummujjitvā, ulloketabba, ussāpetukāma, ussāpenta, ussāvabindūpama, evaṃmahesakkha, ottappapariyāyapatha, ottappasampanna, kaccāyana 2, kapimiddha, kabaḷī, kammakāma, kalyāṇakusala, kāyasattha, kuṭumala, kuṭumalaka, kuṭumalakajāta, kuḍumalakajāta, kodhajāta, kodhapareta, kodharūpa, kora 2, korakajāta, khārakajāta, kheḷapiṇḍūpama, gantabba 4, gāvīvajjhūpama, gopadamatta, govajjha, govajjhūpama, catubbīsati, caturāsītiyojanasahassa, cirarattasaṃvuta, cirassamāgata, corīsama, channavuti, jaṇṇukāmatta, jāpayati, jālaka 2, jeṭṭha 3, jevanika, jevaniya, tatrābhirata, tatrābhiramati, tādī 2, tiṇagga, tilamuggamāsāparaṇṇa, tisattaka, tejokhandha, teladhota, dakarakkhī, daṇḍarāji, daṇḍarājūpama, dayhati, dayhamāna, dahitvā, dāsakaputta 2, dāsīsama, diṭṭhinirodha, diṭṭhinirodhagāmī, dukkhuddaya, dutiyaaggisutta, dutiyaanusayasutta, dutiyaappiyasutta, dummaṅkuya, duruttavādī, dussīlarūpa, dūsī 3, desīyati, desīyamāna, dhavajālikā, dhātar 2, dhūmeti, naadhipatiya, nagaraparikkhāra, nadīpabbateyyūpama, nappaṭivirujjhati, nappasādesi, nānārūpa, nānurujjhati, nāsiyamāna, niddhamati 2, nibbāpetabba, niyojaka, nirajjati, niraṃkatvā, nisevita 5, nissutatta, nhātatta, pakkhandī 2, pacalā, paccāvamati 2, paccora, paccorohaṇī, paññāvāsanalepanasampanna, paññāvīriya, paṭiyādāpesi, paṭhamaaggisutta, paṭhamaanusayasutta, paṭhamaappiyasutta, paṇḍupalāsa 3, patibaddha, patibaddhacitta, padasseti, pannapalāsa, payirupa, paraputta, paravipatti, parasampatti, pariguyhati, pariguhati, parinibbi, pariyāyapatha, pariyogāhamāna, parivajjetabba, parisuddhasaṅkhātatara, parihātabba, palagaṇḍantevāsika, pasādabahula, pācitti, pāṇadada, piṇḍadāyaka 2, pitupitāmahā, pithīyati 2, piyagarahī, puggalaparoparaññū, punarāgamāsi, pubbaṅgama 2, pubbaratta, purisakutta, purisagati, purisacchanda, purisavidhā, purisassara, purisākappa, purisālaṅkāra, posālamāṇavapucchāniddesa, bahubalakāya, bahuratana, bāhitatta, bhaginīsama, bhattantarāya, bhattasahassa, bhattuvasānuvattī, bhadda 5, bhikkhuka, bhikkhudassana, bhūtahacca, macchariyasaṃyojana, manasānukampī, manosattha, mahādhaññarāsi, mahānāga 3, mahāyañña 2, mahisavatthu, māgadhamahāmatta, mātāsama, māsasata, migāra, mittakāma, middhavigata, meghiya, yakkhayoni, yajitvāna 1, yajitvāna 2, yavaka, yasāyasas, yānī 2, yojetvāna, yodhī, rakkhī, raṭṭhavaḍḍhana, rattisahassa, rohaṇeyya, lālasa, vaggika, vacīsattha, vaja 4, vajjivagga, vajjhamāna 1, vajjhamāna 2, vaṭajālikā, vaṭṭajālikā, vadhakasama, vadhadaṇḍatajjita, vanta 3, vamati 2, vassagaṇanamattena, vālarajju, vāsanalepanasampanna, vijetvā, vitta 1.3, videsapāṭha, vippaṭisāranirodha, vippaṭisāranirodhagāmī, vippaṭisārasamudaya, vibhāvetuṃ, viheṭhiyati, vījamāna, vītakodha, vītikkamita, vīriyabalakāya, veḷukaṇḍaka, voyoga, sakapaṭibhāna, sakammāragata, sakhāra, sakhī, sakhīsama, saṅkīḷati, saṅkelāyati, saṅkheyyaka, saccika, saccikaṭṭha, satidovārika, sattasaṇḍa, saddhātar, saddhesika, santamassa, santi 3.1, sandhūmeti, sannidhipekha, sapattakanta, sapattakaraṇa, samaṇadūsī, samaṇarūpī, samasamagati, samādhigārava, samādhigāravatā, samārabbhati, samārambhati, sampadhūmeti, sampayuttaka, sampaliveṭheti, sambandhitabba, saṃkelāyati, saṃghakaraṇīya, saṃdhūmāyati, saṃdhūmeti, saṃyogapaccayā, saṃyogavisaṃyoga, sādhukārasadda, sāranda, sāliyavaka, sāvakaparisā, sivī, sīhapapātā, sukhaseyyā, sukhānupassī, sugatigamana, sutāvudha 2, suparikkhata, svākkhātadhamma, hantvāna, hasitalapitakīḷita, hāpetuṃ, hirīparikkha, hirottappavipanna, hirottappasampanna [330]
+
 ## 2023-03-06
 - 71 509 headwords, 26 236 complete, 17 015 partially complete, 28 258 incomplete entries
 - 744 roots, 2 914 root families, 29 223 words derived from roots

@@ -22,12 +22,10 @@ For instance, If you open *bahalamadhukatelanāgabalapicchillādīnaṃ* in DPD,
 
 ![sandhisplitter](pics/sandhi/bahalamadhukatelanāgabalapicchillādīnaṃ.png)
 
-Currently this feature is available for the following books in the Pāḷi canon.
+Currently this feature is available for the following books in the Pāḷi corpus.
 
-- Dīgha Nikāya Book 1 Mūla
-- Dīgha Nikāya Book 2 Mūla
-- Dīgha Nikāya Book 3 Mūla
-- Majjhima Nikāya Book 2 Mūla
-- Majjhima Nikāya Book 2 Aṭṭhakathā
+- Vinaya mūla and aṭṭhakathā
+- Sutta mūla and aṭṭhakathā
+- Abhidhamma mūla and aṭṭhakathā
 
 More books will be incorporated in the upcoming months.
