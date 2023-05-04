@@ -24,8 +24,9 @@ For instance, If you open *bahalamadhukatelanāgabalapicchillādīnaṃ* in DPD,
 
 Currently this feature is available for the following books in the Pāḷi corpus.
 
-- Vinaya mūla and aṭṭhakathā
-- Sutta mūla and aṭṭhakathā
-- Abhidhamma mūla and aṭṭhakathā
+- **Vinaya** mūla and aṭṭhakathā
+- **Sutta** mūla and aṭṭhakathā
+- **Abhidhamma** mūla and aṭṭhakathā
+- **Visuddhimagga** and Visuddhimagga Mahāṭīkā
 
-More books will be incorporated in the upcoming months.
+Actually the sandhi splitting is completed for the entire Chaṭṭha Saṅgāyana corpus, but the data set or 700 000 words is too large to incorporate into the GoldenDict or MDict format. If you would like a custom dicitonary of sandhi-splitting data for some obscure corner of the Pāḷī corpus, please get in touch and I will be happy to provice you with that. 
