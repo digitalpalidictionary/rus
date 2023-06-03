@@ -1,5 +1,13 @@
 # Compound Deconstruction and Sandhi Splitting
 
+The DPD Splitter is now available as a seperate dictionary.
+
+It currently contains about 700 000 deconstructed words, covering all books in the **Chaṭṭha Saṅgāyana corpus**, as well as all Pāḷi texts on **Sutta Central**. This number will decrease as more compounds get added to the DPD. 
+## How to Install
+Download the latest version of DPD Splitter for GoldenDict or MDict from [this page on GithHub]() and place it in the same parent folder as DPD. 
+
+![sandhisplitter](pics/sandhi/dpd_splitter_folder.png)
+
 ## Some Background
 
 Sandhi compounds are the greatest hurdle to any beginner learning Pāḷi. The rules of sandhi are not absolute rules, only morphing possibilities according to context. These rules are complex and difficult for a beginner to understand.
@@ -14,7 +22,7 @@ The only present solution that is in any way useful is the [DPR analysis functio
 
 ## A New Approach
 
-One of the useful outputs of the Digital Pāḷi Dictionary is a list of inflections for every word in the dictionary. This, together with a set of [letter transformation rules](https://github.com/digitalpalidictionary/inflection-generator/blob/main/sandhi/sandhi%20rules.csv) has been employed to create a new sandhi-splitting algorithm. 
+One of the useful outputs of the Digital Pāḷi Dictionary is a list of inflections for every word in the dictionary. This, together with a set of [letter transformation rules](https://github.com/bdhrs/sqlite-db/blob/d9da7d1ae69dd9dec0aef37d7c6bbc48871ab555/sandhi/sandhi_related/sandhi_rules.tsv) has been employed to create a new sandhi-splitting algorithm. 
 
 It is still a work in progress and far from perfect - an intelligence will always be required to discern context - but it is better than anything else which currently exists, giving more accurate results and, most importantly, fewer false positives. 
 
@@ -22,11 +30,9 @@ For instance, If you open *bahalamadhukatelanāgabalapicchillādīnaṃ* in DPD,
 
 ![sandhisplitter](pics/sandhi/bahalamadhukatelanāgabalapicchillādīnaṃ.png)
 
-Currently this feature is available for the following books in the Pāḷi corpus.
 
-- **Vinaya** mūla and aṭṭhakathā
-- **Sutta** mūla and aṭṭhakathā
-- **Abhidhamma** mūla and aṭṭhakathā
-- **Visuddhimagga** and Visuddhimagga Mahāṭīkā
 
-Actually the sandhi splitting is completed for the entire Chaṭṭha Saṅgāyana corpus, but the data set or 700 000 words is too large to incorporate into the GoldenDict or MDict format. If you would like a custom dicitonary of sandhi-splitting data for some obscure corner of the Pāḷī corpus, please get in touch and I will be happy to provice you with that. 
+
+
+
+

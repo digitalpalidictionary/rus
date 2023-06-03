@@ -1,6 +1,6 @@
 # Features
 
-## DPD contains five different dictionaries
+## DPD contains four different dictionaries
 
 #### Pāḷi to English Dictionary (Blue)
 
@@ -16,15 +16,18 @@ for more info [click here](rootdict.md)
 
 ![english2pali](pics/features/3english2pali.png)
 
-#### Compound Deconstruction Dictionary (Sand)
+<!-- #### Compound Deconstruction Dictionary (Sand)
 
-![compdeconstruction](pics/features/4sandhisplitter.png)
+![compdeconstruction](pics/features/4sandhisplitter.png) -->
 
 #### Abbreviations and Help Dictionary (Green)
 
 ![helpdict](pics/features/5helpabbreviations.png)
 
-## DPD recognises 1.1 million unique inflected forms of Pāḷi words
+## Two supplemetary dictionaries
+There are two additional dicitonary packs which work in concert with DPD. The first is dedicated to [sandhi splitting and compound deconstruction](sandhi.md), and the second is a [grammar dictionary](grammardict.md) which can explain the case of every inflected word in a text. Click the links to learn more.
+
+## DPD recognises 1.5 million unique inflected forms of Pāḷi words
 
 When you select on a word in a Pāḷi text and press the hotkey, DPD automatically recognizes all the headwords to which that inflected form belongs. For example, clicking on _takkarassa_ will automatically open _takkara_. 
 
@@ -32,11 +35,12 @@ When you select on a word in a Pāḷi text and press the hotkey, DPD automatica
 
 ## 100% Dictionary recognition in these books
 
-DPD recognizes all words, both in Chaṭṭha Saṅgāyana Tipiṭaka and Mahāsaṅgīti edition on Sutta Central, including all compounds and sandhis, in the following books:
+DPD recognizes all words, both in **Chaṭṭha Saṅgāyana Tipiṭaka** and **Mahāsaṅgīti** edition on Sutta Central, including all compounds and sandhis, in the following books:
 
 **Vinaya**: Pārājikapāḷi , Pācittiyapāḷi \
 **Sutta**: All four Nikāyas \
-**Up Next**: Khuddakanikāya
+**Khuddaka Nikāya**: Khuddakapāṭha and Dhammapada \
+**Up Next**: Udāna and Itivuttaka
 
 ## Click on everything
 
