@@ -4,7 +4,7 @@
 [Features](features.md)
 [Roots Dictionary](rootdict.md)
 [Word Frequency](frequency.md)
-[Sandhi Splitting](sandhi.md)
+[Deconstructor](deconstructor.md)
 [Grammar Dictionary](grammardict.md)
 [Kindle](kindle.md)
 [Tipitaka Pali Reader](tpr.md)

@@ -1,12 +1,15 @@
 # Compound Deconstruction and Sandhi Splitting
 
-The DPD Splitter is now available as a seperate dictionary.
+The DPD Deconstructor is now available as a seperate dictionary.
 
-It currently contains about 700 000 deconstructed words, covering all books in the **Chaṭṭha Saṅgāyana corpus**, as well as all Pāḷi texts on **Sutta Central**. This number will decrease as more compounds get added to the DPD. 
+It currently contains about 700 000 deconstructed words, covering all books in the **Chaṭṭha Saṅgāyana corpus**, *mūla*, *aṭṭhakathā*, *ṭīkā* and *aññā*, as well as all Pāḷi texts on **Sutta Central**. This number will decrease as more compounds get added to the DPD. \
+
+![deconstructor_example](pics/deconstructor/dinnantiādikāpīti.png)
+
 ## How to Install
-Download the latest version of DPD Splitter for GoldenDict or MDict from [this page on GithHub]() and place it in the same parent folder as DPD. 
+Download the latest version of DPD Deconstructor for GoldenDict or MDict from [this page on GithHub]() and place it in the same parent folder as DPD. 
 
-![sandhisplitter](pics/sandhi/dpd_splitter_folder.png)
+![deconstructor_folder](pics/deconstructor/dpd_deconstructor_folder.png)
 
 ## Some Background
 
@@ -28,7 +31,7 @@ It is still a work in progress and far from perfect - an intelligence will alway
 
 For instance, If you open *bahalamadhukatelanāgabalapicchillādīnaṃ* in DPD, it will show the breakup, which can be clicked on to take you to the relevant words.
 
-![sandhisplitter](pics/sandhi/bahalamadhukatelanāgabalapicchillādīnaṃ.png)
+![deconstructor](pics/deconstructor/bahalamadhukatelanāgabalapicchillādīnaṃ.png)
 
 
 
