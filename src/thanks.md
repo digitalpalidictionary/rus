@@ -20,7 +20,7 @@ Sumukha, for the Python technical support helpline
 
 Inka Kendzia, for paying the internet bill
 
-Max, for paying the internet bill
+Max, for paying the internet bill and pertinent questions
 
 Son Tu, for detailed grammatical feedback
 
@@ -45,4 +45,18 @@ Ulpathkanda Buddhist Monastery, Kandy, Sri Lanka
 Navimana Forest Meditation Centre, Warakapola, Sri Lanka
 
 Sri Pada Aranya Senasanaya, Pelmadulla, Sri Lanka
+
+Seela Samahitha Yogasramaya, Belihuloya, Sri Lanka
+
+Kahagolla Aranya Senasanaya, Diyatalawa, Sri Lanka
+
+Sri Sambodhi Viwekashramaya, Galkanda, Diyathalawa, Sri Lanka
+
+Bhaddekavihari Upasthana Kutiya, Tanjan Tenna, Sri Lanka
+
+The Mountain Hermitage, Wikiliya Ārāmaya, Wikiliya, Sri Lanka
+
+
+
+
 
