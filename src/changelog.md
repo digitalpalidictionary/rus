@@ -1,6 +1,6 @@
 # Changelog
 
-##2023-07-02##
+##2023-07-02
 - 74 657 headwords, 28 049 complete, 17 022 partially complete, 29 586 incomplete entries
 - 746 roots, 3 175 root families, 30 731 words derived from roots
 - 712 856 deconstructed compounds
