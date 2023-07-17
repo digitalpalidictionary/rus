@@ -8,7 +8,7 @@ A lightweight version of DPD is available inside Tipitaka Pali Reader. It just i
 
 To open a word in the dictionary, simply click on it and the dictionary will pop up. TPR uses the same system for recognizing inflections and sandhi as DPD, so only correct possibilities should be displayed.
 
-![click_word]!(pics/tpr/tpr_click_word.png)
+![click_word](pics/tpr/tpr_click_word.png)
 
 To see detailed grammatical information, click the small arrow on the dictionary entry and more info will become visible. 
 
