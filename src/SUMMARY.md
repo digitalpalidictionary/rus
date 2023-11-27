@@ -34,4 +34,5 @@
 [Bibliography](bibliography.md)
 [Thanks](thanks.md)
 [Feedback Form](feedback_form.md)
+[Help with Coding](coding_help.md)
 [Contact](contact.md)
