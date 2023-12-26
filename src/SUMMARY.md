@@ -17,6 +17,7 @@
 [Install on Linux](install_linux.md)
 [Install on Android (DictTango)](install_android_dicttango.md)
 [Install on Android (GoldenDict)](install_android_goldendict.md)
+[Install on Andriod (MDict)](install_android_mdict.md)
 [Update](update.md)
 
 -----------

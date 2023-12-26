@@ -82,5 +82,4 @@ Digital Pāḷi Dictionary
   * **Sanskrit Grammarian** , accessed through <https://sanskrit.inria.fr/DICO/grammar.fr.html>
   * **Sutta Central** , accessed through <https://suttacentral.net/>
   * **The Buddha's Words** , accessed through <https://thebuddhaswords.net/home/index.html>
-  * **Wikipedia** , accessed through <https://en.wikipedia.org/wiki/Main_Page>
 

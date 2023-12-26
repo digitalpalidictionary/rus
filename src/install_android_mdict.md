@@ -1,6 +1,8 @@
 # Install MDict on Android
 
-MDict on Android has the advantage of instant lookup by **selecting** and **copying** a word. Or if you use DPR, simply by **clicking** any word. 
+Android users are recommended to use the [DictTango](install_android_dicttango.md) app rather than MDict. It offers a much better user experience and has many more advanced options.
+
+If you would still prefer to use MDict, here's how to get it setup.  
 
 ## In Brief
 
