@@ -6,35 +6,31 @@ on:
       - source
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-
+  deploy:
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-    - name: Checkout source branch
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       with:
         ref: source
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-
     - name: Setup mdBook
-      uses: extractions/setup-mdbook@v1
+      uses: peaceiris/actions-mdbook@v1
+      with:
+        mdbook-version: '0.4.10'
 
     - name: Build the HTML
-      run: |
-        ./build.sh
+      run: ./build.sh
 
     - name: Checkout main branch
       uses: actions/checkout@v2
       with:
         ref: main
 
-    # - name: Copy book to main branch
-    #   run: |
-    #     cp -r book/* .
+    - name: Copy book to main branch
+      run: |
+        cp -r book/* .
 
     - name: Commit and push to main branch
       run: |
