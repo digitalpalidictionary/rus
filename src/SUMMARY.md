@@ -15,7 +15,7 @@
 [Install on Mac](install_mac.md)
 [Install on iOS](install_ios.md)
 [Install on Linux](install_linux.md)
-[Install on Android (MDict)](install_android_mdict.md)
+[Install on Android (DictTango)](install_android_dicttango.md)
 [Install on Android (GoldenDict)](install_android_goldendict.md)
 [Update](update.md)
 

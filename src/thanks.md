@@ -10,6 +10,8 @@ support. _parapaṭibaddhā me jīvikā'ti pabbajitena abhiṇhaṃ paccavekkhit
   *  **Ven. Ariyananda** in Sri Lanka for a powerful laptop
   *  **Ven. Devamitta** in Malaysia for thousands of small corrections and suggestions for improvement
   *  **Ven. Gambhīro** in Portugal for the technical expertise, and the GoldenDict exporter that started this whole chain of events
+  *  **Ven. Dhammañāṇa** in Vietnam for help with the MDict exporter
+  *  **Ven. Kusalacitto** in Thailand for help with the MDict exporter
   *  **Prof. Bryan Levman,** in Canada for detailed grammatical analysis of Dīgha Nikāya and Theragāthā
   *  **Prof. Aleix Ruiz Falqués** in Spain for internet classes on the classical Pāḷi grammars
   *  **Sumukha** in India for the Python technical support helpline
