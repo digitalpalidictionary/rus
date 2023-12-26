@@ -25,7 +25,7 @@ for more info [click here](rootdict.md)
 ![helpdict](pics/features/5helpabbreviations.png)
 
 ## Two supplemetary dictionaries
-There are two additional dicitonary packs which work in concert with DPD. The first is dedicated to [sandhi splitting and compound deconstruction](sandhi.md), and the second is a [grammar dictionary](grammardict.md) which can explain the case of every inflected word in a text. Click the links to learn more.
+There are two additional dictionary packs which work in concert with DPD. The first is dedicated to [sandhi splitting and compound deconstruction](sandhi.md), and the second is a [grammar dictionary](grammardict.md) which can explain the case of every inflected word in a text. Click the links to learn more.
 
 ## DPD recognises 1.5 million unique inflected forms of Pāḷi words
 
@@ -39,8 +39,8 @@ DPD recognizes all words, both in **Chaṭṭha Saṅgāyana Tipiṭaka** and **
 
 **Vinaya**: Pārājikapāḷi , Pācittiyapāḷi \
 **Sutta**: All four Nikāyas \
-**Khuddaka Nikāya**: Khuddakapāṭha and Dhammapada \
-**Up Next**: Udāna and Itivuttaka
+**Khuddaka Nikāya**: Khuddakapāṭha, Dhammapada, Udāna, Itivuttaka, Suttanipāta, Theragāthā \
+**Up Next**: Therigāthā
 
 ## Click on everything
 
@@ -48,7 +48,7 @@ One of the great features about GoldenDict is the ability to click on any word t
 
 ## Compact Presentation
 
-All the important Pāḷi information is presented in **one compact line**, available at a glance. More detailed information is available by clicking the buttons.
+All the important Pāḷi information is presented in **one compact line**, available at a glance, with more detailed information is available by clicking the buttons.
 
 ![compact line](pics/features/compact%20line.png)
 
@@ -58,7 +58,7 @@ Essential information includes the part of speech, case which the word takes, En
 
 If words with multiple meanings are derived from different sources, their numbering will reflect that. 
 
-![renumerbing](pics/feature/../features/renumbering.png)
+![renumbering](pics/feature/../features/renumbering.png)
 
 In the example above, 1.1 and 1.2 both are related to Sanskrit *śara* , while 2.1 is derived from the root √sar (to make sound), Sansksrit *svara*.
 
@@ -82,7 +82,7 @@ As DPD is a work in progress, it is useful to know how complete a word's data is
 
 ## Grammar
 
-Click the **grammar** button to get more more detailed grammatical information about the word.
+Click the **grammar** button to get more detailed grammatical information about the word.
 
 ![grammar](pics/features/grammar.png)
 
@@ -108,6 +108,9 @@ Click the **declension** or **conjugation** button to see all the inflected form
 
 This table is automatically generated using a stem + pattern system, e.g. anicc + o. Irregular inflections have their own unique tables.
 
+Inflected forms not found within the Chaṭṭha Saṅgāyana corpus are 
+<span style='color:gray'>grayed-out</span>.
+
 ## Root Family
 
 Click the **root family** button to see all words which have the same prefix + root.
@@ -118,7 +121,7 @@ This information is unique to DPD and is based on a detailed study of the Pāḷ
 
 ## Word Family
 
-Click the **word family** button to see all related words which are not derived from a root, created from the primary word using prefixes and suffixes.
+Click the **word family** button to see all related words which are not derived from a root, but created from the primary word using prefixes and suffixes.
 
 ![word family](pics/features/word_family.png)
 
@@ -138,12 +141,13 @@ Click the **frequency** button to see a heat map of where & how often a word can
 
 ![image](pics/features/frequency.png)
 
-[Click here](frequency.md) for more detailed information on this interesting feature. 
+[Click here](frequency.md) for more detailed inf1formation on this interesting feature. 
 
 
 ## English to Pāḷi Dictionary
 
-You can now access the English to Pāḷi dictionary simply by **clicking on any English word** in GoldenDict. That brings up a list of __exact__ matches.
+
+By **clicking on any English word** in GoldenDict, you can now access the English to Pāḷi dictionary, which brings up a list of __exact__ matches.
 
 ![english to pāḷi](pics/features/eng-to-pali.png)
 
