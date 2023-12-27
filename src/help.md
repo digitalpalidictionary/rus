@@ -1,10 +1,10 @@
 # Coding Help Needed!
 
-I am looking for some coding help. If you have the expertise and the interest, [please get in touch by email](mailto:digitalpalidictionary@gmail.com)
+I am looking for some help with coding various aspects of the Digital Pāḷi Dictionary Project. If you have the expertise and the interest, [please get in touch by email](mailto:digitalpalidictionary@gmail.com)
 
 ## JavaScript
 
-I would like to integrate DPD into [The Buddha's Words website](https://thebuddhaswords.net/home/index.html). There is currently a Pāḷi dictionary lookup system, but it is very outdated, it's the same as the one on Sutta Central. I have devised a method to give [more accurate word-recognition](https://github.com/digitalpalidictionary/dpd-db/tree/main/tbw) and need some assistance with the JavaScript implementation. I don't think it will be very complex. Once created, the same system can be easily re-used in other websites.
+I would like to integrate DPD into [The Buddha's Words website](https://thebuddhaswords.net/home/index.html). There is currently a Pāḷi dictionary lookup system, but it is very outdated - the same as on Sutta Central. I have devised a method to give [more accurate word-recognition](https://github.com/digitalpalidictionary/dpd-db/tree/main/tbw) and need some assistance with the JavaScript implementation. I don't think it will be very complex. Once created, the same system can be easily re-used in other websites.
 
 ## Flutter
 
