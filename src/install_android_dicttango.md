@@ -38,6 +38,8 @@ Using your file-manager of choice, **unzip** the dpd-mdict.zip.
 
 **Copy** the three DPD files to this folder: **`/Android/data/cn.jimex.dict/files/Dictionaries`**
 
+⚠️ If you are having security issues and cannot access that folder, try copying the files using a computer. 
+
 Open up the app to tweak some more settings.
 
 ## Add Dictionaries
