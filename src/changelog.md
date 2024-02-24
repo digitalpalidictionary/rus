@@ -1,5 +1,27 @@
 # Changelog
 
+## 2024-02-24
+- 77 871 headwords, 30 955 complete, 17 822 partially complete, 29 094 incomplete entries
+- 749 roots, 3 247 root families, 32 063 words derived from roots
+- 731 122 deconstructed compounds
+- 1 584 589 unique inflected forms recognised
+- 1 636 473 cells of Pāḷi word data
+- 18 173 cells of Pāḷi root data
+- 100% dictionary recognition in the early texts
+- A light version of DPD integrated into [The Buddha's Words website](https://thebuddhaswords.net/home/index.html) 
+- Other Pāḷi and Sanskrit dictionaries in GoldenDict and MDict format [download here](https://github.com/digitalpalidictionary/dpd-db/tree/main/other_dictionaries)
+- Idioms button
+- Semantic versioning
+- Lookup table
+- Bold defintions added to db
+- DPD SQLite database available for download
+- Database refactoring table names and columns
+- Improvements to deconstructor: double letters and tissa / tissā
+- Improved tests: hypehantion, allowable characters, neg cimmpounds, bahubbihis, dupes in examples, digu compounds
+- Improvements to GUI
+- Numerous additions and corrections based on user feedback
+**new words include**: aggisaraṇa, aggisāla, aññaposī, aññasaraṇa, atipātī 3, attasaññā, attasaññī, anāhariyamāna, anugamāsi, anuseṭṭhi, appalābha 2, abhikkamitukāma, abhikkamituṃ, abhisambhuṇanta, abhiharati 4, asambhīta, assāsika 1, assāsika 2, ahināga, āgāriya, ādariya, ādhātuṃ 2, āpucchanta, āraññika 2, ārādhesi 2, uccāvacasīla, udicchati, upacāraṭṭhāna, upasampadākathā, upasampadāpekkha, uruvelapāṭihāriyakathā, ekakula 2, ohārāpetvā, gata 6, garahiya 2, gihisahāyaka, catugihisahāyakapabbajjā, cittasaṅkhāra 2, cetayanta, chupanta, jaṭilasata, jātippabhava 2, jānanatā, jānapada 3, jīvitasaṅkhāra 2, takkāvacara, tammayatā, thaddhamānasa, dutiyamārakathā, dubbi, dubbhanta, dummocaya, dhammacaraṇa, dhammika 5, dhuvato, nalāṭikaṃ deti, nānājanapada 2, nānādisa, niṭṭhaṅgatatā, niyyānikatta, nissaraṇadassī, nihīna 4, nīcavuttī, paggaṇhāpetvā, pajjota 3, paññāsagihisahāyakapabbajjā, paññāsamatta, pabbajjāpekkha, pabbajjūpasampadākathā, parikkhāra 4, paribhuñjituṃ 2, pavāda 2, puṇṇaji, pubbānupubbaka, phalikavaṇṇa, bhaddavaggiya, bhaddavaggiyavatthu, bhaddavaggiyasahāyaka, bhayamatīta, bhinna 3, bhuñjitabba 2, maccuvasaṃ vaje, manussanāga, mārakathā, yato tato, vattī 1.1, vikesika, vikkheḷika, vuṭṭhāsi 3, sagaṇa, sabbaratti, sumanamanasa, suvaṇṇapādukā, seṭṭhānuseṭṭhī, hatthappatta [95]
+
 ## 2024-01-26
 - 77 776 headwords, 30 864 complete, 17 780 partially complete, 29 132 incomplete entries
 - 749 roots, 3 239 root families, 32 019 words derived from roots
