@@ -12,7 +12,7 @@ The **numbers** represent **exact matches** of a **headword and all its inflecte
 
 For **headwords in a specific case** (e.g. masc locative singular, optative reflexive 3rd plural) only the **exact headword** will be matched, not any other related inflections. 
 
-The **colours** are a visual representation of the same data - dark blue represents higher word frequency, while the lighter blues show a lower number of occurences.
+The **colours** are a visual representation of the same data - dark blue represents higher word frequency, while the lighter blues show a lower number of occurrences.
 
 ### Non-matches
 **Partial matches**, as found in compounds and in sandhi, are **not counted**.

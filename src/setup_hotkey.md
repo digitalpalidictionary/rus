@@ -1,6 +1,6 @@
 # Setup the Hotkey
 
-Whehter you use [Sutta Central](https://suttacentral.net/), [Digital Pāli Reader](https://www.digitalpalireader.online/_dprhtml/index.html), [Tipitaka Pali Projector](https://www.microsoft.com/en-us/p/tipitaka-pali-projector/9pkwwvrdvnl4#activetab=pivot:overviewtab), [Tipitaka.app](https://tipitaka.app/), PDF documents or any other source of Pāḷi texts, this allows you to click on a word and open it immeditely in the dictionary. 
+Whether you use [Sutta Central](https://suttacentral.net/), [Digital Pāli Reader](https://www.digitalpalireader.online/_dprhtml/index.html), [Tipitaka Pali Projector](https://www.microsoft.com/en-us/p/tipitaka-pali-projector/9pkwwvrdvnl4#activetab=pivot:overviewtab), [Tipitaka.app](https://tipitaka.app/), PDF documents or any other source of Pāḷi texts, this allows you to click on a word and open it immeditely in the dictionary. 
 
 Go to Menu > Edit > Preferences (Shortcut F4) > Hotkeys
 
@@ -34,5 +34,5 @@ Of course you can also search for Pāḷi words the old-fashioned way ...
 
 ![search](pics/hotkey/search.png)
 
-If you're on Linux, also try out the [scan popup](setup_scan_popup.md) - it allows you to open a word in the dictioanry with a single click.
+If you're on Linux, also try out the [scan popup](setup_scan_popup.md) - it allows you to open a word in the dictionary with a single click.
 

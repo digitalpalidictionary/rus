@@ -66,7 +66,7 @@ Click Add and select folder `/Documents/GoldenDict`
 
 ![add](pics/linux-install/add.png)
 
-Click the recursive tick box √ (this makes sure GoldenDict searches in subfolders)
+Click the recursive tick box √ (this makes sure GoldenDict searches in sub-folders)
 
 ![recursive](pics/linux-install/recursive.png)
 

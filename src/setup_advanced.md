@@ -16,7 +16,7 @@ There are a number of Pāḷi dictionaries available for GoldenDict, try [Simsap
 
 To find a specific word on the page, use the shortcut **Ctrl-F**, or go to Menu > Search > Search in Page.
 
-That will open a dialgue box allowing you to quickly find the specfic word you are looking for on the page.
+That will open a dialogue box allowing you to quickly find the specific word you are looking for on the page.
 
 ![groups2](pics/advanced-setup/find_in_page.png)
 
@@ -32,7 +32,7 @@ The group will now appear in a dropdown list on the main page.
 
 ![dropdown](pics/advanced-setup/dropdown.png)
 
-This helps to limit search results, which is imporotant for full-text searches.
+This helps to limit search results, which is important for full-text searches.
 
 
 ## Full-text search
@@ -53,7 +53,7 @@ Select the mode you would like to use:
 1. **Whole words** finds entire words (needs to be 4 or more letters long)
 2. **Plain text** finds any part of a word (needs to be 4 or more letters long)
 3. **Wildcards** is like plain text with the use of wildcards like *
-4. **Regex** allows for very accurate serching using Regular Expressions.
+4. **Regex** allows for very accurate searching using Regular Expressions.
 
 ![mode](pics/advanced-setup/mode.png)
 

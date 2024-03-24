@@ -15,7 +15,7 @@ A light version of DPD is now available for Amazon Kindle.
 (4) Click and hold on any Pāḷi word, then select the dictionary
 ![image](pics/kindle/Dictionary_Selection_01_Note_1920x1355.png)
 
-(5) Select **Digital Pāḷi Dicitonary** from the list of available dictionaries
+(5) Select **Digital Pāḷi Dictionary** from the list of available dictionaries
 ![image](pics/kindle/Dictionary_Selection_02_Note_1920x1355.png)
 
 (6) That's it, your all set up! Enjoy the ability to look up inflected forms of any Pāḷi word.

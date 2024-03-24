@@ -82,7 +82,7 @@ Select the folder `/Documents/GoldenDict`.
 
 <img width="798" alt="select gd folder" src="pics/mac-install/select%20gd%20folder.png">
 
-Click the recursive tick box √ (this makes sure GoldenDict searches in subfolders).
+Click the recursive tick box √ (this makes sure GoldenDict searches in sub-folders).
 
 <img width="430" alt="recursive" src="pics/mac-install/recursive.png">
 

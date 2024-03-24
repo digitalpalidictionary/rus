@@ -44,7 +44,7 @@ Installing …
 
 Click Finish
 
-![install finshed](pics/win-install/install%20finshed.png)
+![install finished](pics/win-install/install%20finshed.png)
 
 ## Download DPD
 
@@ -62,7 +62,7 @@ Right-click the DPD zip file in your Downloads folder and click Extract All.
 
 ![extract all](pics/win-install/extract%20all.png)
 
-Selct the `\Documents\GoldenDict` folder and click Extract
+Select the `\Documents\GoldenDict` folder and click Extract
 
 ![extract to](pics/win-install/extract%20to.png)
 
@@ -86,7 +86,7 @@ Click Add
 
 Navigate to `\Documents\GoldenDict` and click Select Folder
 
-Tick the __Recursive__ check-box (this makes sure all subfolders get added)
+Tick the __Recursive__ check-box (this makes sure all sub-folders get added)
 
 ![recursive](pics/win-install/recursive.png)
 

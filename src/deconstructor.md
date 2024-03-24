@@ -7,7 +7,7 @@ It currently contains about 700 000 deconstructed words, covering all books in t
 ![deconstructor_example](pics/deconstructor/dinnantiādikāpīti.png)
 
 ## How to Install
-Download the latest version of DPD Deconstructor for GoldenDict or MDict from [this page on GithHub]() and place it in the same parent folder as DPD. 
+Download the latest version of DPD Deconstructor for GoldenDict or MDict from [this page on GitHub]() and place it in the same parent folder as DPD. 
 
 ![deconstructor_folder](pics/deconstructor/dpd_deconstructor_folder.png)
 

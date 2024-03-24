@@ -4,7 +4,7 @@ I am seeking help to code various aspects of the Digital Pāḷi Dictionary proj
 
 ## Python
 
-I am always in need of help from expereinced Python programmers, with small and medium sized tasks, as well as code reviews and consultation. 
+I am always in need of help from experienced Python programmers, with small and medium sized tasks, as well as code reviews and consultation. 
 
 ## Flutter
 
