@@ -2,9 +2,9 @@
 
 I am seeking help to code various aspects of the Digital Pāḷi Dictionary project. If you have the expertise and the interest, [please get in touch by email](mailto:digitalpalidictionary@gmail.com).
 
-## JavaScript
+## Python
 
-I aim to integrate DPD into [The Buddha's Words website](https://thebuddhaswords.net/home/index.html). The site currently has a Pāḷi dictionary lookup system, but it is very outdated - the same as on Sutta Central. I have devised a method to provide [more accurate word-recognition](https://github.com/digitalpalidictionary/dpd-db/tree/main/tbw) and need some assistance with the JavaScript implementation. I don't think it will be very complex. Once created, the same system can be easily re-used on other websites.
+I am always in need of help from expereinced Python programmers, with small and medium sized tasks, as well as code reviews and consultation. 
 
 ## Flutter
 

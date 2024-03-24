@@ -6,8 +6,8 @@
 [Word Frequency](frequency.md)
 [Deconstructor](deconstructor.md)
 [Grammar Dictionary](grammardict.md)
-[Kindle](kindle.md)
 [Tipitaka Pali Reader](tpr.md)
+[The Buddha's Words](tbw.md)
 
 -----------
 
@@ -18,6 +18,7 @@
 [Install on Android (DictTango)](install_android_dicttango.md)
 [Install on Android (GoldenDict)](install_android_goldendict.md)
 [Install on Andriod (MDict)](install_android_mdict.md)
+[Install on Kindle](kindle.md)
 [Update](update.md)
 
 -----------

@@ -1,5 +1,29 @@
 # Changelog
 
+## 2024-03-24
+- 78 048 headwords, 31 684 complete, 17 575 partially complete, 28 789 incomplete entries
+- 749 roots, 3 249 root families, 32 176 words derived from roots
+- 731 160 deconstructed compounds
+- 1 588 235 unique inflected forms recognised
+- 1 646 579 cells of Pāḷi word data
+- 19 662 cells of Pāḷi root data
+- 100% dictionary recognition in the early texts
+- Pass2 started on Majjhima Nikāya
+- Numerous additions and corrections based on user feedback
+
+**new words include**: aññena, atidāyī, adhicca 1.2, adhibhosi, anagāriya 2, anattha 2, anābhoga 2.1, aniñjita 1, anukkama 3, anupasampanna 2, anotattadaha, apakata 3, appaṭigha 3, appaṭividdha 
+3, appatara 2, appīyati, appekadāhaṃ, amanāpa 2, ariyaṃ cakkhuṃ, aviññāṇaka 2, avināsana, avippakiṇṇa, asamatta, asammosa 2, asuṇanta 2, assamāraka, ākāravant 3, ādāya 5, ārabhituṃ 2, 
+āhareti 2, icchāvacara 2, ito bhiyyo, ito 5, indaṭṭha, ujuka 2, ujjaliyi, ujjaletuṃ, uttānīkattabba 2, upagacchati 5, upadhiviveka 2, upanikkhipati 2, upama 2, upalabbhiyamāna, upādiyāna, 
+upāyāsa 2, upeti 5, uppādadhamma, etaṃpatha, opāteti 2, osaṭa 3, kathaṃ 4, kathāvāra, kappeti 3, kareyya 1, kārita 4, kāliṅga 3, kāsa 3.1, kuṭila 2, kodhupāyāsa, khari, gahetvā 2, gāhāpetuṃ,
+gāhetvā 1, guṇa 1.6, cajamāna 2, catubbidhaṃ, caya 3, carato 2, jambuphala, jīva 4, ṭhapīyati, ṭhiti 3, tajjanīya 2, tassassa, tikaṇḍakī, tikanipāta 1, tenahāyasmanto, teme, tesametaṃ 
+pāṭikaṅkhaṃ, thāmagata 2, dhammappaṭisaṃvedī 2, dharamānatā, dhāretar 2, dhāva 2, dhunāti 2, na bhattaṃ paṭibhāti, navuta, nārāca 2, nibbattatī, nissarati 2, netthāra 2, neva kammantā 
+paṭibhanti, pacchima 7, pacchisīsa, paṭibaddha 5, paṭivāta, paṭivīsa, paṇāmeti 2, patiṭṭhāpetvā 4, patiṭṭhāpesi 4, parasenā, paricaritukāma, paricarituṃ, parinibbāyati 3, parinibbuta 4, 
+parimaddati 2, pādaṃ karoti, pāraṃ gacchati, pāricchattakapuppha, pāli 2.1, pīṇetabba 2, purakkhata 7, purima 4, phala 1.4, phāliyati, phāliyi, phoṭṭhabba 2, balaṃ gāhetvā, bahutara 2, 
+bahuvārā, bahuvāre, bhagavati 2, bhāsati 1.3, magabhūta, majjha 5, majjhima 5, majjhimapaṭipadā, maṭṭhavacana, maṇḍala 6, manteti 3, mayi 3, mahatā atthena saṃyutto abhavissa, maṃ pādato 
+karitvā, mātaṅga 4, yāyamhi, rājaguṇa 2, rājavaṃsa 2, lambatthanī, loma 5, vacchadanta 2, vahati 3, vā 4, vāpa, vibhajati 3, vibhaji 2, vibhavesī, vilopa 2, vutta 3.1, sakuṇikā, saṅkamati 2,
+saṅkhāya 3, saccaṃ bhaṇasi, sacchanda, saṇṭhāpayamāna 2, saṇḍāsa 2, saṇha 5, satisammosa 2, satthu 3, saddhānusārī 2, santiṭṭhati 3, santiṭṭhati 4, sappaṭigha 2, samagga 3, samita 3.1, 
+sameti 2.3, sammukhībhāvaṃ adāsi, sammukhībhūta 2, sāmañña 2.2, sāmī 5, supatiṭṭhita 3, susama, susu 3, sekha 2, sotaṃ chetvā, sotāpanna 2, hatthe karitvā, haya 2, hāyamāna 2 [178]
+
 ## 2024-02-24
 - 77 871 headwords, 30 955 complete, 17 822 partially complete, 29 094 incomplete entries
 - 749 roots, 3 247 root families, 32 063 words derived from roots
@@ -20,6 +44,7 @@
 - Improved tests: hypehantion, allowable characters, neg cimmpounds, bahubbihis, dupes in examples, digu compounds
 - Improvements to GUI
 - Numerous additions and corrections based on user feedback
+
 **new words include**: aggisaraṇa, aggisāla, aññaposī, aññasaraṇa, atipātī 3, attasaññā, attasaññī, anāhariyamāna, anugamāsi, anuseṭṭhi, appalābha 2, abhikkamitukāma, abhikkamituṃ, abhisambhuṇanta, abhiharati 4, asambhīta, assāsika 1, assāsika 2, ahināga, āgāriya, ādariya, ādhātuṃ 2, āpucchanta, āraññika 2, ārādhesi 2, uccāvacasīla, udicchati, upacāraṭṭhāna, upasampadākathā, upasampadāpekkha, uruvelapāṭihāriyakathā, ekakula 2, ohārāpetvā, gata 6, garahiya 2, gihisahāyaka, catugihisahāyakapabbajjā, cittasaṅkhāra 2, cetayanta, chupanta, jaṭilasata, jātippabhava 2, jānanatā, jānapada 3, jīvitasaṅkhāra 2, takkāvacara, tammayatā, thaddhamānasa, dutiyamārakathā, dubbi, dubbhanta, dummocaya, dhammacaraṇa, dhammika 5, dhuvato, nalāṭikaṃ deti, nānājanapada 2, nānādisa, niṭṭhaṅgatatā, niyyānikatta, nissaraṇadassī, nihīna 4, nīcavuttī, paggaṇhāpetvā, pajjota 3, paññāsagihisahāyakapabbajjā, paññāsamatta, pabbajjāpekkha, pabbajjūpasampadākathā, parikkhāra 4, paribhuñjituṃ 2, pavāda 2, puṇṇaji, pubbānupubbaka, phalikavaṇṇa, bhaddavaggiya, bhaddavaggiyavatthu, bhaddavaggiyasahāyaka, bhayamatīta, bhinna 3, bhuñjitabba 2, maccuvasaṃ vaje, manussanāga, mārakathā, yato tato, vattī 1.1, vikesika, vikkheḷika, vuṭṭhāsi 3, sagaṇa, sabbaratti, sumanamanasa, suvaṇṇapādukā, seṭṭhānuseṭṭhī, hatthappatta [95]
 
 ## 2024-01-26
