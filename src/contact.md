@@ -1,9 +1,9 @@
-# Contact
+# Контакты
 
-Please [get in touch by email](mailto:digitalpalidictionary@gmail.com) if
+Пожалуйста, [свяжитесь по электронной почте](mailto:digitalpalidictionary@gmail.com), если:
 
-- you have any **bright ideas** to improve this dictionary.
-- you are a **coder** and would like to get involved in the development of this project.
-- you would like to **contribute** to the project in any way.
+- у вас есть какие-либо **яркие идеи** по улучшению этого словаря.
+- вы **программист** и хотели бы принять участие в разработке этого проекта.
+- вы хотели бы **внести вклад** в проект любым образом.
 
-For anything else, please use the [Feedback Form](feedback_form.md)
+Для всего остального, пожалуйста, используйте [Форму обратной связи](feedback_form.html).

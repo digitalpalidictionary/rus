@@ -1,85 +1,86 @@
-Digital Pāḷi Dictionary
+Цифровой Словарь Пали
 
-## Bibliography
+## Библиография
 
-### Pāḷi Dictionaries
+### Пали Словари
+- **Буддадатта**, Дост. А.П., 1958. *Краткий Пали-Английский Словарь (Второе издание)*, Дехивала: Буддийский Культурный Центр
+- **Кон**, Маргарет, 2001. *Словарь Пали Часть I а-х*, Оксфорд: Общество Текстов Пали
+- **Кон**, Маргарет, 2010. *Словарь Пали Часть II г-н*, Оксфорд: Общество Текстов Пали
+- **Кон**, Маргарет, 2020. *Словарь Пали Часть III п-бх*, Оксфорд: Общество Текстов Пали
+- **Рис Дэвидс**, Т. У. и Стед, Уильям (редакторы), 1921-1925. *Пали-Английский Словарь*, Чипстед: Общество Текстов Пали
+- **Тренкнер**, В., и др., 1925-2010. *Критический Пали Словарь*, Копенгаген: Королевская Датская Академия, доступно через [https://cpd.uni-koeln.de/](https://cpd.uni-koeln.de/)
 
-  *  **Buddhadatta** , Ven. A.P., 1958. _Concise Pāli-English Dictionary (Second Edition)_ , Dehiwala: Buddhist Cultural Centre
-  *  **Cone** , Margaret, 2001. _A Dictionary of Pāli Part I a-kh_ , Oxford: Pāli Text Society
-  *  **Cone** , Margaret, 2010. _A Dictionary of Pāli Part II g-n_ , Oxford: Pāli Text Society
-  *  **Cone** , Margaret, 2020. _A Dictionary of Pāli Part III p-bh_ , Oxford: Pāli Text Society
-  *  **Rhys Davids** , T. W. & Stede,William (editors), 1921-1925. _Pali-English Dictionary_ , Chipstead: Pāli Text Society
-  *  **Trenckner** , V, et al., 1925 -2010. _A Critical Pāli Dictionary_ , Copenhagen: The Royal Danish Academy, accessed through <https://cpd.uni-koeln.de/>
+### Санскритские Словари
+- **Апте**, В. С., 1890. *Практический Санскритско-Английский Словарь*, Пуна: Ширавкар и Ко, доступно через [www.sanskrit-lexicon.uni-koeln.de](www.sanskrit-lexicon.uni-koeln.de)
+- **Эджертон**, Фрэнклин, 1953. *Гибридный Буддийский Санскритский Словарь и Грамматика Часть II: Словарь*, Дели: Мотилал Банарсидасс Паблишерс, доступно через [www.sanskrit-lexicon.uni-koeln.de](www.sanskrit-lexicon.uni-koeln.de)
+- **Монье-Уильямс**, Сэр Монье, 1899. *Санскритско-Английский Словарь: Этимологически и Филологически Упорядоченный с Особым Учетом Родственных Индоевропейских Языков*, Оксфорд: Кларендон Пресс, доступно через [www.sanskrit-lexicon.uni-koeln.de](www.sanskrit-lexicon.uni-koeln.de)
 
-### Sanskrit Dictionaries
+### Классические работы по Грамматике Пали
+- Kaccāyanabyākaraṇaṃ
+- Padarūpasiddhi
+- Saddanītippakaraṇaṃ Dhātumālā
+- Saddanītippakaraṇaṃ Padamālā
+- Saddanītippakaraṇaṃ Suttamālā
+- Vuttodayaṃ
 
-  *  **Apte** , V. S., 1890. _The Practical Sanskrit-English Dictionary_ , Poona: Shiralkar & Co, accessed through [www.sanskrit-lexicon.uni-koeln.de](www.sanskrit-lexicon.uni-koeln.de)
-  *  **Edgerton** , Franklin, 1953. _Buddhist Hybrid Sanskrit Grammar And Dictionary Vol. II: Dictionary_ , Delhi: Motilal Banarsidass Publishers, accessed through [www.sanskrit-lexicon.uni-koeln.de](www.sanskrit-lexicon.uni-koeln.de)
-  *  **Monier-Williams** , Sir Monier, 1899. _A Sanskrit-English Dictionary: Etymologically and Philologically Arranged with Special Reference to Cognate Indo-European languages_ , Oxford: Clarendon Press, accessed through [www.sanskrit-lexicon.uni-koeln.de](www.sanskrit-lexicon.uni-koeln.de)
+### Современные работы по Грамматике Пали (список неполный)
+- **Андерсен**, Динес и Смит, Хелмер, 1921. *Пали Дхатупатха и Дхатумаджуша: Редакция с Индексами*, Копенгаген: Андерсен, Фред, Хост и Сын, доступно через [https://archive.org/details/palidhatupathadh00andeuoft](https://archive.org/details/palidhatupathadh00andeuoft)
+- **Буддадатта**, Дост. А.П., 2020. *Новый Курс Пали Части 1 и 2 (Шестое издание)*, Дехивала: Буддийский Культурный Центр
+- **Буддадатта**, Дост. А.П., 2020. *Новый Курс Пали Часть 3*, Дехивала: Буддийский Культурный Центр
+- **Дюрвайзелл**, Чарльз, 2007. *Практическая Грамматика Пали (Четвертое издание)*, доступно через [https://palistudies.blogspot.com/p/a-practical-grammar-of-pali-language.html](https://palistudies.blogspot.com/p/a-practical-grammar-of-pali-language.html)
+- **Гейгер**, Вильгельм, 2005. *Грамматика Пали*, Оксфорд: Общество Текстов Пали
+- **Оберлис**, Томас, 2001. *Пали: Грамматика Языка Теравады Типитаки, Со Сводом Конкорданс к Грамматике Прописчих Языков Пишель*, Берлин: Вальтер де Грюйтер
+- **Перниола**, В., 1997. *Грамматика Пали*, Оксфорд: Общество Текстов Пали
+- **Силананда**, Саядоу У. и Нандисена, У. (Редактор), 2002. *Пали Корни в Саддханити Дхату-Мала с С
 
-### Classical Pāḷi Grammars
+равнением с Панини Дхатупата*
 
-  *  **Kaccāyanabyākaraṇaṃ**
-  *  **Padarūpasiddhi**
-  *  **Saddanītippakaraṇaṃ Dhātumālā**
-  *  **Saddanītippakaraṇaṃ Padamālā**
-  *  **Saddanītippakaraṇaṃ Suttamālā**
-  *  **Vuttodayaṃ**
+### Английские Переводы (список неполный)
+- **Бодхи**, Бхикку, 2000. *Связанные Дискурсы Будды: Перевод Самйутта Никая*, Бостон: Издательство Мудрости
+- **Бодхи**, Бхикку, 2012. *Числовые Дискурсы Будды: Перевод Ангуттара Никая*, Бостон: Издательство Мудрости
+- **Бодхи**, Бхикку, 2017. *Сутта Нипата: Древняя Коллекция Дискурсов Будды Вместе с Его Комментариями*, Бостон: Издательство Мудрости
+- **Ньянадипа**, Бхикку, 2018. *Молчаливые Мудрецы Древности: Дискурсы из Суттанипата*, Издательство Патх Пресс, доступно через [https://pathpress.files.wordpress.com/2018/02/the_silent_sages_of_old_suttanipata_ppp.pdf](https://pathpress.files.wordpress.com/2018/02/the_silent_sages_of_old_suttanipata_ppp.pdf)
+- **Ньянамоли**, Бхикку, & Бодхи, Бхикку, 2005. *Средние Длинные Дискурсы Будды: Перевод Маджхима Никая (Третье издание)*, Бостон: Издательство Мудрости
+- **Суджато**, Бхикку, 2018. *Дигханикая: Длинные Дискурсы*, SuttaCentral, доступно через [https://suttacentral.net/](https://suttacentral.net/)
+- **Суджато**, Бхикку, 2018. *Маджхиманикая: Средние Дискурсы*, SuttaCentral, доступно через [https://suttacentral.net/](https://suttacentral.net/)
+- **Суджато**, Бхикку, 2018. *Самйуттаникая: Связанные Дискурсы*, SuttaCentral, доступно через [https://suttacentral.net/](https://suttacentral.net/)
+- **Суджато**, Бхикку, 2018. *Ангуттараникая: Нумерованные Дискурсы*, SuttaCentral, доступно через [https://suttacentral.net/](https://suttacentral.net/)
+- **Суджато**, Бхикку, & Уолтон, Джессика, 2019. *Тхерагата: Стихи Старших Монахов (Пересмотренное издание)*, SuttaCentral, доступно через [https://suttacentral.net/](https://suttacentral.net/)
+- **Суджато**, Бхикку, & Уолтон, Джессика, 2019. *Тхеригата: Стихи Старших Монахинь*, SuttaCentral, доступно через [https://suttacentral.net/](https://suttacentral.net/)
+- **Тханиссаро**, Бхикку, 2017. *Горсть Листьев: Антология из Сутта Питаки (Пересмотренное издание)*, Монастырь Метта Форест, доступно через [https://www.dhammatalks.org/suttas/index.html](https://www.dhammatalks.org/suttas/index.html)
+- **Уолш**, Моррис, 1986. *Длинные Дискурсы Будды: Перевод Дигха Никая*, Бостон: Издательство Мудрости
 
-### Modern Pāḷi Grammars (incomplete)
+### Академические Работы (список неполный)
+- **Деокар**, Махеш А., 2008. *Технические Термины и Техника Пали и Санскритских Грамматик*, Сарнат, Варанаси
 
-  *  **Andersen** , Dines & Smith, Helmer, 1921. _The Pali Dhatupatha and the Dhatumajusa: Edited with Indexes_ , Copenhagen: Anderson, Fred, Host & Son, accessed through <https://archive.org/details/palidhatupathadh00andeuoft>
-  * **Buddhadatta** , Ven. A.P., 2020. _The New Pali Course Parts 1 & 2 (Sixth Edition)_, Dehiwala: Buddhist Cultural Centre
-  *  **Buddhadatta** , Ven. A.P., 2020. _The New Pali Course Parts 3_ , Dehiwala: Buddhist Cultural Centre
-  *  **Duroiselle** , Charles, 2007. _A Practical Grammar of the Pali Language (Fourth Edition)_ , accessed through <https://palistudies.blogspot.com/p/a-practical-grammar-of-pali-language.html>
-  * **Geiger** , Wilhelm, 2005. _A Pāli Grammar_ , Oxford: Pāli Text Society
-  *  **Oberlies** , Thomas , 2001. _Pali:A Grammar of the Language of the Theravada Tipitaka, With a Concordance to Pischel's Grammatik der Prakrit-Sprachen_ , Berlin: Walter de Gruyter
-  *  **Perniola** , V., 1997. _Pali Grammar_ , Oxford: Pāli Text Society
-  *  **Silananda** , Sayadaw U & Nandisena, U (Editor), 2002. _Pali Roots in Saddanīti Dhātu-Mālā compared with Pāṇinīya-Dhātupāṭha_
+: Центральный Институт Высших Тибетских Исследований
+- **Деокар**, Махеш А., 2012. *Некоторые Вероятные Санскритские Источники Пали Грамматиков с Особым Упоминанием Аггавамсы*, Нью-Дели: ДК Принтворлд
+- **Пандита**, Дост., 2015. *Пали Прилагательные: Когда Прогресс Вредит*, Неопубликованное
+- **Пинд**, Оле Холтен, 1995. *Пали и Пали Граммарианы: Метод Пали Граммарианов*, Стокгольм: Ассоциация Восточных Исследований
+- **Виджесекера**, О.Х. Де А., 1993. *Синтаксис Пад в Пали Никаях*, Келания: Последипломный Институт Пали и Буддийских Исследований, Университет Келания, доступно через [https://www.ancient-buddhist-texts.net/Textual-Studies/Syntax-of-the-Cases/index.htm](https://www.ancient-buddhist-texts.net/Textual-Studies/Syntax-of-the-Cases/index.htm)
 
-### English Translations (incomplete)
+### Приложения с открытым исходным кодом
+- **Anki**, доступно через [https://apps.ankiweb.net/](https://apps.ankiweb.net/)
+- **Beautiful Soup**, доступно через [https://pypi.org/project/beautifulsoup4](https://pypi.org/project/beautifulsoup4)
+- **Libre Office**, доступно через [https://www.libreoffice.org/](https://www.libreoffice.org/)
+- **Linux Mint**, доступно через [https://linuxmint.com/](https://linuxmint.com/)
+- **Natural Language Toolkit**, доступно через [https://www.nltk.org/](https://www.nltk.org/)
+- **Pandas**, доступно через [https://pandas.pydata.org/](https://pandas.pydata.org/)
+- **Python**, доступно через [https://www.python.org/](https://www.python.org/)
+- **SQLite**, доступно через [https://www.sqlite.org/index.html](https://www.sqlite.org/index.html)
+- **Tipiṭaka Pāḷi Projector**, доступно через [https://github.com/bksubhuti/Tipitaka-Pali-Projector](https://github.com/bksubhuti/Tipitaka-Pali-Projector)
+- **Tipitaka Pali Reader**, доступно через [https://github.com/bksubhuti/tipitaka-pali-reader/releases/](https://github.com/bksubhuti/tipitaka-pali-reader/releases/)
+- **Visual Studio Code**, доступно через [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-  *  **Bodhi** , Bhikkhu, 2000. _The Connected Discourses of the Buddha: A Translation of the Saṃyutta Nikāya_ , Boston: Wisdom Publications
-  *  **Bodhi** , Bhikkhu, 2012. _The Numerical Discourses of the Buddha: A Translation of the Aṅguttara Nikāya_ , Boston: Wisdom Publications
-  *  **Bodhi** , Bhikkhu, 2017. _The Sutta Nipata: An Ancient Collection of the Buddha's Discourses Togther with its Commentaries_ , Boston: Wisdom Publications
-  *  **Ñāṇadīpa** , Bhikkhu, 2018. _The Silent Sages of Old: Suttas from the Suttanipata_ , Path Press Publications, accessed through <https://pathpress.files.wordpress.com/2018/02/the_silent_sages_of_old_suttanipata_ppp.pdf>
-  * **Nāṇamoli** , Bhikkhu, & Bodhi, Bhikkhu, 2005. _The Middle Length Discourses of the Buddha: A Translation of the Majjhima Nikāya (Third Edition)_ , Boston: Wisdom Publications
-  *  **Sujato** , Bhikkhu, 2018. _Dīghanikāya: Long Discourses_ , Sutta Central, accessed through <https://suttacentral.net/>
-  * **Sujato** , Bhikkhu, 2018. _Majjhimanikāya: Middle Discourses_ , Sutta Central, accessed through <https://suttacentral.net/>
-  * **Sujato** , Bhikkhu, 2018. _Saṃyuttanikāya: Linked Discourses_ , Sutta Central, accessed through <https://suttacentral.net/>
-  * **Sujato** , Bhikkhu, 2018. _Aṅguttaranikāya: Numbered Discourses_ , Sutta Central, accessed through <https://suttacentral.net/>
-  * **Sujato** , Bhikkhu, & Walton, Jessica, 2019. _Theragāthā: Verses of the Senior Monks (Revised Edition)_ , Sutta Central, accessed through <https://suttacentral.net/>
-  * **Sujato** , Bhikkhu, & Walton, Jessica, 2019. _Therīgāthā: Verses of the Senior Nuns_ , Sutta Central, accessed through <https://suttacentral.net/>
-  * **Thanissaro** , Bhikkhu, 2017. _Handful of Leaves: An Anthology from the Sutta Piṭaka (Revised Edition)_ , Metta Forest Monastery, accessed through <https://www.dhammatalks.org/suttas/index.html>
-  * **Walshe** , Maurice, 1986. _The Long Discourses of the Buddha: A Translation of the Dīgha Nikāya_ , Boston: Wisdom Publications
-
-### Academic Papers (incomplete)
-
-  *  **Deokar** , Mahesh A., 2008. _Technical Terms And Technique Of The Pali And The Sanskrit Grammars_ , Sarnath, Varanasi: Central Institute of Higher Tibetan Studies
-  *  **Deokar** , Mahesh A., 2012. _Some Probable Sanskrit Sources of the Pali Grammarians With Special Reference to Aggavamsa_ , New Delhi: DK Printworld
-  *  **Pandita** , Ven., 2015. _Pali Adjectives: When Progress Hurts_ , Unpublished
-  *  **Pind** , Ole Holten, 1995. _Pāli and the Pāli Garmmarians: The Method of the Pāli Grammarians_ , Stockholm: Association of Oriental Studies
-  *  **Wijesekera** , O.H. De A. , 1993. _Syntax of the Cases in the Pali Nikayas_ , Kelaniya: The Postgraduate Institute of Pali and Buddhist Studies, University of Kelaniya, accessed through <https://www.ancient-buddhist-texts.net/Textual-Studies/Syntax-of-the-Cases/index.htm>
-
-### Open Source Software
-
-  *  **Anki** , accessed through <https://apps.ankiweb.net/>
-  * **Beautiful Soup** , accessed through <https://pypi.org/project/beautifulsoup4>
-  * **Libre Office** , accessed through <https://www.libreoffice.org/>
-  * **Linux Mint** , accessed through <https://linuxmint.com/>
-  * **Natural Language Toolkit** , accessed through <https://www.nltk.org/>
-  * **Pandas** , accessed through <https://pandas.pydata.org/>
-  * **Python** , accessed through <https://www.python.org/>
-  * **SQLite** , accessed through <https://www.sqlite.org/index.html>
-  * **Tipiṭaka Pāḷi Projector** , accessed through <https://github.com/bksubhuti/Tipitaka-Pali-Projector>
-  * **Tipitaka Pali Reader** , accessed through <https://github.com/bksubhuti/tipitaka-pali-reader/releases/>
-  * **Visual Studio Code** , accessed through <https://code.visualstudio.com/>
-
-### Websites
-
-  *  **Digital Pāli Reader** , accessed through <https://www.digitalpalireader.online/>
-  * **Github** , accessed through <https://github.com/>
-  * **Sanskrit Grammarian** , accessed through <https://sanskrit.inria.fr/DICO/grammar.fr.html>
-  * **Sutta Central** , accessed through <https://suttacentral.net/>
-  * **The Buddha's Words** , accessed through <https://thebuddhaswords.net/home/index.html>
+### Веб-сайты
+- **Access to Insight**, доступно через [https://www.accesstoinsight.org/](https://www.accesstoinsight.org/)
+- **Ancient Buddhist Texts**, доступно через [https://www.ancient-buddhist-texts.net/](https://www.ancient-buddhist-texts.net/)
+- **Buddha Vacana**, доступно через [https://www.buddha-vacana.org/](https://www.buddha-vacana.org/)
+- **Buddhism Study and Practice Group**, доступно через [http://buddhism.spd.lk/](http://buddhism.spd.lk/)
+- **Dhamma Talks**, доступно через [https://www.dhammatalks.org/](https://www.dhammatalks.org/)
+- **Dharmafarer**, доступно через [http://www.dharmafarer.org/](http://www.dharmafarer.org/)
+- **Palicanon**, доступно через [https://www.palicanon.org/](https://www.palicanon.org/)
+- **Pali Studies**, доступно через [https://palistudies.blogspot.com/](https://palistudies.blogspot.com/)
+- **PTS Pali Text Society**, доступно через [https://www.palitext.com/](https://www.palitext.com/)
+- **Sutta Central**, доступно через [https://suttacentral.net/](https://suttacentral.net/)
 

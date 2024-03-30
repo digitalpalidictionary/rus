@@ -1,11 +1,11 @@
-# Help with Coding
+# Помощь в программировании
 
-I am seeking help to code various aspects of the Digital Pāḷi Dictionary project. If you have the expertise and the interest, [please get in touch by email](mailto:digitalpalidictionary@gmail.com).
+Ищем помощь в написании кода для различных аспектов проекта Цифровой Словарь Пали. Если у вас есть опыт и интерес, [свяжитесь с нами по электронной почте](mailto:digitalpalidictionary@gmail.com).
 
 ## Python
 
-I am always in need of help from experienced Python programmers, with small and medium sized tasks, as well as code reviews and consultation. 
+Всегда нужна помощь опытных программистов на Python в выполнении маленьких и средних задач, а также при проведении кодовых ревью и консультаций.
 
 ## Flutter
 
-As part of a longer-term vision, I would like to develop DPD into a Flutter App. This app would replicate the current lookup functionality of GoldenDict and further allow the integration of many requested features, which are not possible within the GoldenDict framework. The backend would be a SQLite database, with methods to lookup and present the relevant data. This is a longer, more complex project.
+В рамках долгосрочного видения мы бы хотели разработать DPD в приложение Flutter. Это приложение повторило бы текущую функциональность поиска в GoldenDict и далее позволило бы интегрировать множество запрашиваемых функций, которые не реализуемы в рамках GoldenDict. База данных на бэкенде была бы SQLite, с методами для поиска и представления соответствующих данных. Это более длительный и сложный проект.

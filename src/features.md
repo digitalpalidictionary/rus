@@ -1,181 +1,126 @@
-# Features
+# Особенности
 
-## DPD contains four different dictionaries
+## DPD содержит четыре различных словаря
 
-#### Pāḷi to English Dictionary (Blue)
-
+### Словарь палийского языка на английский (синий)
 ![pali2english](pics/features/1pali2english.png)
 
-#### Pāḷi Roots Dictionary (Orange)
+### Словарь корней палийского языка (оранжевый)
+![pali2english](pics/features/2rootsdict.png)
+Для получения дополнительной информации [нажмите здесь](rootdict.html)
 
-![pali2english](pics/features/2rootsdict.png) \
-
-for more info [click here](rootdict.md)
-
-#### English to Pāḷi Dictionary (Purple)
-
+### Словарь русского на палийский язык (фиолетовый)
 ![english2pali](pics/features/3english2pali.png)
 
-<!-- #### Compound Deconstruction Dictionary (Sand)
-
-![compdeconstruction](pics/features/4sandhisplitter.png) -->
-
-#### Abbreviations and Help Dictionary (Green)
-
+### Словарь сокращений и помощи (зеленый)
 ![helpdict](pics/features/5helpabbreviations.png)
 
-## Two supplemetary dictionaries
-There are two additional dictionary packs which work in concert with DPD. The first is dedicated to [sandhi splitting and compound deconstruction](sandhi.md), and the second is a [grammar dictionary](grammardict.md) which can explain the case of every inflected word in a text. Click the links to learn more.
+## Два дополнительных словаря
 
-## DPD recognises 1.5 million unique inflected forms of Pāḷi words
+Существует два дополнительных словарных набора, которые работают в связке с DPD. Первый посвящен [разбору составных слов и разложению сложных слов](sandhi.html), а второй - [грамматический словарь](grammardict.html), который может объяснить падеж каждого измененного слова в тексте. Щелкните по ссылкам, чтобы узнать больше.
 
-When you select on a word in a Pāḷi text and press the hotkey, DPD automatically recognizes all the headwords to which that inflected form belongs. For example, clicking on _takkarassa_ will automatically open _takkara_. 
+## DPD распознает 1,5 миллиона уникальных измененных форм слов палийского языка
 
+Когда вы выбираете слово в тексте на палийском языке и нажимаете сочетание клавиш, DPD автоматически определяет все главные слова, к которым принадлежит эта измененная форма. Например, клик по *takkarassa* автоматически откроет *takkara*.
 ![inflected forms](pics/features/inflected%20forms.png)
 
-## 100% Dictionary recognition in these books
+## 100% Распознавание словаря в этих книгах
 
-DPD recognizes all words, both in **Chaṭṭha Saṅgāyana Tipiṭaka** and **Mahāsaṅgīti** edition on Sutta Central, including all compounds and sandhis, in the following books:
+DPD распознает все слова, как в **Chaṭṭha Saṅgāyana Tipiṭaka**, так и в **Mahāsaṅgīti** издании на Sutta Central, включая все сложные слова и соединения, в следующих книгах:
+- **Виная**: Pārājikapāḷi , Pācittiyapāḷi 
+- **Сутты**: Все четыре Никаи 
+- **Кхуддака Никая**: Khuddakapāṭha, Dhammapada, Udāna, Itivuttaka, Suttanipāta, Theragāthā 
+- **Вплоть до**: Therigāthā
 
-**Vinaya**: Pārājikapāḷi , Pācittiyapāḷi \
-**Sutta**: All four Nikāyas \
-**Khuddaka Nikāya**: Khuddakapāṭha, Dhammapada, Udāna, Itivuttaka, Suttanipāta, Theragāthā \
-**Up Next**: Therigāthā
+## Кликайте по всему
 
-## Click on everything
+Одна из  значительных особенностей GoldenDict - это возможность щелкнуть по любому слову, чтобы открыть определение этого слова. Это создает бесконечное пространство для изучения языка.
 
-One of the great features about GoldenDict is the ability to click on any word to open up the definition of that word. This creates an infinite web of language discovery.
+## Компактное представление
 
-## Compact Presentation
-
-All the important Pāḷi information is presented in **one compact line**, available at a glance, with more detailed information is available by clicking the buttons.
-
+Вся важная информация на палийском языке представлена в **одной компактной строке**, доступной на первый взгляд, а более подробная информация доступна при нажатии кнопок.
 ![compact line](pics/features/compact%20line.png)
+Основная информация включает часть речи, падеж, значение, буквальное значение и упрощенную конструкцию.
 
-Essential information includes the part of speech, case which the word takes, English meaning, literal meaning and simplified construction.
+## Система нумерации
 
-## Numbering System
+Если слова с несколькими значениями происходят из разных источников, их нумерация будет отражать это.
+![renumbering](pics/features/renumbering.png)
+В приведенном выше примере 1.1 и 1.2 оба связаны с санскритским *śara*, в то время как 2.1 происходит от корня √sar (издавать звук), санскритское *svara*.
 
-If words with multiple meanings are derived from different sources, their numbering will reflect that. 
+## Степень завершенности данных о словах
 
-![renumbering](pics/feature/../features/renumbering.png)
+Поскольку DPD находится в процессе выполнения, полезно знать, насколько полны данные о слове. Это указывается серым значком (✓~✗) после записи.
+- ✓ серая галочка означает, что данные о слове в основном завершены с контекстуальным значением, грамматической информацией, примерами из сутт и другой соответствующей информацией.
+- ~ серая волнистая линия означает, что данные о слове частично завершены с контекстуальным значением и грамматической конструкцией, но минимальной другой информацией.
+- ✗ серый крест означает, что данные о слове все еще находятся в процессе создания и содержат только таблицу измененных форм, таблицу частотности и очень базовую информацию.
 
-In the example above, 1.1 and 1.2 both are related to Sanskrit *śara* , while 2.1 is derived from the root √sar (to make sound), Sansksrit *svara*.
+## Грамматика
 
-## Word Data's Degree of Completion
-
-As DPD is a work in progress, it is useful to know how complete a word's data is. This is indicated by a gray icon (<span style='color:gray'>✓~✗</span>) after the entry.  
-
-![complete](pics/features/complete_fin.png)
-
-<span style='color:gray'>✓</span> a gray tick means the word data is mostly complete with contextual meaning, grammar, sutta example and other relevant information. 
-
-![half_complete](pics/features/complete_half.png)
-
-<span style='color:gray'>~</span>  a gray dash means the word data is partially complete with a meaning in context and grammatical construction, but minimal other information.
-
-![half_complete](pics/features/complete_no.png)
-
-<span style='color:gray'>✗</span> a gray cross means the word data is still under construction with only an inflection table, frequency table and very basic information.
-
-
-
-## Grammar
-
-Click the **grammar** button to get more detailed grammatical information about the word.
-
+Щелкните кнопку **грамматика**, чтобы получить более подробную грамматическую информацию о слове.
 ![grammar](pics/features/grammar.png)
-
-This includes root information, detailed construction, derivative, phonetic changes, compound, antonyms, synonyms, commentarial glosses, non-Indo-Aryan cognates, Sanskrit cognates and Sanskrit root.
-
+Это включает информацию о корне, детальное образование, производное, фонетические изменения, составное слово, антонимы, синонимы, комментарий, неиндоарийские родственные слова, санскритские родственные слова и санскритский корень.
 ![grammar2](pics/features/grammar2.png)
+Если вы заметили ошибку, пожалуйста, нажмите ссылку, чтобы исправить ее.
 
-If you spot a mistake, please click the link to correct it.
+# Примеры
 
-## Examples
-
-Click the **examples** button to see relevant sutta examples of the word. 
-
+Щелкните кнопку **примеры**, чтобы увидеть соответствующие примеры из сутт, содержащие слово.
 ![examples](pics/features/examples.png)
+Если у вас есть лучший пример, пожалуйста, сообщите нам!
 
-If you can think of a better example, please let me know!
+## Склонение / Спряжение
 
-## Declension / Conjugation
-
-Click the **declension** or **conjugation** button to see all the inflected forms of a word. 
-
+Щелкните кнопку **склонение** или **спряжение**, чтобы увидеть все измененные формы слова.
 ![declension](pics/features/declension.png)
+Эта таблица автоматически генерируется с использованием системы основа + шаблон, например, anicc + o. Неправильные склонения имеют свои собственные уникальные таблицы.
+Измененные формы, не найденные в тексте Chaṭṭha Saṅgāyana, <span style='color:gray'>отмечены серым</span>.
 
-This table is automatically generated using a stem + pattern system, e.g. anicc + o. Irregular inflections have their own unique tables.
+## Семья корня
 
-Inflected forms not found within the Chaṭṭha Saṅgāyana corpus are 
-<span style='color:gray'>grayed-out</span>.
-
-## Root Family
-
-Click the **root family** button to see all words which have the same prefix + root.
-
+Щелкните кнопку **семья корня**, чтобы увидеть все слова, которые имеют тот же префикс + корень.
 ![root family](pics/features/root%20family.png)
+Эта информация уникальна для DPD и основана на детальном изучении системы корней палийского и санскритского языков. Это отлично подходит для изучения тонких оттенков значений, которые может показывать комбинация корня + префикса.
 
-This information is unique to DPD and is based on a detailed study of the Pāḷi and Sanskrit root system. It's great for getting to know the nuanced range of meanings that a root + prefix combination can display.
+## Семья слова
 
-## Word Family
-
-Click the **word family** button to see all related words which are not derived from a root, but created from the primary word using prefixes and suffixes.
-
+Щелкните кнопку **семья слова**, чтобы увидеть все связанные слова, которые не происходят от корня, а созданы из первичного слова с использованием префиксов и суффиксов.
 ![word family](pics/features/word_family.png)
 
-## Compound Family 
+## Семья составного
 
-Click the **compound family** button to see a collection of all the compounds which contain a particular word.
-
+Щелкните кнопку **семья составного**, чтобы увидеть коллекцию всех составных слов, которые содержат определенное слово.
 ![compound family](pics/features/compound%20family.png)
-
-If the headword itself is a compound, all compound families of the component words will be listed.
-
+Если само заглавное слово является составным, будут перечислены все семьи слов компонентов.
 ![compound family2](pics/features/compound%20family2.png)
 
-## Word Frequency
+## Частотность слова
 
-Click the **frequency** button to see a heat map of where & how often a word can be found in the Chaṭṭha Saṅgāyana corpus.
-
+Щелкните кнопку **частота**, чтобы увидеть карту интенсивности того, где и как часто слово встречается в тексте Chaṭṭha Saṅgāyana.
 ![image](pics/features/frequency.png)
+[Нажмите здесь](frequency.html) для получения более подробной информации об этой интересной функции.
 
-[Click here](frequency.md) for more detailed inf1formation on this interesting feature. 
+## Английско-палийский словарь
 
-
-## English to Pāḷi Dictionary
-
-
-By **clicking on any English word** in GoldenDict, you can now access the English to Pāḷi dictionary, which brings up a list of __exact__ matches.
-
+Щелкнув **любое русское слово** в GoldenDict, теперь можно получить доступ к русско-палийскому словарю, который выводит список **точных** совпадений.
 ![english to pāḷi](pics/features/eng-to-pali.png)
-
-Or you can use the **search bar** to find a word, phrase or idiom. The dropdown list will display all possible options.
-
+Или вы можете использовать **поиск по слову**, чтобы найти слово, фразу или идиому. В раскрывающемся списке будут отображены все возможные варианты.
 ![english to pāḷi dropdown](pics/features/eng-to-pali-dropdown.png)
-
-Or you can highlight any word, phrase or idiom and use the **hotkey**.
-
+Или вы можете выделить любое слово, фразу или идиому и использовать **горячую клавишу**.
 ![english to pāḷi dropdown](pics/features/eng-to-pali-hotkey.png)
+Эта функция предназначена для начинающих, которые испытывают трудности с переводом с русского на палийский, и более продвинутых студентов, изучающих общение на палийском языке.
 
-This feature is designed for beginners struggling with English to Pāḷi exercises, and more advanced students learning to communicate in Pāḷi. 
+## Сингальский, деванагари и тайские скрипты
 
-## Sinhala, Devanagari and Thai Scripts
-
-Good news for those who read Pāḷi in Sinhala, Devanagari or Thai scripts, DPD recognizes all inflected forms in all three of these scripts.
-
+Хорошая новость для тех, кто читает палийский в сингальском, деванагари или тайском алфавите, DPD распознает все измененные формы во всех трех этих алфавитах.
 ![devanagari](pics/features/devanagari.png)
+Транслитерация основана на [Конвертере шрифтов Aksharamukha](https://aksharamukha.appspot.com/about).
 
-Transliteration is based on [Aksharamukha Script Converter](https://aksharamukha.appspot.com/about).
+## Обратная связь
 
-## Feedback
-
-One of the most important aspects of DPD is the feedback loop. When you spot a mistake, please click the link to correct it. That opens up a Google form which is pre-filled with the headword. 
-
+Один из самых важных аспектов DPD - это обратная связь. Когда вы замечаете ошибку, пожалуйста, нажмите ссылку, чтобы исправить ее. Это открывает форму Google, которая автоматически заполняется заголовком.
 ![feedback](pics/features/feedback.png)
-
-It generally takes less than a minute to log an error, and helps to improve the quality of the dictionary for everyone who uses it.
+Это обычно занимает менее минуты, чтобы зарегистрировать ошибку, и помогает улучшить качество словаря для всех. Если у вас есть другие вопросы или комментарии, пожалуйста, сообщите нам!
 
 ## Wikipedia links
 

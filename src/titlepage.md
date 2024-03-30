@@ -1,26 +1,25 @@
-# Welcome to Digital Pāḷi Dictionary
+# Добро пожаловать в Цифровой Пали Словарь
 
-DPD is a feature-rich Pāḷi-English dictionary which runs in GoldenDict, MDict, and [Kindle](kindle.md), or any other application that supports those formats. 
+DPD - это богатый возможностями словарь палийского языка на английском и русском, который работает в GoldenDict, MDict и [Kindle](kindle.html), или в любом другом приложении, поддерживающем эти форматы.
 
-Download the latest version from [this page on GitHub](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+Скачайте последнюю версию с [этой страницы на GitHub](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
 
-It is a work in progress, made available for testing and feedback purposes.
+Это работа в процессе, предоставленная для тестирования и обратной связи.
 
-Here's a handy guide to some of the [features](features.md) available in DPD. 
+Вот удобное руководство по некоторым [возможностям](features.html), доступным в DPD.
 
-Firstly, you need to get GoldenDict or MDict installed and setup on your machine ([Win](install_win.md) / [Mac](install_mac.md) / [iOS](install_ios.md) / [Linux](install_linux.md) / [Android](install_android_dicttango.md)) or [update](update.md) once a month if you're already installed.
+Прежде всего, вам нужно установить и настроить GoldenDict или MDict на вашем компьютере ([Win](install_win.html) / [Mac](install_mac.html) / [iOS](install_ios.html) / [Linux](install_linux.html) / [Android](install_android_dicttango.html)) или [обновить](update.html) раз в месяц, если вы уже установили их.
 
-Next, you should really [configure the hotkey](setup_hotkey.md) if you're on Windows or Mac, or try the [scan-popup](setup_scan_popup.md) if you're on Linux. This will allow you to click on any word in any Pāḷi text, and automatically open it in GoldenDict.
+Затем можно [настроить горячую клавишу](setup_hotkey.html), если вы используете Windows или Mac, или попробовать [всплывающее окно](setup_scan_popup.html), если вы используете Linux. Это позволит вам щелкнуть любое слово в любом тексте на пали, и автоматически открыть его в GoldenDict.
 
-There are some powerful [advanced features for Goldendict](setup_advanced.md) that might be useful to you.
+Есть некоторые [продвинутые функции для Goldendict](setup_advanced.html), которые могут быть полезны для вас.
 
-While you're at it, here are some [more Pāḷi and Sanskrit dictionaries](https://github.com/digitalpalidictionary/dpd-db/tree/main/exporter/other_dictionaries) to install for GoldenDict or MDict. These include the Critial Pāli Dictionary, and the Simsapa Combined Dictionary which contains PTS, DPPN and NCPED and more.
+Пока вы занимаетесь этим, вот еще несколько [словарей на пали и санскрите](https://github.com/digitalpalidictionary/dpd-db/tree/main/exporter/other_dictionaries) для установки в GoldenDict или MDict. Среди них Критический Пали Словарь и Объединенный Словарь Симсапа, который содержит PTS, DPPN и NCPED и другие.
 
-If you spot a mistake in DPD, or notice something missing, here's where to [report it](https://docs.google.com/forms/d/e/1FAIpQLSf9boBe7k5tCwq7LdWgBHHGIPVc4ROO5yjVDo1X5LDAxkmGWQ/viewform?usp=pp_url&entry.1433863141=digitalpalidictionary.github.io). It generally takes less than a minute. 
+Если вы заметили ошибку в DPD или заметили что-то отсутствующее, пожалуйста [сообщите об этом](https://docs.google.com/forms/d/e/1FAIpQLSf9boBe7k5tCwq7LdWgBHHGIPVc4ROO5yjVDo1X5LDAxkmGWQ/viewform?usp=pp_url&entry.1433863141=digitalpalidictionary.github.io). Обычно на это уходит менее минуты.
 
-If you have any bright ideas to make this dictionary even better, or would like to get involved with the project, please [get in touch](contact.md).
+Если у вас есть какие-то яркие идеи, чтобы сделать этот словарь еще лучше, или вы хотели бы принять участие в проекте, пожалуйста, [свяжитесь с нами](contact.html).
 
-Digital Pāḷi Dictionary is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
+Цифровой Пали Словарь распространяется под [лицензией Атрибуция-Некоммерчески 4.0 Всемирная](http://creativecommons.org/licenses/by-nc/4.0/deed.ru).
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />
-
+[![Creative Commons License](https://i.creativecommons.org/l/by-nc/4.0/deed.ru88x31.png)](http://creativecommons.org/licenses/by-nc/4.0/deed.ru)
