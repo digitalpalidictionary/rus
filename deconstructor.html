@@ -1,16 +1,14 @@
 <!DOCTYPE HTML>
-<html lang="en" class="light" dir="ltr">
+<html lang="en" class="sidebar-visible no-js light">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Deconstructor - Digital Pāḷi Dictionary</title>
-
-
         <!-- Custom HTML head -->
-        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff">
+        <meta name="theme-color" content="#ffffff" />
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -18,11 +16,9 @@
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
         <link rel="stylesheet" href="css/print.css" media="print">
-
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="fonts/fonts.css">
-
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
@@ -30,18 +26,16 @@
 
         <!-- Custom theme stylesheets -->
         <link rel="stylesheet" href="src/custom.css">
-
     </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
+    <body>
         <!-- Provide site root to javascript -->
-        <script>
+        <script type="text/javascript">
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script>
+        <script type="text/javascript">
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -57,81 +51,50 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script>
+        <script type="text/javascript">
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
+            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add('js');
         </script>
 
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
-
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script>
-            var body = document.querySelector('body');
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
-            } else {
-                sidebar = 'hidden';
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="titlepage.html">Home</a></li><li class="chapter-item expanded affix "><a href="features.html">Features</a></li><li class="chapter-item expanded affix "><a href="rootdict.html">Roots Dictionary</a></li><li class="chapter-item expanded affix "><a href="frequency.html">Word Frequency</a></li><li class="chapter-item expanded affix "><a href="deconstructor.html" class="active">Deconstructor</a></li><li class="chapter-item expanded affix "><a href="grammardict.html">Grammar Dictionary</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="tpr.html">Tipitaka Pali Reader</a></li><li class="chapter-item expanded affix "><a href="tbw.html">The Buddha's Words</a></li><li class="chapter-item expanded affix "><a href="simsampa.html">Simsapa Dhamma Reader</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="install_win.html">Install on Windows</a></li><li class="chapter-item expanded affix "><a href="install_mac.html">Install on Mac</a></li><li class="chapter-item expanded affix "><a href="install_ios.html">Install on iOS</a></li><li class="chapter-item expanded affix "><a href="install_linux.html">Install on Linux</a></li><li class="chapter-item expanded affix "><a href="install_android_dicttango.html">Install on Android (DictTango)</a></li><li class="chapter-item expanded affix "><a href="install_android_goldendict.html">Install on Android (GoldenDict)</a></li><li class="chapter-item expanded affix "><a href="install_android_mdict.html">Install on Android (MDict)</a></li><li class="chapter-item expanded affix "><a href="kindle.html">Install on Kindle</a></li><li class="chapter-item expanded affix "><a href="update.html">Update</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="setup_hotkey.html">Setup the Hotkey</a></li><li class="chapter-item expanded affix "><a href="setup_scan_popup.html">Setup the Scan Popup</a></li><li class="chapter-item expanded affix "><a href="setup_advanced.html">Setup Advanced Features</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="changelog.html">Changelog</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li><li class="chapter-item expanded affix "><a href="thanks.html">Thanks</a></li><li class="chapter-item expanded affix "><a href="feedback_form.html">Feedback Form</a></li><li class="chapter-item expanded affix "><a href="coding_help.html">Help with Coding</a></li><li class="chapter-item expanded affix "><a href="contact.html">Contact</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="titlepage.html">Home</a></li><li class="chapter-item expanded affix "><a href="features.html">Features</a></li><li class="chapter-item expanded affix "><a href="rootdict.html">Roots Dictionary</a></li><li class="chapter-item expanded affix "><a href="frequency.html">Word Frequency</a></li><li class="chapter-item expanded affix "><a href="deconstructor.html" class="active">Deconstructor</a></li><li class="chapter-item expanded affix "><a href="grammardict.html">Grammar Dictionary</a></li><li class="chapter-item expanded affix "><a href="kindle.html">Kindle</a></li><li class="chapter-item expanded affix "><a href="tpr.html">Tipitaka Pali Reader</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="install_win.html">Install on Windows</a></li><li class="chapter-item expanded affix "><a href="install_mac.html">Install on Mac</a></li><li class="chapter-item expanded affix "><a href="install_ios.html">Install on iOS</a></li><li class="chapter-item expanded affix "><a href="install_linux.html">Install on Linux</a></li><li class="chapter-item expanded affix "><a href="install_android_mdict.html">Install on Android (MDict)</a></li><li class="chapter-item expanded affix "><a href="install_android_goldendict.html">Install on Android (GoldenDict)</a></li><li class="chapter-item expanded affix "><a href="update.html">Update</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="setup_hotkey.html">Setup the Hotkey</a></li><li class="chapter-item expanded affix "><a href="setup_scan_popup.html">Setup the Scan Popup</a></li><li class="chapter-item expanded affix "><a href="setup_advanced.html">Setup Advanced Features</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="changelog.html">Changelog</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li><li class="chapter-item expanded affix "><a href="thanks.html">Thanks</a></li><li class="chapter-item expanded affix "><a href="feedback_form.html">Feedback Form</a></li><li class="chapter-item expanded affix "><a href="contact.html">Contact</a></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
-                <div class="sidebar-resize-indicator"></div>
-            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
-
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </label>
+                        </button>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -148,7 +111,6 @@
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-
                     </div>
                 </div>
 
@@ -162,9 +124,8 @@
                         </ul>
                     </div>
                 </div>
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script>
+                <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -174,23 +135,23 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="Разбор-составных-слов-и-разделение-сандхи"><a class="header" href="#Разбор-составных-слов-и-разделение-сандхи">Разбор составных слов и разделение сандхи</a></h1>
-<p>Деконструктор DPD теперь доступен как отдельный словарь.</p>
-<p>В настоящее время он содержит около 700 000 разобранных слов, охватывая все книги в <strong>тексте Chaṭṭha Saṅgāyana</strong>, <em>mūla</em>, <em>aṭṭhakathā</em>, <em>ṭīkā</em> и <em>aññā</em>, а также все палийские тексты на <strong>Sutta Central</strong>. Это число будет уменьшаться по мере добавления новых сочетаний в DPD.</p>
+                        <h1 id="compound-deconstruction-and-sandhi-splitting"><a class="header" href="#compound-deconstruction-and-sandhi-splitting">Compound Deconstruction and Sandhi Splitting</a></h1>
+<p>The DPD Deconstructor is now available as a seperate dictionary.</p>
+<p>It currently contains about 700 000 deconstructed words, covering all books in the <strong>Chaṭṭha Saṅgāyana corpus</strong>, <em>mūla</em>, <em>aṭṭhakathā</em>, <em>ṭīkā</em> and <em>aññā</em>, as well as all Pāḷi texts on <strong>Sutta Central</strong>. This number will decrease as more compounds get added to the DPD. </p>
 <p><img src="pics/deconstructor/dinnanti%C4%81dik%C4%81p%C4%ABti.png" alt="deconstructor_example" /></p>
-<h2 id="Как-установить"><a class="header" href="#Как-установить">Как установить</a></h2>
-<p>Скачайте последнюю версию деконструктора DPD для GoldenDict или MDict с <a href="https://github.com/">этой страницы на GitHub</a> и поместите его в ту же папку, что и DPD.</p>
+<h2 id="how-to-install"><a class="header" href="#how-to-install">How to Install</a></h2>
+<p>Download the latest version of DPD Deconstructor for GoldenDict or MDict from <a href="">this page on GithHub</a> and place it in the same parent folder as DPD. </p>
 <p><img src="pics/deconstructor/dpd_deconstructor_folder.png" alt="deconstructor_folder" /></p>
-<h2 id="Немного-информации"><a class="header" href="#Немного-информации">Немного информации</a></h2>
-<p>Сандхи-сочетания - это самое большое препятствие для любого начинающего изучающего палийский язык. Правила сандхи не являются абсолютными правилами, а только возможностями морфологических изменений в зависимости от контекста. Эти правила сложны и трудны в понимании для начинающего.</p>
-<p>Ситуация только усугубляется в комментариях, где не редко встречаются чрезвычайно длинные составные слова, включая такие гиганты, как <em>avippavāsasammutisanthatasammutibhattuddesakasenāsanaggāhāpakabhaṇḍāgārikacīvarappaṭiggāhakayāgubhājakaphalabhājakakhajjabhājakaappamattakavissajjakasāṭiyaggāhapakapattaggāhāpakaārāmikapesakasāmaṇerapesakasammutīti</em>, <em>bhattuddesakasenāsanaggāhāpakabhaṇḍāgārikacīvarapaṭiggāhakacīvarabhājanakayāgubhājanakaphalabhājanakakhajjabhājanakaappamattakavissajjakasāṭiyaggāhāpakapattaggāhāpakaārāmikapesakasāmaṇerapesakasammutīnaṃ</em> и <em>āsavavippayuttasāsavasaṃyojanavippayuttasaṃyojaniyaganthavippayuttaganthaniyanīvaraṇavippayuttanīvaraṇiyaparāmāsavippayuttaparāmaṭṭhakilesavippayuttasaṅkilesikapariyāpannasauttaradukāta</em>.</p>
-<p>Сандхи - самое большое препятствие, с которым сталкиваются все формы вычислительной лингвистики, связанные с палийским каноном. В настоящее время это препятствует любому реальному развитию в этой области.</p>
-<p>Никто еще не нашел удовлетворительного решения этой задачи.</p>
-<p>Единственное текущее решение, которое в какой-то мере полезно, - это <a href="https://www.digitalpalireader.online/_dprhtml/index.html?loc=m.0.0.0.0.1.2.m&amp;analysis=cakkhundriyasa.mvarasa.mvuto&amp;frombox=1">функция анализа DPR</a>, которая часто неправильна и вводит в заблуждение столько же, сколько и правильна. По-видимому, используемый ею метод - это система замен регулярных выражений для удаления склонений и сокращения составных слов до словарных слов.</p>
-<h2 id="Новый-подход"><a class="header" href="#Новый-подход">Новый подход</a></h2>
-<p>Один из полезных продуктов Цифрового Палийского Словаря - это список склонений для каждого слова в словаре. Вместе с набором <a href="https://github.com/bdhrs/sqlite-db/blob/d9da7d1ae69dd9dec0aef37d7c6bbc48871ab555/sandhi/sandhi_related/sandhi_rules.tsv">правил трансформации букв</a> этот список был использован для создания нового алгоритма разделения сандхи.</p>
-<p>Это все еще в процессе и далеко не идеально - для понимания контекста всегда требуется интеллект, - но это лучше, чем все, что существует в настоящее время, давая более точные результаты и, самое главное, меньше ложных срабатываний.</p>
-<p>Например, если вы откроете <em>bahalamadhukatelanāgabalapicchillādīnaṃ</em> в DPD, он покажет разбиение, по которому можно перейти к соответствующим словам.</p>
+<h2 id="some-background"><a class="header" href="#some-background">Some Background</a></h2>
+<p>Sandhi compounds are the greatest hurdle to any beginner learning Pāḷi. The rules of sandhi are not absolute rules, only morphing possibilities according to context. These rules are complex and difficult for a beginner to understand.</p>
+<p>The situation only gets worse in the commentaries where it is not uncommon to have extremely long compounds, including such monsters as <em>avippavāsasammutisanthatasammutibhattuddesakasenāsanaggāhāpakabhaṇḍāgārikacīvarappaṭiggāhakayāgubhājakaphalabhājakakhajjabhājakaappamattakavissajjakasāṭiyaggāhapakapattaggāhāpakaārāmikapesakasāmaṇerapesakasammutīti</em>,  <em>bhattuddesakasenāsanaggāhāpakabhaṇḍāgārikacīvarapaṭiggāhakacīvarabhājanakayāgubhājanakaphalabhājanakakhajjabhājanakaappamattakavissajjakasāṭiyaggāhāpakapattaggāhāpakaārāmikapesakasāmaṇerapesakasammutīnaṃ</em> and <em>āsavavippayuttasāsavasaṃyojanavippayuttasaṃyojaniyaganthavippayuttaganthaniyanīvaraṇavippayuttanīvaraṇiyaparāmāsavippayuttaparāmaṭṭhakilesavippayuttasaṅkilesikapariyāpannasauttaradukāta</em>.</p>
+<p>Sandhi is the greatest hurdle facing all forms of computational linguistics related to the Pāḷi canon. At the moment it is blocking any real development in the field. </p>
+<p>No-one has cracked this puzzle in any way that comes close to a satisfactory solution.</p>
+<p>The only present solution that is in any way useful is the <a href="https://www.digitalpalireader.online/_dprhtml/index.html?loc=m.0.0.0.0.1.2.m&amp;analysis=cakkhundriyasa.mvarasa.mvuto&amp;frombox=1">DPR analysis function</a>, which is wrong and misleading as often as it is right. Apparently the method it uses is a system of regex substitutions to remove inflections and reduce compounds to dictionary words.</p>
+<h2 id="a-new-approach"><a class="header" href="#a-new-approach">A New Approach</a></h2>
+<p>One of the useful outputs of the Digital Pāḷi Dictionary is a list of inflections for every word in the dictionary. This, together with a set of <a href="https://github.com/bdhrs/sqlite-db/blob/d9da7d1ae69dd9dec0aef37d7c6bbc48871ab555/sandhi/sandhi_related/sandhi_rules.tsv">letter transformation rules</a> has been employed to create a new sandhi-splitting algorithm. </p>
+<p>It is still a work in progress and far from perfect - an intelligence will always be required to discern context - but it is better than anything else which currently exists, giving more accurate results and, most importantly, fewer false positives. </p>
+<p>For instance, If you open <em>bahalamadhukatelanāgabalapicchillādīnaṃ</em> in DPD, it will show the breakup, which can be clicked on to take you to the relevant words.</p>
 <p><img src="pics/deconstructor/bahalamadhukatelan%C4%81gabalapicchill%C4%81d%C4%ABna%E1%B9%83.png" alt="deconstructor" /></p>
 
                     </main>
@@ -200,11 +161,9 @@
                             <a rel="prev" href="frequency.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-
-                            <a rel="next prefetch" href="grammardict.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="grammardict.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
@@ -214,33 +173,23 @@
                     <a rel="prev" href="frequency.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-
-                    <a rel="next prefetch" href="grammardict.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="grammardict.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
-
-
-
-        <script>
+        <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-
-
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
-
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-
-
-    </div>
     </body>
 </html>
