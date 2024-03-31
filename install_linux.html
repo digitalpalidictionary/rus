@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
-<html lang="en" class="light" dir="ltr">
+<html lang="ru" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Установка на Linux - Digital Pāḷi Dictionary</title>
+        <title>Установка на Linux - Цифровой Пали Словарь</title>
 
 
         <!-- Custom HTML head -->
@@ -142,7 +142,7 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">Digital Pāḷi Dictionary</h1>
+                    <h1 class="menu-title">Цифровой Пали Словарь</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -177,28 +177,28 @@
                         <h1 id="Установка-goldendict-на-linux"><a class="header" href="#Установка-goldendict-на-linux">Установка GoldenDict на Linux</a></h1>
 <h2 id="Кратко"><a class="header" href="#Кратко">Кратко</a></h2>
 <ol>
-<li>Скачайте последнюю версию DPD <a href="https://github.com/digitalpalidictionary/digitalpalidictionary/releases">здесь</a>.</li>
+<li>Скачайте последнюю версию DPD <a href="https://github.com/digitalpalidictionary/rus-release/releases">здесь</a>.</li>
 <li>Установите версию 1.5 GoldenDict.</li>
 <li>В настройках направьте GoldenDict в папку DPD.</li>
 </ol>
 <p>Ниже подробные инструкции <em>anupubba</em>.</p>
 <h2 id="Скачать-dpd"><a class="header" href="#Скачать-dpd">Скачать DPD</a></h2>
-<p>Прежде всего, скачайте последнюю версию Цифрового Палийского Словаря с <a href="https://github.com/digitalpalidictionary/digitalpalidictionary/releases">Github</a>.</p>
+<p>Прежде всего, скачайте последнюю версию Цифрового Словаря Пали с <a href="https://github.com/digitalpalidictionary/rus-release/releases">Github</a>.</p>
 <h2 id="Создайте-папку-goldendict"><a class="header" href="#Создайте-папку-goldendict">Создайте папку GoldenDict</a></h2>
 <p>Рекомендуется создать легкодоступную папку GoldenDict, например, <code>/Documents/GoldenDict</code>.</p>
-<p><img src="pics/linux-install/create%20new%20folder.png" alt="создать новую папку" /></p>
+<p><img src="pics/linux-install/create%20new%20folder.png" alt="create new folder" /></p>
 <p>Или в терминале:</p>
 <pre><code>mkdir /home/ваше_имя_пользователя/Documents/GoldenDict
 </code></pre>
 <p>(Очевидно, замените ваше_имя_пользователя на ваше реальное имя пользователя)</p>
 <h2 id="Разархивируйте"><a class="header" href="#Разархивируйте">Разархивируйте</a></h2>
 <p>Щелкните правой кнопкой мыши по zip-файлу DPD в папке Загрузки и откройте его с помощью Архивного менеджера.</p>
-<p><img src="pics/linux-install/archive%20manager.png" alt="менеджер архивов" /></p>
+<p><img src="pics/linux-install/archive%20manager.png" alt="archive manager" /></p>
 <p>Нажмите Извлечь и выберите папку <code>/Documents/GoldenDict</code>.</p>
-<p><img src="pics/linux-install/extract.png" alt="извлечь" /></p>
+<p><img src="pics/linux-install/extract.png" alt="extract" /></p>
 <p>Или в терминале:</p>
 <pre><code>cd home/ваше_имя_пользователя/Загрузки
-unzip /home/ваше_имя_пользователя/Загрузки/dpd.zip -d /home/ваше_имя_пользователя/Documents/GoldenDict
+unzip /home/ваше_имя_пользователя/Загрузки/ru-dpd.zip -d /home/ваше_имя_пользователя/Documents/GoldenDict
 </code></pre>
 <h2 id="Установите-goldendict"><a class="header" href="#Установите-goldendict">Установите GoldenDict</a></h2>
 <p>GoldenDict можно установить напрямую с помощью apt-get:</p>
@@ -207,28 +207,20 @@ sudo apt-get install goldendict
 </code></pre>
 <p>Или выберите дистрибутив по вашему выбору с <a href="https://pkgs.org/download/goldendict">сайта pkgs.org</a>.</p>
 <p>Или непосредственно из Менеджера программ:</p>
-<p><img src="pics/linux-install/software%20manager.png" alt="менеджер программ" /></p>
+<p><img src="pics/linux-install/software%20manager.png" alt="software manager" /></p>
 <p>Убедитесь, что устанавливается версия 1.5, а не версия 1.0!</p>
 <h2 id="Добавление-словарей-в-goldendict"><a class="header" href="#Добавление-словарей-в-goldendict">Добавление словарей в GoldenDict</a></h2>
-<ol>
-<li>Запустите приложение GoldenDict.</li>
-<li>Перейдите в Меню &gt; Редактировать &gt; Словари (Сочетание клавиш <strong>F3</strong>).</li>
-</ol>
-<p><img src="pics/linux-install/dictionaries%20F3.png" alt="словари F3" /></p>
-<ol start="3">
-<li>Перейдите в Источники &gt; Файлы.</li>
-<li>Нажмите Добавить и выберите папку <code>/Documents/GoldenDict</code>.</li>
-</ol>
-<p><img src="pics/linux-install/add.png" alt="добавить" /></p>
-<ol start="5">
-<li>Установите флажок рекурсивного поиска √ (это гарантирует поиск в подпапках).</li>
-</ol>
-<p><img src="pics/linux-install/recursive.png" alt="рекурсивный" /></p>
-<ol start="6">
-<li>Нажмите OK и подождите несколько моментов, пока словари индексируются.</li>
-</ol>
+<p>Запустите приложение GoldenDict.</p>
+<p>Перейдите в Меню &gt; Редактировать &gt; Словари (Клавиша <strong>F3</strong>).</p>
+<p><img src="pics/linux-install/dictionaries%20F3.png" alt="dictionaries F3" /></p>
+<p>Перейдите в Источники &gt; Файлы.</p>
+<p>Нажмите Добавить и выберите папку <code>/Documents/GoldenDict</code>.</p>
+<p><img src="pics/linux-install/add.png" alt="add" /></p>
+<p>Установите флажок рекурсивного поиска √ (это гарантирует поиск в подпапках).</p>
+<p><img src="pics/linux-install/recursive.png" alt="recursive" /></p>
+<p>Нажмите OK и подождите несколько моментов, пока словари индексируются.</p>
 <p>Вы готовы!</p>
-<p>Далее узнайте, как <a href="setup_hotkey.html">настроить горячую клавишу</a> или <a href="setup_scan_popup.html">настроить всплывающее окно сканирования</a>, чтобы вы могли щелкнуть по любому слову Пали в любом тексте и сразу открыть его в словаре.</p>
+<p>Далее узнайте, как <a href="setup_hotkey.html">настроить горячую клавишу</a> или <a href="setup_scan_popup.html">настроить всплывающее окно</a>, чтобы вы могли щелкнуть по любому слову Пали в любом тексте и сразу открыть его в словаре.</p>
 
                     </main>
 
