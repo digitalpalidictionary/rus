@@ -1,38 +1,36 @@
-# Setup the Hotkey
+## Настройка горячей клавиши
 
-Whether you use [Sutta Central](https://suttacentral.net/), [Digital Pāli Reader](https://www.digitalpalireader.online/_dprhtml/index.html), [Tipitaka Pali Projector](https://www.microsoft.com/en-us/p/tipitaka-pali-projector/9pkwwvrdvnl4#activetab=pivot:overviewtab), [Tipitaka.app](https://tipitaka.app/), PDF documents or any other source of Pāḷi texts, this allows you to click on a word and open it immeditely in the dictionary. 
+Независимо от того, используете ли вы [Sutta Central](https://suttacentral.net/), [Digital Pāli Reader](https://www.digitalpalireader.online/_dprhtml/index.html), [Tipitaka Pali Projector](https://www.microsoft.com/en-us/p/tipitaka-pali-projector/9pkwwvrdvnl4#activetab=pivot:overviewtab), [Tipitaka.app](https://tipitaka.app/), PDF-документы или любой другой источник текстов на пали, это позволяет вам щелкнуть по слову и немедленно открыть его в словаре.
 
-Go to Menu > Edit > Preferences (Shortcut F4) > Hotkeys
+1. Перейдите в меню > Редактировать > Настройки (Сочетание клавиш F4) > Горячие клавиши.
 
 ![preferences](pics/hotkey/preferences.png)
 
-Choose your preferred hotkey and click OK. The default Ctrl-C-C works nicely, there's no need to change it.
+2. Выберите предпочтительную горячую клавишу и нажмите ОК. По умолчанию Ctrl-C-C работает отлично, нет необходимости его менять.
 
 ![hoteky](pics/hotkey/hoteky.png)
 
-Double click to highlight any Pāḷi word in any software or pdf and press the hotkey. A small GoldenDict window will open. DPD will automatically find any inflected word in the dictionary.
+3. Дважды щелкните, чтобы выделить любое слово на пали в любом программном обеспечении или PDF-документе и нажмите горячую клавишу. Откроется небольшое окно GoldenDict. DPD автоматически найдет любое измененное слово в словаре.
 
 ![popupwindow](pics/hotkey/popupwindow.png)
 
-If you prefer, you can open the word in the main window every time. 
-- Go to Menu > Edit > Preferences (Shortcut F4) > **Scan Popup** 
-- Select "**Send translated word to main window**"
+4. Если вы предпочитаете, вы можете каждый раз открывать слово в главном окне.
+   - Перейдите в меню > Редактировать > Настройки (Сочетание клавиш F4) > **Сканировать всплывающее окно**
+   - Выберите "Отправить переведенное слово в главное окно"
 
 ![send to main window](pics/hotkey/send%20to%20main%20window.png)
 
-If you're a Digital Pāli Reader user, you can enable hotkey with a _single click_ in the preferences
-- Open DPR preferences (shortcut **%**)
-- Select "**Copy words to clipboard on click**"
+5. Если вы пользователь Digital Pāli Reader, вы можете включить горячую клавишу одним щелчком в настройках.
+   - Откройте настройки DPR (сочетание клавиш `%`).
+   - Выберите "Копировать слова в буфер обмена при щелчке".
 
 ![dpr clipboard preference](pics/hotkey/dpr%20clipboard%20preference.png)
 
-Of course you can also search for Pāḷi words the old-fashioned way ...
-
-- Go to Menu > View and click Search Pane (Shortcut **Ctrl-S**)
-- Start typing in the Search Bar and click the word you are looking for.
-- No need to use diacritics when typing in GoldenDict, it will automatically find what you are looking for.
+Конечно, вы также можете искать слова на пали по-старому...
+- Перейдите в меню > Вид и выберите Панель поиска (Сочетание клавиш Ctrl-S).
+- Начните вводить слово в строку поиска и щелкните слово, которое вы ищете.
+- Не нужно использовать диакритические знаки при вводе в GoldenDict, он автоматически найдет то, что вы ищете.
 
 ![search](pics/hotkey/search.png)
 
-If you're on Linux, also try out the [scan popup](setup_scan_popup.md) - it allows you to open a word in the dictionary with a single click.
-
+Если вы используете Linux, также попробуйте [всплывающее окно сканирования](setup_scan_popup.html) - это позволяет открывать слово в словаре одним щелчком.

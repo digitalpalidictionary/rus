@@ -1,28 +1,27 @@
-# Setup the Scan-pop
+## Настройка всплывающего окна
 
-Scan popup works best on Linux. Mileage may vary on other operating systems. 
+Всплывающее окно работает лучше всего в Linux. Результаты могут отличаться на других операционных системах.
 
-In GoldenDict, open Edit > Preferences (Shortcut F4)
+1. В GoldenDict откройте меню Редактировать > Настройки (Сочетание клавиш F4).
 
 ![edit preferences](pics/scan-popup/edit%20preferences.png)
 
-Go to the Scan Popup tab and **enable scan popup functionality**. With these settings every word you click on will open in the dictionary
+2. Перейдите на вкладку "Сканирование всплывающего окна" и **включите функциональность сканирования всплывающего окна**. С этими настройками каждое слово, по которому вы щелкаете, будет открываться в словаре.
 
 ![scan popup tab](pics/scan-popup/scan%20popup%20tab.png)
 
-If that setting is a little extreme for you, try the setting in the pic below. 
+3. Если эта настройка кажется вам слишком крайней, попробуйте настройку на картинке ниже.
 
 ![settings with scan flag](pics/scan-popup/settings%20with%20scan%20flag.png)
 
-Now, when you click a word in a Pāḷi text, a small dictionary icon will appear. Click it to open the word in the dictionary. 
+Теперь, когда вы щелкаете слово в тексте на пали, появляется небольшая иконка словаря. Щелкните по ней, чтобы открыть слово в словаре.
 
 ![popup icon](pics/scan-popup/popup%20icon.png)
 
-The settings I personally use are in the pic below. This opens the scan popup in the main window by pressing Alt-Shift. 
+Настройки, которые я лично использую, показаны на картинке ниже. Это открывает всплывающее окно сканирования в главном окне при нажатии Alt-Shift.
 
 ![settings personal](pics/scan-popup/settings%20personal.png)
 
-Please experiment to find the settings that are comfortable for you.
+Пожалуйста, экспериментируйте, чтобы найти настройки, которые подходят вам.
 
-Next, take a look at how to setup some [advanced features in GoldenDict](setup_advanced.md).
-
+Затем посмотрите, как настроить некоторые [расширенные функции в GoldenDict](setup_advanced.html).

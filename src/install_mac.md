@@ -1,98 +1,54 @@
-# Install GoldenDict on Mac
+# Установка GoldenDict на Mac
 
-## In Brief
+## Кратко
+1. Скачайте последнюю версию DPD [здесь](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+2. Установите версию 1.5 GoldenDict для [OS X 10.9 Mavericks и выше](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_563%29.dmg/download) или [OS X 10.12 Sierra и выше](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_5121%29.dmg/download).
+3. В настройках направьте GoldenDict в папку DPD.
 
-1. download the latest version of DPD [here](https://github.com/digitalpalidictionary/digitalpalidictionary/releases)
-2. install version 1.5 of GoldenDict for [OS X 10.9 Mavericks onwards](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_563%29.dmg/download) or [OS X 10.12 Sierra onwards](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_5121%29.dmg/download)
-3. in settings, direct GoldenDict to the DPD folder.
+Ниже подробные инструкции *anupubba*.
 
-Below are detailed *anupubba* instructions. 
+## Скачать GoldenDict
+- Если вы используете OS X 10.9 Mavericks или более позднюю версию, [скачайте эту версию GoldenDict с Sourceforge](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_563%29.dmg/download).
+- Если вы используете OS X 10.12 Sierra или более позднюю версию, [скачайте эту версию GoldenDict с Sourceforge](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_5121%29.dmg/download).
+- Более подробную информацию о последней версии GoldenDict для Mac можно найти [здесь](https://github.com/goldendict/goldendict/wiki/Early-Access-Builds-for-Mac-OS-X).
 
+## Установка GoldenDict
+1. Дважды щелкните файл .dmg GoldenDict в папке Загрузки.
+   ![download gd](pics/mac-install/download%20gd.png)
+2. Дважды щелкните установщик.
+   ![goldendict install](pics/mac-install/goldendict%20install.png)
+3. Вероятно, вы получите предупреждение безопасности. Нажмите "Открыть в любом случае".
+   ![warning](pics/mac-install/warning.png)
+4. Нажмите "Открыть" на следующем предупреждении безопасности.
+   ![allow gd](pics/mac-install/allow%20gd.png)
+5. Установка завершена.
 
-## Download GoldenDict
+## Скачать DPD
+Скачайте последнюю версию Цифрового Палийского Словаря для GoldenDict с [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases) в вашу папку Загрузки.
 
-If you are using OS X 10.9 Mavericks or later [download this version of GoldenDict from Sourceforge](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_563%29.dmg/download).
+## Распаковка
+Найдите файл .zip в папке Загрузки и распакуйте его.
+![unzip dpd](pics/mac-install/unzip%20dpd.png)
 
-If you are using OS X 10.12 Sierra or later [download this version of GoldenDict from Sourceforge](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_5121%29.dmg/download). 
+## Создание папки GoldenDict
+- Рекомендуется создать легко доступную папку GoldenDict, например `/Documents/GoldenDict`.
+  ![documents folder](pics/mac-install/documents%20folder.png)
+- Скопируйте распакованную папку DPD в `/Documents/GoldenDict`.
+  ![documents gd dpd](pics/mac-install/documents%20gd%20dpd.png)
 
-More information about the latest Mac version of GoldenDict is available [here](https://github.com/goldendict/goldendict/wiki/Early-Access-Builds-for-Mac-OS-X).
+## Добавление словарей в GoldenDict
+1. Запустите приложение GoldenDict.
+2. Перейдите в Меню > Правка > Словари (Горячая клавиша **F3**).
+   ![edit dictionaries](pics/mac-install/edit%20dictionaries.png)
+3. Перейдите в Источники > Файлы. Нажмите Добавить.
+   ![sources files](pics/mac-install/sources%20files.png)
+4. Выберите папку `/Documents/GoldenDict`.
+   ![select gd folder](pics/mac-install/select%20gd%20folder.png)
+5. Установите флажок "Рекурсивно" √ (это гарантирует поиск во вложенных папках).
+   ![recursive](pics/mac-install/recursive.png)
+6. Нажмите "Пересканировать сейчас" или OK и подождите несколько моментов, пока словари индексируются.
+   ![indexing](pics/mac-install/indexing.png)
 
+Всё готово!
 
-## Install GoldenDict
-
-Double click the GoldenDict .dmg file in your Downloads folder.
-
-<img width="470" alt="download gd" src="pics/mac-install/download%20gd.png">
-
-Double click the installer.
-
-<img width="628" alt="goldendict install" src="pics/mac-install/goldendict%20install.png">
-
-You'll probably get a security warning like this. 
-
-<img width="258" alt="warning" src="pics/mac-install/warning.png">
-
-Click cancel and open Security and Privacy Preferences. Click on the lock at the bottom left corner. Then choose “Open anyway” and GoldenDict will open. Click Open Anyway.
-
-<img width="627" alt="allow gd" src="pics/mac-install/allow%20gd.png">
-
-Click Open on the next security warning. 
-
-<img width="258" alt="next security warning" src="pics/mac-install/next%20security%20warning.png">
-
-Ok, you're installed. Now let's add a dictionary. 
-
--------------------------------------------------
-
-## Download DPD
-
-Download the latest version of Digital Pāḷi Dictionary for GoldenDict from [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases) into your Downloads folder.
-
-## Unzip
-
-Find the .zip file in your downloads folder and unzip it.
-
-<img width="485" alt="unzip dpd" src="pics/mac-install/unzip%20dpd.png">
-
-## Make a GoldenDict folder
-
-It is recommended to make an easily accessible GoldenDict folder, for example `/Documents/GoldenDict`
-
-<img width="470" alt="documents folder" src="pics/mac-install/documents%20folder.png">
-
-Copy the unzipped DPD folder into `/Documents/GoldenDict`
-
-<img width="485" alt="documents gd dpd" src="pics/mac-install/documents%20gd%20dpd.png">
-
--------------------------------------------------
-
-## Adding Dictionaries to GoldenDict
-
-Launch the GoldenDict application.
-
-Go to Menu > Edit > Dictionaries (Shortcut **F3**).
-
-<img width="552" alt="edit dictionaries" src="pics/mac-install/edit%20dictionaries.png">
-
-Go to Sources > Files. Click Add.
-
-<img width="989" alt="sources files" src="pics/mac-install/sources%20files.png">
-
-Select the folder `/Documents/GoldenDict`.
-
-<img width="798" alt="select gd folder" src="pics/mac-install/select%20gd%20folder.png">
-
-Click the recursive tick box √ (this makes sure GoldenDict searches in sub-folders).
-
-<img width="430" alt="recursive" src="pics/mac-install/recursive.png">
-
-Click Rescan now or OK and wait a few moments while the dictionaries are indexing.
-
-<img width="917" alt="indexing" src="pics/mac-install/indexing.png">
-
-You're all setup!
-
--------------------------------------------------
-
-Next learn how to [set up the hotkey](setup_hotkey.md) so you can click on any inflected Pāḷi word in any text and open it immediately in the dictionary.
-
+Можно почитать, как [настроить горячую клавишу](setup_hotkey.html), чтобы вы могли щелкнуть по любому измененному слову Пали в любом тексте и немедленно открыть его в словаре.

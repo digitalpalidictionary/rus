@@ -1,32 +1,30 @@
-# Update Digital Pāḷi Dictionary
+# Обновление Цифрового Словаря Пали
 
-A new version becomes available every full moon uposatha day. 
+Каждый полнолуние день упосатха становится доступной новая версия.
 
-Updating is very easy. In brief:
-1. download the latest version of DPD
-2. copy it to your GoldenDict folder, entirely replacing the old version
+Обновление очень простое. Вкратце:
 
-### Updating on Windows
+1. **Скачайте последнюю версию DPD**
+2. **Скопируйте ее в папку GoldenDict, полностью заменив старую версию**
 
-1. Download the latest DPD zip file from [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
-2. Unzip the DPD folder and copy it to your GoldenDict folder. `\Documents\GoldenDict`
-3. Make sure to replace all the contents of the old DPD folder.
-4. EITHER close GoldenDict completely and re-open it (make sure it's not active in your system tray)  
-   OR go to Edit > Dictionaries (Shortcut F3) and click **rescan now** and **OK**. 
-   OR the shortcut **Ctrl-F5** may also work to re-scan.
+## Обновление на Windows
+
+1. Скачайте последний zip-файл DPD с [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+2. Распакуйте папку DPD и скопируйте ее в папку GoldenDict. `\Documents\GoldenDict`
+3. Убедитесь, что все содержимое старой папки DPD заменено.
+4. ЛИБО полностью закройте GoldenDict и снова откройте его (убедитесь, что он не активен в системном трее) 
+   ЛИБО перейдите в Меню > Словари (Шорткат F3) и нажмите **пересканировать сейчас** и **ОК**. 
+   ЛИБО может также сработать комбинация клавиш **Ctrl-F5** для повторного сканирования.
 
 ![rescan now](pics/update/rescan%20now.png)
 
-### Updating on Mac
+## Обновление на Mac
 
-1. Download the latest DPD zip file from [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
-2. Unzip
-3. Copy the DPD folder to  your /Documents/GoldenDict folder, entirely replacing the old one.
-4. Quit GoldenDict and restart it 
-   OR the shortcut **Apple-F5** may also work to re-scan.
-5. You should get a message that DPD is indexing... success!
+1. Скачайте последний zip-файл DPD с [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+2. Распакуйте
+3. Скопируйте папку DPD в вашу папку `/Documents/GoldenDict`, полностью заменив старую.
+4. Выходите из GoldenDict и перезапустите его 
+   ЛИБО может также сработать комбинация клавиш **Apple-F5** для повторного сканирования.
+5. Вы должны получить сообщение, что DPD индексируется... успех!
 
-Enjoy the most up-to-date Pāḷi information!
-
-
-
+Наслаждайтесь самой актуальной информацией о палийском языке!

@@ -1,47 +1,42 @@
 # Tipitaka Pali Reader
 
-**Tipitaka Pali Reader** is an excellent new app for reading Pāḷi texts being developed by [Ven. Subhuti](https://americanmonk.org/) and Ven. Paññadhaja in Myanmar. You can find out more information about TPR on [this website](https://americanmonk.org/tipitaka-pali-reader/).
+**Tipitaka Pali Reader** - отличное новое приложение для чтения палийских текстов, разрабатываемое [Дост. Субхути](https://americanmonk.org/) и Дост. Паньяджаджа в Мьянме. Дополнительную информацию о TPR можно найти на [этом веб-сайте](https://americanmonk.org/tipitaka-pali-reader/).
 
-TPR is available for all OS's and devices. Download the latest version for Windows, Mac, LInux, iOS, Android from [this page on GitHub](https://github.com/bksubhuti/tipitaka-pali-reader/releases)
+TPR доступен для всех операционных систем и устройств. Загрузите последнюю версию для Windows, Mac, Linux, iOS и Android с [этой страницы на GitHub](https://github.com/bksubhuti/tipitaka-pali-reader/releases).
 
-A lightweight version of DPD is available inside Tipitaka Pali Reader. It just includes the grammatical information for every word, none of the other buttons.
+Легковесная версия DPD доступна внутри приложения Tipitaka Pali Reader. Она содержит только грамматическую информацию для каждого слова, без прочих кнопок.
 
-To open a word in the dictionary, simply click on it and the dictionary will pop up. TPR uses the same system for recognizing inflections and sandhi as DPD, so only correct possibilities should be displayed.
+Чтобы открыть слово в словаре, просто щелкните по нему, и откроется словарь. TPR использует ту же систему для распознавания измененных форм и сандхи, что и DPD, поэтому будут отображены только правильные возможности.
 
 ![click_word](pics/tpr/tpr_click_word.png)
 
-To see detailed grammatical information, click the small arrow on the dictionary entry and more info will become visible. 
+Чтобы увидеть подробную грамматическую информацию, щелкните по маленькой стрелке на записи в словаре, и появится больше информации.
 
 ![grammar_info](pics/tpr/tpr_open_grammar.png)
 
-The DPD grammar dictionary is also included to show the possible declensions and conjugations of the word.
+Грамматический словарь DPD также включен для отображения возможных склонений и спряжений слова.
 
 ![dpd_grammar](pics/tpr/tpr_grammar_info.png)
 
+## Получите последнюю версию DPD
 
-## Get The Latest Version of DPD
+Tipitaka Pali Reader позволяет вам загрузить различные дополнения. Сюда входят словари на других языках, построчные переводы на английский язык с SuttaCentral и книги для чтения.
 
-Tipitaka Pali Reader allows you to download a variety of extensions. These include dictionaries in other languages, line by line Pāḷi English translations from Sutta Central and chanting books.
+Чтобы получить самую последнюю версию DPD:
 
-To get the very latest release of DPD,
+1. Откройте **Меню** и нажмите **Настройки**.
+2. Нажмите **Расширения**.
+   ![extension](pics/tpr/tpr_open_extensions.png)
+3. Выберите **DPD**. Это шестой элемент в списке.
+   ![select_dpd](pics/tpr/tpr_select_dpd.png)
+4. Файл загрузится, а затем установится сам.
+   ![downloading](pics/tpr/tpr_downloading.png)
+5. **ПОЖАЛУЙСТА, ОБРАТИТЕ ВНИМАНИЕ!** Подождите, пока вы снова не увидите меню Дополнений, это означает, что DPD установлен правильно.
+   ![extensions](pics/tpr/tpr_extensions.png)
 
-(1) Open the **Menu** and click **Settings**. (2) Click **Extensions** \
-![extension](pics/tpr/tpr_open_extensions.png)
+Пока вы здесь, можете скачать что-то еще, что может быть вам полезно!
 
-(3) Select **DPD**. It's the sixth item in the list.
-![select_dpd](pics/tpr/tpr_select_dpd.png)
+## Бета-версия DPD
 
-(4) The file will download and then install itself. \
-![downloading](pics/tpr/tpr_downloading.png)
-
-(5) **PLEASE NOTE!** Wait until you see the menu of Extensions again, that means DPD has installed properly. \
-![extensions](pics/tpr/tpr_extensions.png)
-
-While you're there, grab anything else that might be useful to you! 
-
-## DPD Beta Version
-
-I personally use TPR for Pāḷi reading, so sometimes need a more up-to-date version of DPD than the monthly Uposatha day release. To get the very latest / bleeding-edge / untested / no guarantees whatsoever / beta version, scroll down to the bottom of the Extensions list, click on **DPD Beta**, and install in exactly the same way as above.
+Я лично использую TPR для чтения палийских текстов, поэтому иногда нам нужна более актуальная версия DPD, чем ежемесячный релиз в день Упосатха. Чтобы получить самую последнюю / передовую / не проверенную / без каких-либо гарантий / бета-версию, прокрутите вниз до конца списка Дополнений, нажмите на **DPD Beta** и установите точно так же, как описано выше.
 ![beta_version](pics/tpr/tpr_dpd_beta.png)
-
-

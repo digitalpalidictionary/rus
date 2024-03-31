@@ -1,11 +1,11 @@
 # Summary
 
-[Home](titlepage.md)
-[Features](features.md)
-[Roots Dictionary](rootdict.md)
-[Word Frequency](frequency.md)
-[Deconstructor](deconstructor.md)
-[Grammar Dictionary](grammardict.md)
+[Главная](titlepage.md)
+[Особенности](features.md)
+[Словарь корней](rootdict.md)
+[Частота слов](frequency.md)
+[Деконструктор](deconstructor.md)
+[Словарь грамматики](grammardict.md)
 
 -----------
 
@@ -15,30 +15,26 @@
 
 -----------
 
-[Install on Windows](install_win.md)
-[Install on Mac](install_mac.md)
-[Install on iOS](install_ios.md)
-[Install on Linux](install_linux.md)
-[Install on Android (DictTango)](install_android_dicttango.md)
-[Install on Android (GoldenDict)](install_android_goldendict.md)
-[Install on Android (MDict)](install_android_mdict.md)
-[Install on Kindle](kindle.md)
-[Update](update.md)
+[Установка на Windows](install_win.md)
+[Установка на Mac](install_mac.md)
+[Установка на iOS](install_ios.md)
+[Установка на Linux](install_linux.md)
+[Установка на Android (DictTango)](install_android_dicttango.md)
+[Установка на Android (GoldenDict)](install_android_goldendict.md)
+[Установка на Android (MDict)](install_android_mdict.md)
+[Установка на Kindle](kindle.md)
+[Обновление](update.md)
 
 -----------
 
-[Setup the Hotkey](setup_hotkey.md)
-[Setup the Scan Popup](setup_scan_popup.md)
-[Setup Advanced Features](setup_advanced.md)
+[Настройка горячей клавиши](setup_hotkey.md)
+[Настройка всплывающего окна](setup_scan_popup.md)
+[Настройка расширенных функций](setup_advanced.md)
 
 -----------
 
-[Changelog](changelog.md)
-
------------
-
-[Bibliography](bibliography.md)
-[Thanks](thanks.md)
-[Feedback Form](feedback_form.md)
-[Help with Coding](coding_help.md)
-[Contact](contact.md)
+[Библиография](bibliography.md)
+[Благодарности](thanks.md)
+[Форма обратной связи](feedback_form.md)
+[Помощь в программировании](coding_help.md)
+[Контакты](contact.md)

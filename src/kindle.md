@@ -1,25 +1,22 @@
-# DPD for Kindle
+# DPD на Kindle
 
-A light version of DPD is now available for Amazon Kindle. 
+Теперь доступна легкая версия DPD для Amazon Kindle.
 
-## Installation
+## Установка
 
-(1) Download the latest version of **dpd-kindle.mobi** from **[this page on GitHub](https://github.com/digitalpalidictionary/digitalpalidictionary/releases)**.
-![image](pics/kindle/kindle_github.png)
+1. Загрузите последнюю версию **dpd-kindle.mobi** с [этой страницы на GitHub](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+   ![image](pics/kindle/kindle_github.png)
 
-(2) Copy that file to the following folder on your Kindle: `/documents/dictionaries`
-![image](pics/kindle/copy_dpd_on_kindle_02.png)
+2. Скопируйте этот файл в следующую папку на вашем Kindle: `/documents/dictionaries`
+   ![image](pics/kindle/copy_dpd_on_kindle_02.png)
 
-(3) Restart the Kindle
+3. Перезагрузите Kindle.
 
-(4) Click and hold on any Pāḷi word, then select the dictionary
-![image](pics/kindle/Dictionary_Selection_01_Note_1920x1355.png)
+4. Нажмите и удерживайте любое пали слово, затем выберите словарь.
+   ![image](pics/kindle/Dictionary_Selection_01_Note_1920x1355.png)
 
-(5) Select **Digital Pāḷi Dictionary** from the list of available dictionaries
-![image](pics/kindle/Dictionary_Selection_02_Note_1920x1355.png)
+5. Выберите **Цифровой Словарь Пали** из списка доступных словарей.
+   ![image](pics/kindle/Dictionary_Selection_02_Note_1920x1355.png)
 
-(6) That's it, your all set up! Enjoy the ability to look up inflected forms of any Pāḷi word.
-![image](pics/kindle/ariyasacca_Entry_01_1920x1355.png)
-
-
-
+6. Вот и всё, вы настроились! Наслаждайтесь возможностью просмотра измененных форм любого пали слова.
+   ![image](pics/kindle/ariyasacca_Entry_01_1920x1355.png)

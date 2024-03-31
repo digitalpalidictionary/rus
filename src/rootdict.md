@@ -1,28 +1,27 @@
-## Roots Dictionary
+## Словарь корней
 
-There is a detailed **Pāḷi Roots Dictionary** included in DPD. Clicking on any root will take you to a special page containing all the root information.
+В DPD включен подробный **Словарь корней Пали**. Нажатие на любой корень перенесет вас на специальную страницу, содержащую всю информацию о корне.
 
 ![roots dict1](pics/rootsdict/rootsdict.png)
 
-### Root Info
+### Информация о корне
 
-Root info contains comprehensive information from classical grammars.
+Информация о корне содержит подробную информацию из классических грамматик.
 
 ![roots dict2](pics/rootsdict/rootinfo.png)
 
-### Root Matrix
+### Матрица корней
 
-Root matrix lists every word derived from a root, ordered according to part of speech (verbs, participles, nouns, adjectives and adverbs) and according to mode of the verb (causative, passive, intensive, denominative, etc.). 
+Матрица корней перечисляет каждое слово, происходящее от корня, упорядоченное по частям речи (глаголы, причастия, существительные, прилагательные и наречия) и по наклонениям глаголов (побудительный, пассивный, интенсивный, деноминативный и т. д.).
 
 ![root matrix](pics/rootsdict/rootsmatrix.png)
 
-The result is a comprehensive table of how the root appears within Pāḷi texts, useful for teachers and students alike. 
+Результатом является всесторонняя таблица того, как корень появляется в текстах Пали, полезная как для учителей, так и для студентов.
 
-### Root Families
+### Семьи корней
 
-Each root family contains every word with the same prefix and root. 
+Каждая семья корня содержит каждое слово с тем же префиксом и корнем.
 
 ![roots dict3](pics/rootsdict/rootfamily.png)
 
-These are very useful for seeing the range of nuanced meanings that a prefix and root combination produces.
-
+Эти семьи корней очень полезны для понимания диапазона тонких значений, которые комбинация префикса и корня производит.

@@ -1,78 +1,74 @@
-# Install GoldenDict on Linux
+# Установка GoldenDict на Linux
 
-## In Brief
+## Кратко
+1. Скачайте последнюю версию DPD [здесь](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+2. Установите версию 1.5 GoldenDict.
+3. В настройках направьте GoldenDict в папку DPD.
 
-1. download the latest version of DPD [here](https://github.com/digitalpalidictionary/digitalpalidictionary/releases)
-2. install version 1.5 of GoldenDict
-3. in settings, direct GoldenDict to the DPD folder.
+Ниже подробные инструкции *anupubba*.
 
-Below are detailed *anupubba* instructions. 
+## Скачать DPD
+Прежде всего, скачайте последнюю версию Цифрового Палийского Словаря с [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
 
-## Download DPD
+## Создайте папку GoldenDict
+Рекомендуется создать легкодоступную папку GoldenDict, например, `/Documents/GoldenDict`.
 
-First things first, download the latest version of Digital Pāḷi Dictionary from [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+![создать новую папку](pics/linux-install/create%20new%20folder.png)
 
-## Make a GoldenDict folder
+Или в терминале:
+```
+mkdir /home/ваше_имя_пользователя/Documents/GoldenDict
+```
+(Очевидно, замените ваше_имя_пользователя на ваше реальное имя пользователя)
 
-It is recommended to make an easily accessible GoldenDict folder, for example /Documents/GoldenDict
+## Разархивируйте
+Щелкните правой кнопкой мыши по zip-файлу DPD в папке Загрузки и откройте его с помощью Архивного менеджера.
 
-![create new folder](pics/linux-install/create%20new%20folder.png)
+![менеджер архивов](pics/linux-install/archive%20manager.png)
 
-Or in the terminal\
-`mkdir /home/your_user_name/Documents/GoldenDict`
+Нажмите Извлечь и выберите папку `/Documents/GoldenDict`.
 
-(Obviously, substitute your_user_name with your actual user name)
+![извлечь](pics/linux-install/extract.png)
 
-## Unzip
+Или в терминале:
+```
+cd home/ваше_имя_пользователя/Загрузки
+unzip /home/ваше_имя_пользователя/Загрузки/dpd.zip -d /home/ваше_имя_пользователя/Documents/GoldenDict
+```
 
-Right-click the DPD zip file in your Downloads folder and open it with Archive Manager.
+## Установите GoldenDict
+GoldenDict можно установить напрямую с помощью apt-get:
+```
+sudo apt-get update
+sudo apt-get install goldendict
+```
 
-![archive manager](pics/linux-install/archive%20manager.png)
+Или выберите дистрибутив по вашему выбору с [сайта pkgs.org](https://pkgs.org/download/goldendict).
 
-Click Extract and select the folder `/Documents/GoldenDict`
+Или непосредственно из Менеджера программ:
 
-![extract](pics/linux-install/extract.png)
+![менеджер программ](pics/linux-install/software%20manager.png)
 
-Or in the terminal:
+Убедитесь, что устанавливается версия 1.5, а не версия 1.0!
 
-`cd home/your_user_name/Downloads`\
-`unzip /home/your_user_name/Downloads/dpd.zip -d /home/your_user_name/Documents/GoldenDict`
+## Добавление словарей в GoldenDict
+1. Запустите приложение GoldenDict.
+2. Перейдите в Меню > Редактировать > Словари (Сочетание клавиш **F3**).
 
-## Install GoldenDict
+![словари F3](pics/linux-install/dictionaries%20F3.png)
 
-GoldenDict can be installed directly with apt-get:
+3. Перейдите в Источники > Файлы.
+4. Нажмите Добавить и выберите папку `/Documents/GoldenDict`.
 
-`sudo apt-get update`\
-`sudo apt-get install goldendict`
+![добавить](pics/linux-install/add.png)
 
-Or choose the distribution of your choice from [https://pkgs.org/download/goldendict](https://pkgs.org/download/goldendict):
+5. Установите флажок рекурсивного поиска √ (это гарантирует поиск в подпапках).
 
-Or directly from the Software Manager:
+![рекурсивный](pics/linux-install/recursive.png)
 
-![software manager](pics/linux-install/software%20manager.png)
+6. Нажмите OK и подождите несколько моментов, пока словари индексируются.
 
-Make sure to install version 1.5, not version 1.0!
+Вы готовы!
 
-## Adding Dictionaries to GoldenDict
-
-Launch the GoldenDict application
-
-Go to Menu > Edit > Dictionaries (Shortcut **F3**)
-
-![dictionaries F3](pics/linux-install/dictionaries%20F3.png)
-
-Go to Sources > Files.\
-Click Add and select folder `/Documents/GoldenDict`
-
-![add](pics/linux-install/add.png)
-
-Click the recursive tick box √ (this makes sure GoldenDict searches in sub-folders)
-
-![recursive](pics/linux-install/recursive.png)
-
-Click OK and wait a few moments while the dictionaries are indexing.
-
-You're all setup!
-
-Next learn how to [setup the hotkey](setup_hotkey.md) or [scan popup](setup_scan_popup.md) so you can click on any Pāḷi word in any text and open it immediately in the dictionary.
+Далее узнайте, как [настроить горячую клавишу](setup_hotkey.html) или [настроить всплывающее окно сканирования](setup_scan_popup.html), чтобы вы могли щелкнуть по любому слову Пали в любом тексте и сразу открыть его в словаре.
 

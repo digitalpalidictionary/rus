@@ -1,13 +1,13 @@
-# The Buddha's Words Website
+## Веб-сайт Слов Будды
 
-A light version of DPD is now integrated into [The Buddha's Words](https://thebuddhaswords.net/home/index.html) website.
+Легкая версия DPD теперь интегрирована на [веб-сайте Слов Будды](https://thebuddhaswords.net/home/index.html).
 
-This offers a very comfortable Pāḷi reading experience, with 
-- English translations on the left
-- Pāḷi texts on the right
-- DPD lookup just by rolling the mouse over any Pāḷi word
+Это способствует очень комфортному чтению на Пали, с:
+
+- английскими переводами слева
+- текстами на Пали справа
+- поиском в DPD просто наведением мыши на любое слово на Пали
 
 ![tbw](pics/tbw/tbw.png)
 
-The Buddha's Words is also available for download and offline use [from here](https://drive.google.com/drive/folders/1HawM4A_Ns37VGpHgH4YFpkkJpjtpNLEw)
-
+Веб-сайт Слов Будды также доступен для загрузки и использования офлайн [отсюда](https://drive.google.com/drive/folders/1HawM4A_Ns37VGpHgH4YFpkkJpjtpNLEw).

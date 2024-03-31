@@ -1,105 +1,63 @@
-# Install GoldenDict on Windows
+# Установка GoldenDict на Windows
 
-## In Brief
+## В кратце
+1. Скачайте последнюю версию DPD [здесь](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+2. Установите версию 1.5 [GoldenDict](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/GoldenDict-1.5.0-RC2-372-gc3ff15f-Install.exe/download).
+3. В настройках укажите GoldenDict папку с DPD.
 
-1. download the latest version of DPD [here](https://github.com/digitalpalidictionary/digitalpalidictionary/releases)
-2. install version 1.5 of [GoldenDict](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/GoldenDict-1.5.0-RC2-372-gc3ff15f-Install.exe/download)
-3. in settings, direct GoldenDict to the DPD folder.
-   
-Here is a [video to help you with Windows installation](https://www.youtube.com/watch?v=KZ4CecdVL0k) courtesy of the [Learn Pali Channel on Youtube](https://www.youtube.com/channel/UC73nNRzMzvweRb52ArFG3Gg).
+Вот [видео](https://www.youtube.com/watch?v=KZ4CecdVL0k), чтобы помочь вам с установкой на Windows от [канала Learn Pali на Youtube](https://www.youtube.com/channel/UC73nNRzMzvweRb52ArFG3Gg).
 
-Below are detailed *anupubba* text instructions. 
+Ниже приведены подробные инструкции в текстовом формате.
 
-## Install GoldenDict
+## Установка GoldenDict
+1. Скачайте последнюю версию GoldenDict с [Sourceforge](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/GoldenDict-1.5.0-RC2-372-gc3ff15f-Install.exe/download).
+2. Перейдите в вашу папку `Загрузки` и дважды щелкните `GoldenDict-1.5.0-RC2-372-gc3ff15f-Install.exe`.
+   ![gd exe](pics/win-install/gd%20exe.png)
+3. Выберите ваш язык. Нажмите **OK**.
+   ![select language](pics/win-install/select%20language.png)
+4. Нажмите Далее.
+   ![setup welcome](pics/win-install/setup%20welcome.png)
+5. Нажмите Я согласен.
+   ![gd license](pics/win-install/gd%20license.png)
+6. Выберите место установки и нажмите **Далее**.
+   ![choose default install location](pics/win-install/choose%20default%20install%20location.png)
+7. Нажмите Установить.
+   ![choose start menu folder](pics/win-install/choose%20start%20menu%20folder.png)
+8. Установка…
+   ![installing](pics/win-install/installing.png)
+9. Нажмите Готово.
+   ![install finished](pics/win-install/install%20finshed.png)
 
-Download the latest version of GoldenDict from [Sourceforge](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/GoldenDict-1.5.0-RC2-372-gc3ff15f-Install.exe/download)
+## Скачать DPD
+Скачайте последнюю версию Цифрового Палийского Словаря с [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
 
-Go to your `Downloads` folder and double click `GoldenDict-1.5.0-RC2-372-gc3ff15f-Install.exe`
-
-![gd exe](pics/win-install/gd%20exe.png)
-
-Choose your language. Click __OK__
-
-![select language](pics/win-install/select%20language.png)
-
-Click Next
-
-![setup welcome](pics/win-install/setup%20welcome.png)
-
-Click I Agree
-
-![gd license](pics/win-install/gd%20license.png)
-
-Choose your install location and click __Next__.
-
-![choose default install location](pics/win-install/choose%20default%20install%20location.png)
-
-Click Install
-
-![choose start menu folder](pics/win-install/choose%20start%20menu%20folder.png)
-
-Installing …
-
-![installing](pics/win-install/installing.png)
-
-Click Finish
-
-![install finished](pics/win-install/install%20finshed.png)
-
-## Download DPD
-
-Download the latest version of Digital Pāḷi Dictionary from [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
-
-## Make a GoldenDict folder
-
-It is recommended to make an easily accessible GoldenDict folder, for example `\Documents\GoldenDict`
-
+## Создание папки GoldenDict
+Рекомендуется создать легко доступную папку GoldenDict, например `\Documents\GoldenDict`.
 ![goldendict folder](pics/win-install/goldendict%20folder.png)
 
-## Unzip
+## Распаковка
+1. Щелкните правой кнопкой мыши на файле .zip в папке Загрузки и выберите "Извлечь все".
+   ![extract all](pics/win-install/extract%20all.png)
+2. Выберите папку `\Documents\GoldenDict` и нажмите Извлечь.
+   ![extract to](pics/win-install/extract%20to.png)
+3. Теперь в `\Documents\GoldenDict` будет папка `DPD`.
+   ![extracted folder](pics/win-install/extracted%20folder.png)
 
-Right-click the DPD zip file in your Downloads folder and click Extract All.
+## Настройка GoldenDict
+1. Запустите GoldenDict из меню Пуск.
+   ![gd icon](pics/win-install/gd%20icon.png)
+2. Откройте Меню > Правка > Словари (клавиша F3).
+   ![edit dictionaries](pics/win-install/edit%20dictionaries.png)
+3. Нажмите Добавить.
+   ![add button](pics/win-install/add%20button.png)
+4. Перейдите в `\Documents\GoldenDict` и нажмите Выбрать папку.
+5. Установите флажок **Рекурсивно** (это гарантирует добавление всех подпапок).
+   ![recursive](pics/win-install/recursive.png)
+6. Нажмите ОК.
+   ![ok](pics/win-install/ok.png)
+7. Подождите, пока словарь будет проиндексирован.
+   ![indexing](pics/win-install/indexing.png)
 
-![extract all](pics/win-install/extract%20all.png)
+Всё готово!
 
-Select the `\Documents\GoldenDict` folder and click Extract
-
-![extract to](pics/win-install/extract%20to.png)
-
-There will now be a `DPD` folder in `\Documents\GoldenDict`
-
-![extracted folder](pics/win-install/extracted%20folder.png)
-
-## Setting up GoldenDict 
-
-Run GoldenDict from the Start Menu
-
-![gd icon](pics/win-install/gd%20icon.png)
-
-Open Menu > Edit > Dictionaries (Shortcut F3)
-
-![edit dictionaries](pics/win-install/edit%20dictionaries.png)
-
-Click Add
-
-![add button](pics/win-install/add%20button.png)
-
-Navigate to `\Documents\GoldenDict` and click Select Folder
-
-Tick the __Recursive__ check-box (this makes sure all sub-folders get added)
-
-![recursive](pics/win-install/recursive.png)
-
-Click OK
-
-![ok](pics/win-install/ok.png)
-
-Wait while the dictionary gets indexed.
-
-![indexing](pics/win-install/indexing.png)
-
-You're all setup!
-
-Next learn how to [set up the hotkey](setup_hotkey.md) so you can click on any Pāḷi word in any text and open it immediately in the dictionary.
-
-
+Можно почитать, как [настроить горячую клавишу](setup_hotkey.html), чтобы вы могли щелкнуть на любое слово на пали в любом тексте и мгновенно открыть его в словаре.

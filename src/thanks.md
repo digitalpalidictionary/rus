@@ -1,41 +1,40 @@
-Digital Pāḷi Dictionary
+Цифровой Пали Словарь
 
-## DPD Thanks
+## Благодарность DPD
 
-Thank you, appreciation and _anumodana_ to the following people who have
-contributed to this project with their time, expertise and with material
-support. _parapaṭibaddhā me jīvikā'ti pabbajitena abhiṇhaṃ paccavekkhitabbaṃ._
+Благодарим следующих людей, которые внесли свой вклад в этот проект своим временем, опытом и материальной поддержкой. 
 
-  *  **Ven. Sumedhāloka** in Sri Lanka for sparking my interest in Pāḷi studies
-  *  **Ven. Ariyananda** in Sri Lanka for a powerful laptop
-  *  **Ven. Devamitta** in Malaysia for thousands of small corrections and suggestions for improvement
-  *  **Ven. Gambhīro** in Portugal for the technical expertise, and the GoldenDict exporter that started this whole chain of events
-  *  **Ven. Dhammañāṇa** in Vietnam for help with the MDict exporter
-  *  **Ven. Kusalacitto** in Thailand for help with the MDict exporter
-  *  **Prof. Bryan Levman,** in Canada for detailed grammatical analysis of Dīgha Nikāya and Theragāthā
-  *  **Prof. Aleix Ruiz Falqués** in Spain for internet classes on the classical Pāḷi grammars
-  *  **Sumukha** in India for the Python technical support helpline
-  *  **Inka Kendzia** in South Africa for paying the internet bill
-  *  **Max** in Massachusetts for paying the internet bill and pertinent questions
-  *  **Son Tu** in California for detailed grammatical feedback
-  *  **Everyone** around the world who has made suggestions through the [feedback form](https://docs.google.com/forms/d/e/1FAIpQLSf9boBe7k5tCwq7LdWgBHHGIPVc4ROO5yjVDo1X5LDAxkmGWQ/viewform)
-  *  **Anyone** who I have erroneously forgotten to thank
+"parapaṭibaddhā me jīvikā'ti pabbajitena abhiṇhaṃ paccavekkhitabbaṃ."
 
-## Monasteries
+- **Дост. Сумедхалока** из Шри-Ланки за внушение интереса к изучению Пали
+- **Дост. Арийананда** из Шри-Ланки за мощный ноутбук
+- **Дост. Девамитта** в Малайзии за тысячи мелких исправлений и предложений по улучшению
+- **Дост. Гамбхиро** в Португалии за техническую экспертизу и экспорт GoldenDict, который начал все эти события
+- **Дост. Дхамманьяна** во Вьетнаме за помощь с экспортом MDict
+- **Дост. Кусалачитто** в Таиланде за помощь с экспортом MDict
+- **Проф. Брайан Левман** в Канаде за подробный грамматический анализ Дигха Никайи и Тхерагатхи
+- **Проф. Алекс Руис Фалькес** в Испании за интернет-уроки по классической грамматике Пали
+- **Сумуха** в Индии за поддержку по Python
+- **Инка Кендзия** в Южной Африке за оплату интернет-счета
+- **Макс** в Массачусетсе за оплату интернет-счета и соответствующие вопросы
+- **Сон Ту** в Калифорнии за детальную грамматическую обратную связь
+- **Все** по всему миру, кто делал предложения через [форму обратной связи](https://docs.google.com/forms/d/e/1FAIpQLSf9boBe7k5tCwq7LdWgBHHGIPVc4ROO5yjVDo1X5LDAxkmGWQ/viewform)
+- **Все**, кого я ошибочно забыл поблагодарить
 
-Thank you to all the monasteries and their supporters which have sustained my
-livelihood during the course of this work.
+## Монастыри
 
-  *  **Na Uyana Dharmayatana** in Melsiripura, Sri Lanka
-  *  **Hindagala Meditation Centre** in Kandy, Sri Lanka
-  *  **Sri Sumedha Meditation Center** in Gomara, Sri Lanka
-  *  **University Viharaya** in Peradeniya, Sri Lanka
-  *  **Ulpathkanda Buddhist Monastery** in Kandy, Sri Lanka
-  *  **Navimana Forest Meditation Centre** in Warakapola, Sri Lanka
-  *  **Sri Pada Aranya Senasanaya** in Pelmadulla, Sri Lanka
-  *  **Seela Samahitha Yogasramaya** in Belihuloya, Sri Lanka
-  *  **Kahagolla Aranya Senasanaya** in Diyatalawa, Sri Lanka
-  *  **Sri Sambodhi Viwekashramaya, Galkanda** in Diyathalawa, Sri Lanka
-  *  **Bhaddekavihari Upasthana Kutiya** in Tanjan Tenna, Sri Lanka
-  *  **The Mountain Hermitage, Wikiliya Ārāmaya** in Wikiliya, Sri Lanka
+Благодарим все монастыри и их сторонников, которые обеспечили мое существование во время этой работы.
+
+- **Na Uyana Dharmayatana** в Мельсирипуре, Шри-Ланка
+- **Hindagala Meditation Centre** в Канди, Шри-Ланка
+- **Sri Sumedha Meditation Center** в Гомаре, Шри-Ланка
+- **University Viharaya** в Перадении, Шри-Ланка
+- **Ulpathkanda Buddhist Monastery** в Канди, Шри-Ланка
+- **Navimana Forest Meditation Centre** в Варакаполе, Шри-Ланка
+- **Sri Pada Aranya Senasanaya** в Пелмадулле, Шри-Ланка
+- **Seela Samahitha Yogasramaya** в Белихулойе, Шри-Ланка
+- **Kahagolla Aranya Senasanaya** в Дияталаве, Шри-Ланка
+- **Sri Sambodhi Viwekashramaya, Galkanda** в Дияталаве, Шри-Ланка
+- **Bhaddekavihari Upasthana Kutiya** в Танджан Тенне, Шри-Ланка
+- **The Mountain Hermitage, Wikiliya Ārāmaya** в Викилии, Шри-Ланка
 

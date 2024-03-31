@@ -1,23 +1,24 @@
-# Simsapa Dhamma Reader
+## Simsapa Dhamma Reader
 
-DPD is integrated into the [Simsapa Dhamma Reader](https://simsapa.github.io/), a very powerful new desktop application for immersive Pāḷi study.
+DPD интегрирован в [Simsapa Dhamma Reader](https://simsapa.github.io/), очень мощное новое приложение для погружения в изучение Пали.
 
-Simsapa aims to be an all-in-one app which contains
-- CST4 Chaṭṭha Saṅgāyana Tipiṭaka
-- Sutta Central texts and translations
-- a full set of Pāḷi dictionaries
-- dhammatalks.org Translations by Ajahn Ṭhānissaro
-- numerous Dhamma ebooks
-- Gretil Sanskrit texts
-- Sanskrit dictioanaries
-- and more
+Симсапа стремится быть всё-в-одном приложением, которое содержит:
+
+- CST4 Chaṭṭha Saṅgāyana Типитаку
+- Тексты и переводы SuttaCentral
+- Полный набор Пали словарей
+- Переводы dhammatalks.org от Аджана Тханиссаро
+- Множество электронных книг о Дхамме
+- Санскритские тексты Gretil
+- Санскритские словари
+- И многое другое
 
 ![simsapa sutta study](pics/simsapa/simsapa_sutta_study.png)
 
-(right click and open in new tab to see the images full size)
+*(щелкните правой кнопкой мыши и откройте в новой вкладке, чтобы увидеть изображения в полном размере)*
 
 ![simsapa links](pics/simsapa/simsapa_links.png)
 
-Every time a new there is a new DPD release, Simsapa automatically updates itself with the latest DPD database information.
+Каждый раз при выпуске новой версии DPD, Simsapa автоматически обновляется с последней информацией из базы данных DPD.
 
-For more information and how to install, visit the [Simsapa website](https://simsapa.github.io/).
+Для получения дополнительной информации и инструкций по установке посетите [веб-сайт Simsapa](https://simsapa.github.io/).
