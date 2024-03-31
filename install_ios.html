@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Install on iOS - Digital Pāḷi Dictionary</title>
+
+
         <!-- Custom HTML head -->
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -16,9 +18,11 @@
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
         <link rel="stylesheet" href="css/print.css" media="print">
+
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="fonts/fonts.css">
+
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
@@ -26,16 +30,18 @@
 
         <!-- Custom theme stylesheets -->
         <link rel="stylesheet" href="src/custom.css">
+
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -51,50 +57,81 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
 
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
-            var html = document.querySelector('html');
-            var sidebar = 'hidden';
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="titlepage.html">Home</a></li><li class="chapter-item expanded affix "><a href="features.html">Features</a></li><li class="chapter-item expanded affix "><a href="rootdict.html">Roots Dictionary</a></li><li class="chapter-item expanded affix "><a href="frequency.html">Word Frequency</a></li><li class="chapter-item expanded affix "><a href="deconstructor.html">Deconstructor</a></li><li class="chapter-item expanded affix "><a href="grammardict.html">Grammar Dictionary</a></li><li class="chapter-item expanded affix "><a href="kindle.html">Kindle</a></li><li class="chapter-item expanded affix "><a href="tpr.html">Tipitaka Pali Reader</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="install_win.html">Install on Windows</a></li><li class="chapter-item expanded affix "><a href="install_mac.html">Install on Mac</a></li><li class="chapter-item expanded affix "><a href="install_ios.html" class="active">Install on iOS</a></li><li class="chapter-item expanded affix "><a href="install_linux.html">Install on Linux</a></li><li class="chapter-item expanded affix "><a href="install_android_mdict.html">Install on Android (MDict)</a></li><li class="chapter-item expanded affix "><a href="install_android_goldendict.html">Install on Android (GoldenDict)</a></li><li class="chapter-item expanded affix "><a href="update.html">Update</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="setup_hotkey.html">Setup the Hotkey</a></li><li class="chapter-item expanded affix "><a href="setup_scan_popup.html">Setup the Scan Popup</a></li><li class="chapter-item expanded affix "><a href="setup_advanced.html">Setup Advanced Features</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="changelog.html">Changelog</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li><li class="chapter-item expanded affix "><a href="thanks.html">Thanks</a></li><li class="chapter-item expanded affix "><a href="feedback_form.html">Feedback Form</a></li><li class="chapter-item expanded affix "><a href="contact.html">Contact</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="titlepage.html">Home</a></li><li class="chapter-item expanded affix "><a href="features.html">Features</a></li><li class="chapter-item expanded affix "><a href="rootdict.html">Roots Dictionary</a></li><li class="chapter-item expanded affix "><a href="frequency.html">Word Frequency</a></li><li class="chapter-item expanded affix "><a href="deconstructor.html">Deconstructor</a></li><li class="chapter-item expanded affix "><a href="grammardict.html">Grammar Dictionary</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="tpr.html">Tipitaka Pali Reader</a></li><li class="chapter-item expanded affix "><a href="tbw.html">The Buddha's Words</a></li><li class="chapter-item expanded affix "><a href="simsampa.html">Simsapa Dhamma Reader</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="install_win.html">Install on Windows</a></li><li class="chapter-item expanded affix "><a href="install_mac.html">Install on Mac</a></li><li class="chapter-item expanded affix "><a href="install_ios.html" class="active">Install on iOS</a></li><li class="chapter-item expanded affix "><a href="install_linux.html">Install on Linux</a></li><li class="chapter-item expanded affix "><a href="install_android_dicttango.html">Install on Android (DictTango)</a></li><li class="chapter-item expanded affix "><a href="install_android_goldendict.html">Install on Android (GoldenDict)</a></li><li class="chapter-item expanded affix "><a href="install_android_mdict.html">Install on Android (MDict)</a></li><li class="chapter-item expanded affix "><a href="kindle.html">Install on Kindle</a></li><li class="chapter-item expanded affix "><a href="update.html">Update</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="setup_hotkey.html">Setup the Hotkey</a></li><li class="chapter-item expanded affix "><a href="setup_scan_popup.html">Setup the Scan Popup</a></li><li class="chapter-item expanded affix "><a href="setup_advanced.html">Setup Advanced Features</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="changelog.html">Changelog</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li><li class="chapter-item expanded affix "><a href="thanks.html">Thanks</a></li><li class="chapter-item expanded affix "><a href="feedback_form.html">Feedback Form</a></li><li class="chapter-item expanded affix "><a href="coding_help.html">Help with Coding</a></li><li class="chapter-item expanded affix "><a href="contact.html">Contact</a></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -111,6 +148,7 @@
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
+
                     </div>
                 </div>
 
@@ -124,8 +162,9 @@
                         </ul>
                     </div>
                 </div>
+
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -135,39 +174,39 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="install-mdict-on-ios"><a class="header" href="#install-mdict-on-ios">Install MDict on iOS</a></h1>
-<h2 id="in-brief"><a class="header" href="#in-brief">In Brief</a></h2>
+                        <h1 id="Установка-mdict-на-ios"><a class="header" href="#Установка-mdict-на-ios">Установка MDict на iOS</a></h1>
+<h2 id="Вкратце"><a class="header" href="#Вкратце">Вкратце</a></h2>
 <ol>
-<li>download the latest version of DPD for MDict (dpd.mdx) <a href="https://github.com/digitalpalidictionary/digitalpalidictionary/releases">here</a>. </li>
-<li>install MDict from the <a href="https://apps.apple.com/us/app/mdict-ad/id894362875">App Store</a></li>
-<li>Move the dpd.mdx file to the MDict folder on your iOS device.</li>
+<li>Загрузите последнюю версию DPD для MDict (dpd.mdx) <a href="https://github.com/digitalpalidictionary/digitalpalidictionary/releases">здесь</a>.</li>
+<li>Установите MDict из <a href="https://apps.apple.com/us/app/mdict-ad/id894362875">App Store</a>.</li>
+<li>Переместите файл dpd.mdx в папку MDict на вашем устройстве iOS.</li>
 </ol>
-<p>Below are detailed <em>anupubba</em> instructions. </p>
-<h2 id="download-dpd"><a class="header" href="#download-dpd">Download DPD</a></h2>
-<p>First things first, download the latest MDict version of Digital Pāḷi Dictionary from <a href="https://github.com/digitalpalidictionary/digitalpalidictionary/releases">Github</a></p>
-<h2 id="download-mdict"><a class="header" href="#download-mdict">Download MDict</a></h2>
-<p>Search for <strong>MDict</strong> in your device's App Store and click <strong>GET</strong> to install</p>
+<p>Ниже приведены подробные инструкции <em>anupubba</em>.</p>
+<h2 id="Загрузка-dpd"><a class="header" href="#Загрузка-dpd">Загрузка DPD</a></h2>
+<p>Прежде всего, загрузите последнюю версию Цифрового Палийского Словаря для MDict с <a href="https://github.com/digitalpalidictionary/digitalpalidictionary/releases">Github</a>.</p>
+<h2 id="Загрузка-mdict"><a class="header" href="#Загрузка-mdict">Загрузка MDict</a></h2>
+<p>Найдите приложение <strong>MDict</strong> в App Store на вашем устройстве и нажмите <strong>GET</strong>, чтобы установить.</p>
 <p><img src="pics/ios/1search_mdict.JPG" alt="search mdict" /></p>
-<h2 id="install-the-dpd-file"><a class="header" href="#install-the-dpd-file">Install the DPD File</a></h2>
-<p>There are 2 ways to install.</p>
-<p>Put the dpd.mdx file into your <strong>Library</strong>, it will install automatically.</p>
+<h2 id="Установка-файла-dpd"><a class="header" href="#Установка-файла-dpd">Установка файла DPD</a></h2>
+<p>Есть 2 способа установки.</p>
+<p>Поместите файл dpd.mdx в вашу <strong>Библиотеку</strong>, он установится автоматически.</p>
 <p><img src="pics/ios/2library.JPG" alt="library" /></p>
-<p>Or open the <strong>Files</strong> application </p>
+<p>Или откройте приложение <strong>Files</strong>.</p>
 <p><img src="pics/ios/3files.JPG" alt="files" /></p>
-<p>and move the dpd.mdx file to the <strong>MDict</strong> folder in <strong>On My iPhone</strong></p>
+<p>И переместите файл dpd.mdx в папку <strong>MDict</strong> в разделе <strong>На моем iPhone</strong>.</p>
 <p><img src="pics/ios/4onmyios.JPG" alt="onmyios" /></p>
-<h2 id="open-mdict"><a class="header" href="#open-mdict">Open MDict</a></h2>
-<p>You should be able to use DPD by searching now.</p>
+<h2 id="Откройте-mdict"><a class="header" href="#Откройте-mdict">Откройте MDict</a></h2>
+<p>Теперь вы можете использовать DPD, выполнив поиск.</p>
 <p><img src="pics/ios/5dpd.JPG" alt="dpd" /></p>
-<h2 id="auto-lookup-settings"><a class="header" href="#auto-lookup-settings">Auto Lookup Settings</a></h2>
-<p>In <strong>Settings</strong> turn on <strong>Auto lookup clipboard</strong>. Now you can <strong>copy</strong> any word in a Pāḷi text to automatically open it in MDict.</p>
+<h2 id="Настройки-автоматического-поиска"><a class="header" href="#Настройки-автоматического-поиска">Настройки автоматического поиска</a></h2>
+<p>В <strong>Настройках</strong> включите <strong>Автоматический поиск по буферу обмена</strong>. Теперь вы можете <strong>скопировать</strong> любое слово в тексте на пали, чтобы автоматически открыть его в MDict.</p>
 <p><img src="pics/ios/6settings.JPG" alt="settings" /></p>
-<h2 id="one-click-settings-in-dpr"><a class="header" href="#one-click-settings-in-dpr">One Click Settings in DPR</a></h2>
-<p>As an added bonus, if you use Digital Pāli Reader, open <strong>Settings</strong> and turn on <strong>Copy words to clipboard on click</strong>. </p>
+<h2 id="Настройки-однократного-нажатия-в-dpr"><a class="header" href="#Настройки-однократного-нажатия-в-dpr">Настройки однократного нажатия в DPR</a></h2>
+<p>Кроме того, если вы используете Digital Pāli Reader, откройте <strong>Настройки</strong> и включите <strong>Копировать слова в буфер обмена при нажатии</strong>.</p>
 <p><img src="pics/ios/7dprsettings.png" alt="dprsettings" /></p>
-<p>Now simply <strong>clicking</strong> on any word should open it in MDict.</p>
+<p>Теперь просто <strong>нажмите</strong> на любое слово, чтобы открыть его в MDict.</p>
 <p><img src="pics/ios/8dpr.JPG" alt="dpr" /></p>
-<p>You're all good to go on your iOS device!</p>
+<p>Ваше устройство iOS готово к использованию!</p>
 
                     </main>
 
@@ -176,9 +215,11 @@
                             <a rel="prev" href="install_mac.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="install_linux.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+
+                            <a rel="next prefetch" href="install_linux.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
+
                         <div style="clear: both"></div>
                     </nav>
                 </div>
@@ -188,23 +229,33 @@
                     <a rel="prev" href="install_mac.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="install_linux.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+
+                    <a rel="next prefetch" href="install_linux.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
-        <script type="text/javascript">
+
+
+
+        <script>
             window.playground_copyable = true;
         </script>
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+
+
+    </div>
     </body>
 </html>

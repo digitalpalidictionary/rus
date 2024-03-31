@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Word Frequency - Digital Pāḷi Dictionary</title>
+
+
         <!-- Custom HTML head -->
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -16,9 +18,11 @@
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
         <link rel="stylesheet" href="css/print.css" media="print">
+
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="fonts/fonts.css">
+
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
@@ -26,16 +30,18 @@
 
         <!-- Custom theme stylesheets -->
         <link rel="stylesheet" href="src/custom.css">
+
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -51,50 +57,81 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
 
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
-            var html = document.querySelector('html');
-            var sidebar = 'hidden';
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="titlepage.html">Home</a></li><li class="chapter-item expanded affix "><a href="features.html">Features</a></li><li class="chapter-item expanded affix "><a href="rootdict.html">Roots Dictionary</a></li><li class="chapter-item expanded affix "><a href="frequency.html" class="active">Word Frequency</a></li><li class="chapter-item expanded affix "><a href="deconstructor.html">Deconstructor</a></li><li class="chapter-item expanded affix "><a href="grammardict.html">Grammar Dictionary</a></li><li class="chapter-item expanded affix "><a href="kindle.html">Kindle</a></li><li class="chapter-item expanded affix "><a href="tpr.html">Tipitaka Pali Reader</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="install_win.html">Install on Windows</a></li><li class="chapter-item expanded affix "><a href="install_mac.html">Install on Mac</a></li><li class="chapter-item expanded affix "><a href="install_ios.html">Install on iOS</a></li><li class="chapter-item expanded affix "><a href="install_linux.html">Install on Linux</a></li><li class="chapter-item expanded affix "><a href="install_android_mdict.html">Install on Android (MDict)</a></li><li class="chapter-item expanded affix "><a href="install_android_goldendict.html">Install on Android (GoldenDict)</a></li><li class="chapter-item expanded affix "><a href="update.html">Update</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="setup_hotkey.html">Setup the Hotkey</a></li><li class="chapter-item expanded affix "><a href="setup_scan_popup.html">Setup the Scan Popup</a></li><li class="chapter-item expanded affix "><a href="setup_advanced.html">Setup Advanced Features</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="changelog.html">Changelog</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li><li class="chapter-item expanded affix "><a href="thanks.html">Thanks</a></li><li class="chapter-item expanded affix "><a href="feedback_form.html">Feedback Form</a></li><li class="chapter-item expanded affix "><a href="contact.html">Contact</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="titlepage.html">Home</a></li><li class="chapter-item expanded affix "><a href="features.html">Features</a></li><li class="chapter-item expanded affix "><a href="rootdict.html">Roots Dictionary</a></li><li class="chapter-item expanded affix "><a href="frequency.html" class="active">Word Frequency</a></li><li class="chapter-item expanded affix "><a href="deconstructor.html">Deconstructor</a></li><li class="chapter-item expanded affix "><a href="grammardict.html">Grammar Dictionary</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="tpr.html">Tipitaka Pali Reader</a></li><li class="chapter-item expanded affix "><a href="tbw.html">The Buddha's Words</a></li><li class="chapter-item expanded affix "><a href="simsampa.html">Simsapa Dhamma Reader</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="install_win.html">Install on Windows</a></li><li class="chapter-item expanded affix "><a href="install_mac.html">Install on Mac</a></li><li class="chapter-item expanded affix "><a href="install_ios.html">Install on iOS</a></li><li class="chapter-item expanded affix "><a href="install_linux.html">Install on Linux</a></li><li class="chapter-item expanded affix "><a href="install_android_dicttango.html">Install on Android (DictTango)</a></li><li class="chapter-item expanded affix "><a href="install_android_goldendict.html">Install on Android (GoldenDict)</a></li><li class="chapter-item expanded affix "><a href="install_android_mdict.html">Install on Android (MDict)</a></li><li class="chapter-item expanded affix "><a href="kindle.html">Install on Kindle</a></li><li class="chapter-item expanded affix "><a href="update.html">Update</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="setup_hotkey.html">Setup the Hotkey</a></li><li class="chapter-item expanded affix "><a href="setup_scan_popup.html">Setup the Scan Popup</a></li><li class="chapter-item expanded affix "><a href="setup_advanced.html">Setup Advanced Features</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="changelog.html">Changelog</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li><li class="chapter-item expanded affix "><a href="thanks.html">Thanks</a></li><li class="chapter-item expanded affix "><a href="feedback_form.html">Feedback Form</a></li><li class="chapter-item expanded affix "><a href="coding_help.html">Help with Coding</a></li><li class="chapter-item expanded affix "><a href="contact.html">Contact</a></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -111,6 +148,7 @@
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
+
                     </div>
                 </div>
 
@@ -124,8 +162,9 @@
                         </ul>
                     </div>
                 </div>
+
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -135,52 +174,47 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="word-frequency"><a class="header" href="#word-frequency">Word Frequency</a></h1>
-<p>Clicking the <strong>frequency</strong> button will give you an instant overview of where &amp; how often a word can be found in the <a href="https://www.tipitaka.org/">Chaṭṭha Saṅgāyana</a> corpus.</p>
+                        <h2 id="Частота-слов"><a class="header" href="#Частота-слов">Частота слов</a></h2>
+<p>Нажатие кнопки <strong>частота</strong> даст вам мгновенный обзор того, где и как часто слово может встречаться в тексте <a href="https://www.tipitaka.org/">Chaṭṭha Saṅgāyana</a>.</p>
 <p><img src="pics/frequency/frequency-overview.png" alt="image" /></p>
-<p>These word frequency maps can provide an instantly accessible snapshot of word usage in different strata of texts, and a entry point for further investigation into how Pāḷi words and associated concepts developed over the course of time.</p>
-<h3 id="matches"><a class="header" href="#matches">Matches</a></h3>
-<p>The <strong>numbers</strong> represent <strong>exact matches</strong> of a <strong>headword and all its inflected forms</strong> in a section of the corpus. </p>
-<p>For <strong>headwords in a specific case</strong> (e.g. masc locative singular, optative reflexive 3rd plural) only the <strong>exact headword</strong> will be matched, not any other related inflections. </p>
-<p>The <strong>colours</strong> are a visual representation of the same data - dark blue represents higher word frequency, while the lighter blues show a lower number of occurences.</p>
-<h3 id="non-matches"><a class="header" href="#non-matches">Non-matches</a></h3>
-<p><strong>Partial matches</strong>, as found in compounds and in sandhi, are <strong>not counted</strong>.</p>
-<p>A <strong>dash</strong> &quot;-&quot; indicates 0 instances of a word in that section.</p>
-<h3 id="false-positives"><a class="header" href="#false-positives">False Positives</a></h3>
-<p>All matching inflections are counted, resulting in false positives for words with with identical inflections, e.g. assu (nt nom sg of &quot;tear&quot;) and assu (opt 3rd pl of &quot;they could be&quot;).</p>
+<p>Эти карты частоты слов могут предоставить мгновенный доступ к картинке использования слов в различных слоях текстов и стать отправной точкой для дальнейшего изучения того, как слова на пали и связанные с ними концепции развивались со временем.</p>
+<h3 id="Соответствия"><a class="header" href="#Соответствия">Соответствия</a></h3>
+<p><strong>Числа</strong> представляют <strong>точные совпадения</strong> между <strong>заголовком и всеми его склонениями</strong> в разделе текста.</p>
+<p>Для <strong>заголовков в определенном падеже</strong> (например, мужской местный единственное число, желательное рефлексивное 3-е лицо множественного числа) будет учитываться только <strong>точный заголовок</strong>, а не какие-либо другие связанные склонения.</p>
+<p><strong>Цвета</strong> являются визуальным представлением тех же данных: темно-синий цвет означает более высокую частоту слов, в то время как более светлые оттенки синего цвета показывают более низкое количество встречаемости.</p>
+<h3 id="Несоответствия"><a class="header" href="#Несоответствия">Несоответствия</a></h3>
+<p><strong>Частичные совпадения</strong>, как в составных словах, так и в сандхи, <strong>не учитываются</strong>.</p>
+<p><strong>Тире</strong> "-" указывает на 0 экземпляров слова в этом разделе.</p>
+<h3 id="Ложные-срабатывания"><a class="header" href="#Ложные-срабатывания">Ложные срабатывания</a></h3>
+<p>Все совпадающие склонения учитываются, что приводит к ложным срабатываниям для слов с идентичными склонениями, например, assu (сред. имен. ед. для "слеза") и assu (желат 3е мн. для "они могли бы быть").</p>
 <hr />
-<p>Here follows an explanation of some of the quirks of the Chaṭṭha Saṅgāyana corpus subdivision as represented here. </p>
+<p>Ниже приведено объяснение некоторых особенностей разделов текстов Chaṭṭha Saṅgāyana, представленных здесь.</p>
 <h2 id="vinaya-Ṭīkā"><a class="header" href="#vinaya-Ṭīkā">Vinaya Ṭīkā</a></h2>
-<p><img src="pics/frequency/vinaya-%E1%B9%AD%C4%ABk%C4%81.png" alt="image" /></p>
-<p>Some of the Vinaya Ṭīkā (sub-commentaries) contain overlapping material which cannot be easily assigned to a specific book of the Vinaya, so all Vinaya Ṭīkā are listed under Vinaya Pārājika.</p>
-<p>This section includes Sāratthadīpanī-ṭīkā, Dvemātikāpāḷi, Vinayasaṅgaha-aṭṭhakathā, Vajirabuddhi-ṭīkā, Vimativinodanī-ṭīkā, Vinayālaṅkāra-ṭīkā, Kaṅkhāvitaraṇīpurāṇa-ṭīkā, Vinayavinicchaya-uttaravinicchaya, Vinayavinicchaya-ṭīkā, Pācityādiyojanāpāḷi and Khuddasikkhā-mūlasikkhā.</p>
-<hr />
-<h2 id="khuddaka-nikāya"><a class="header" href="#khuddaka-nikāya">Khuddaka Nikāya</a></h2>
-<p><img src="pics/frequency/khuddaka.png" alt="image" /></p>
-<p>The Khuddaka Nikāya contains much material that differs not only in linguistic style, but also conceptually. It has been divied into three relevant sections for easy reference:</p>
-<h3 id="1-early-wisdom-collection"><a class="header" href="#1-early-wisdom-collection">1. Early Wisdom Collection:</a></h3>
-<p>These books are mostly consistent with the four nikāyas of the Sutta Piṭaka in language and style.</p>
+<p>Некоторые из подкомментариев Винаи (Vinaya Ṭīkā) содержат перекрывающийся материал, который нельзя сразу отнести к определенной книге Винаи, поэтому все Vinaya Ṭīkā перечислены в разделе Vinaya Pārājika.</p>
+<p>Этот раздел включает в себя Sāratthadīpanī-ṭīkā, Dvemātikāpāḷi, Vinayasaṅgaha-aṭṭhakathā, Vajirabuddhi-ṭīkā, Vimativinodanī-ṭīkā, Vinayālaṅkāra-ṭīkā, Kaṅkhāvitaraṇīpurāṇa-ṭīkā, Vinayavinicchaya-uttaravinicchaya, Vinayavinicchaya-ṭīkā, Pācityādiyojanāpāḷi и Khuddasikkhā-mūlasikkhā.</p>
+<h2 id="Кхуддака-Никая"><a class="header" href="#Кхуддака-Никая">Кхуддака Никая</a></h2>
+<p>Кхуддака Никая содержит много материала, который отличается не только по языковому стилю, но и по смысловому содержанию. Он был разделен на три соответствующих раздела для удобства ссылок:</p>
+<h3 id="1-Раннее-собрание-мудрости"><a class="header" href="#1-Раннее-собрание-мудрости">1. Раннее собрание мудрости:</a></h3>
+<p>Эти книги в основном согласуются с четырьмя никаями Сутта Питаки по языку и стилю.</p>
 <p>Khuddakapāṭhapāḷi, Dhammapadapāḷi, Udānapāḷi, Itivuttakapāḷi, Suttanipātapāḷi, Theragāthāpāḷi, Therīgāthāpāḷi, Jātakapāḷi-1, Jātakapāḷi-2.</p>
-<p>Please note there are <em>aṭṭhakathā</em> but no <em>ṭīkā</em> for all these books</p>
-<h3 id="2-late-story-collection"><a class="header" href="#2-late-story-collection">2. Late Story Collection:</a></h3>
-<p>These late books have an easily recognisable flowery style of verse and devotional content. </p>
+<p>Обратите внимание, что есть <em>aṭṭhakathā</em>, но нет <em>ṭīkā</em> для всех этих книг</p>
+<h3 id="2-Позднее-собрание-историй"><a class="header" href="#2-Позднее-собрание-историй">2. Позднее собрание историй:</a></h3>
+<p>Эти поздние книги имеют легко узнаваемый цветастый стиль стиха и религиозное содержание.</p>
 <p>Vimānavatthupāḷi, Petavatthupāḷi, Apadānapāḷi-1, Apadānapāḷi-2, Buddhavaṃsapāḷi, Cariyāpiṭakapāḷi.</p>
-<p>Again, there are <em>aṭṭhakathā</em> but no <em>ṭīkā</em> for these books</p>
-<h3 id="3-commentarial--abhidhammic-texts"><a class="header" href="#3-commentarial--abhidhammic-texts">3. Commentarial &amp; Abhidhammic Texts:</a></h3>
-<p>These late books contain the earliest known exegetical material and the beginnings of Abhidhamma-style analysis.</p>
-<p>Mahāniddesapāḷi, Cūḷaniddesapāḷi, Paṭisambhidāmaggapāḷi, Nettippakaraṇapāḷi, Milindapañhapāḷi, Peṭakopadesapāḷi.</p>
-<hr />
-<p>Thank you to Ven. Ānandajoti from <a href="https://www.ancient-buddhist-texts.net/">Ancient Buddhist Texts</a> for his suggestions on the subdivision of the Khuddaka Nikāya. </p>
-<hr />
+<p>Снова, для этих книг есть <em>aṭṭhakathā</em>, но нет <em>ṭīkā</em></p>
+<h3 id="3-Комментарии-и-тексты-Абхидхаммы"><a class="header" href="#3-Комментарии-и-тексты-Абхидхаммы">3. Комментарии и тексты Абхидхаммы:</a></h3>
+<p>Эти поздние книги содержат самый ранний известный толковательный материал и начала анализа в стиле Абхидхаммы.</p>
+<p>Mahāniddesapāḷi, Cūḷaniddesapāḷi, Paṭisambhidām</p>
+<p>aggapāḷi, Nettippakaraṇapāḷi, Milindapañhapāḷi, Peṭakopadesapāḷi.</p>
 <h2 id="aññā"><a class="header" href="#aññā">Aññā</a></h2>
-<p>The Aññā section contains a wealth of material from the commentarial era, all the way up to modern times.</p>
+<p>Раздел Aññā содержит огромный объем материала с комментариев и до современности.</p>
 <p><img src="pics/frequency/a%C3%B1%C3%B1%C4%81.png" alt="image" /></p>
 <h3 id="aññā-abhidhamma"><a class="header" href="#aññā-abhidhamma">Aññā Abhidhamma</a></h3>
 <p><img src="pics/frequency/a%C3%B1%C3%B1%C4%81-abhidhamma.png" alt="image" /></p>
-<p>All the books which are not diredctly related to the 7 books of the Abhidhamma Piṭaka are included in Aññā Abhidhamma. This section includes summaries and overviews:  Abhidhammāvatāro-nāmarūpaparicchedo, the well-known Abhidhammatthasaṅgaho, Abhidhammāvatāra-purāṇaṭīkā, and Abhidhammamātikāpāḷi.</p>
+<p>Все книги, которые не связаны непосредственно с 7 книгами Абхидхамма Питаки, включены в Aññā Abhidhamma. Этот раздел включает в себя резюме и обзоры:  Abhidhammāvatāro-nāmarūpaparicchedo, широко известные Abhidhammatthasaṅgaho, Abhidhammāvatāra-purāṇaṭīkā, и Abhidhammamātikāpāḷi.</p>
 <h3 id="aññā-visuddhimagga"><a class="header" href="#aññā-visuddhimagga">Aññā Visuddhimagga</a></h3>
 <p><img src="pics/frequency/a%C3%B1%C3%B1%C4%81-visuddhimagga.png" alt="image" /></p>
-<p>The Visuddhimagga is included in the Aññā section under <em>aṭṭhakathā</em>, and its commentary under <em>ṭīkā</em>. </p>
+<p>Висуддхимагга включена в раздел Aññā под <em>aṭṭhakathā</em>, а его комментарий под <em>ṭīkā</em>.</p>
 <hr />
 
                     </main>
@@ -190,9 +224,11 @@
                             <a rel="prev" href="rootdict.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="deconstructor.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+
+                            <a rel="next prefetch" href="deconstructor.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
+
                         <div style="clear: both"></div>
                     </nav>
                 </div>
@@ -202,23 +238,33 @@
                     <a rel="prev" href="rootdict.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="deconstructor.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+
+                    <a rel="next prefetch" href="deconstructor.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
-        <script type="text/javascript">
+
+
+
+        <script>
             window.playground_copyable = true;
         </script>
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+
+
+    </div>
     </body>
 </html>

@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Changelog - Digital Pāḷi Dictionary</title>
+
+
         <!-- Custom HTML head -->
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="icon" href="favicon.svg">
         <link rel="shortcut icon" href="favicon.png">
@@ -16,9 +18,11 @@
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
         <link rel="stylesheet" href="css/print.css" media="print">
+
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="fonts/fonts.css">
+
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
         <link rel="stylesheet" href="tomorrow-night.css">
@@ -26,16 +30,18 @@
 
         <!-- Custom theme stylesheets -->
         <link rel="stylesheet" href="src/custom.css">
+
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -51,50 +57,81 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
 
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
-            var html = document.querySelector('html');
-            var sidebar = 'hidden';
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="titlepage.html">Home</a></li><li class="chapter-item expanded affix "><a href="features.html">Features</a></li><li class="chapter-item expanded affix "><a href="rootdict.html">Roots Dictionary</a></li><li class="chapter-item expanded affix "><a href="frequency.html">Word Frequency</a></li><li class="chapter-item expanded affix "><a href="deconstructor.html">Deconstructor</a></li><li class="chapter-item expanded affix "><a href="grammardict.html">Grammar Dictionary</a></li><li class="chapter-item expanded affix "><a href="kindle.html">Kindle</a></li><li class="chapter-item expanded affix "><a href="tpr.html">Tipitaka Pali Reader</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="install_win.html">Install on Windows</a></li><li class="chapter-item expanded affix "><a href="install_mac.html">Install on Mac</a></li><li class="chapter-item expanded affix "><a href="install_ios.html">Install on iOS</a></li><li class="chapter-item expanded affix "><a href="install_linux.html">Install on Linux</a></li><li class="chapter-item expanded affix "><a href="install_android_mdict.html">Install on Android (MDict)</a></li><li class="chapter-item expanded affix "><a href="install_android_goldendict.html">Install on Android (GoldenDict)</a></li><li class="chapter-item expanded affix "><a href="update.html">Update</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="setup_hotkey.html">Setup the Hotkey</a></li><li class="chapter-item expanded affix "><a href="setup_scan_popup.html">Setup the Scan Popup</a></li><li class="chapter-item expanded affix "><a href="setup_advanced.html">Setup Advanced Features</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="changelog.html" class="active">Changelog</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li><li class="chapter-item expanded affix "><a href="thanks.html">Thanks</a></li><li class="chapter-item expanded affix "><a href="feedback_form.html">Feedback Form</a></li><li class="chapter-item expanded affix "><a href="contact.html">Contact</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="titlepage.html">Home</a></li><li class="chapter-item expanded affix "><a href="features.html">Features</a></li><li class="chapter-item expanded affix "><a href="rootdict.html">Roots Dictionary</a></li><li class="chapter-item expanded affix "><a href="frequency.html">Word Frequency</a></li><li class="chapter-item expanded affix "><a href="deconstructor.html">Deconstructor</a></li><li class="chapter-item expanded affix "><a href="grammardict.html">Grammar Dictionary</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="tpr.html">Tipitaka Pali Reader</a></li><li class="chapter-item expanded affix "><a href="tbw.html">The Buddha's Words</a></li><li class="chapter-item expanded affix "><a href="simsampa.html">Simsapa Dhamma Reader</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="install_win.html">Install on Windows</a></li><li class="chapter-item expanded affix "><a href="install_mac.html">Install on Mac</a></li><li class="chapter-item expanded affix "><a href="install_ios.html">Install on iOS</a></li><li class="chapter-item expanded affix "><a href="install_linux.html">Install on Linux</a></li><li class="chapter-item expanded affix "><a href="install_android_dicttango.html">Install on Android (DictTango)</a></li><li class="chapter-item expanded affix "><a href="install_android_goldendict.html">Install on Android (GoldenDict)</a></li><li class="chapter-item expanded affix "><a href="install_android_mdict.html">Install on Android (MDict)</a></li><li class="chapter-item expanded affix "><a href="kindle.html">Install on Kindle</a></li><li class="chapter-item expanded affix "><a href="update.html">Update</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="setup_hotkey.html">Setup the Hotkey</a></li><li class="chapter-item expanded affix "><a href="setup_scan_popup.html">Setup the Scan Popup</a></li><li class="chapter-item expanded affix "><a href="setup_advanced.html">Setup Advanced Features</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="changelog.html" class="active">Changelog</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="bibliography.html">Bibliography</a></li><li class="chapter-item expanded affix "><a href="thanks.html">Thanks</a></li><li class="chapter-item expanded affix "><a href="feedback_form.html">Feedback Form</a></li><li class="chapter-item expanded affix "><a href="coding_help.html">Help with Coding</a></li><li class="chapter-item expanded affix "><a href="contact.html">Contact</a></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -111,6 +148,7 @@
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
+
                     </div>
                 </div>
 
@@ -124,8 +162,9 @@
                         </ul>
                     </div>
                 </div>
+
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -136,6 +175,146 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="changelog"><a class="header" href="#changelog">Changelog</a></h1>
+<h2 id="2024-03-24"><a class="header" href="#2024-03-24">2024-03-24</a></h2>
+<ul>
+<li>78 048 headwords, 31 684 complete, 17 575 partially complete, 28 789 incomplete entries</li>
+<li>749 roots, 3 249 root families, 32 176 words derived from roots</li>
+<li>731 160 deconstructed compounds</li>
+<li>1 588 235 unique inflected forms recognised</li>
+<li>1 646 579 cells of Pāḷi word data</li>
+<li>19 662 cells of Pāḷi root data</li>
+<li>100% dictionary recognition in the early texts</li>
+<li>Pass2 started on Majjhima Nikāya</li>
+<li>Numerous additions and corrections based on user feedback</li>
+</ul>
+<p><strong>new words include</strong>: aññena, atidāyī, adhicca 1.2, adhibhosi, anagāriya 2, anattha 2, anābhoga 2.1, aniñjita 1, anukkama 3, anupasampanna 2, anotattadaha, apakata 3, appaṭigha 3, appaṭividdha
+3, appatara 2, appīyati, appekadāhaṃ, amanāpa 2, ariyaṃ cakkhuṃ, aviññāṇaka 2, avināsana, avippakiṇṇa, asamatta, asammosa 2, asuṇanta 2, assamāraka, ākāravant 3, ādāya 5, ārabhituṃ 2,
+āhareti 2, icchāvacara 2, ito bhiyyo, ito 5, indaṭṭha, ujuka 2, ujjaliyi, ujjaletuṃ, uttānīkattabba 2, upagacchati 5, upadhiviveka 2, upanikkhipati 2, upama 2, upalabbhiyamāna, upādiyāna,
+upāyāsa 2, upeti 5, uppādadhamma, etaṃpatha, opāteti 2, osaṭa 3, kathaṃ 4, kathāvāra, kappeti 3, kareyya 1, kārita 4, kāliṅga 3, kāsa 3.1, kuṭila 2, kodhupāyāsa, khari, gahetvā 2, gāhāpetuṃ,
+gāhetvā 1, guṇa 1.6, cajamāna 2, catubbidhaṃ, caya 3, carato 2, jambuphala, jīva 4, ṭhapīyati, ṭhiti 3, tajjanīya 2, tassassa, tikaṇḍakī, tikanipāta 1, tenahāyasmanto, teme, tesametaṃ
+pāṭikaṅkhaṃ, thāmagata 2, dhammappaṭisaṃvedī 2, dharamānatā, dhāretar 2, dhāva 2, dhunāti 2, na bhattaṃ paṭibhāti, navuta, nārāca 2, nibbattatī, nissarati 2, netthāra 2, neva kammantā
+paṭibhanti, pacchima 7, pacchisīsa, paṭibaddha 5, paṭivāta, paṭivīsa, paṇāmeti 2, patiṭṭhāpetvā 4, patiṭṭhāpesi 4, parasenā, paricaritukāma, paricarituṃ, parinibbāyati 3, parinibbuta 4,
+parimaddati 2, pādaṃ karoti, pāraṃ gacchati, pāricchattakapuppha, pāli 2.1, pīṇetabba 2, purakkhata 7, purima 4, phala 1.4, phāliyati, phāliyi, phoṭṭhabba 2, balaṃ gāhetvā, bahutara 2,
+bahuvārā, bahuvāre, bhagavati 2, bhāsati 1.3, magabhūta, majjha 5, majjhima 5, majjhimapaṭipadā, maṭṭhavacana, maṇḍala 6, manteti 3, mayi 3, mahatā atthena saṃyutto abhavissa, maṃ pādato
+karitvā, mātaṅga 4, yāyamhi, rājaguṇa 2, rājavaṃsa 2, lambatthanī, loma 5, vacchadanta 2, vahati 3, vā 4, vāpa, vibhajati 3, vibhaji 2, vibhavesī, vilopa 2, vutta 3.1, sakuṇikā, saṅkamati 2,
+saṅkhāya 3, saccaṃ bhaṇasi, sacchanda, saṇṭhāpayamāna 2, saṇḍāsa 2, saṇha 5, satisammosa 2, satthu 3, saddhānusārī 2, santiṭṭhati 3, santiṭṭhati 4, sappaṭigha 2, samagga 3, samita 3.1,
+sameti 2.3, sammukhībhāvaṃ adāsi, sammukhībhūta 2, sāmañña 2.2, sāmī 5, supatiṭṭhita 3, susama, susu 3, sekha 2, sotaṃ chetvā, sotāpanna 2, hatthe karitvā, haya 2, hāyamāna 2 [178]</p>
+<h2 id="2024-02-24"><a class="header" href="#2024-02-24">2024-02-24</a></h2>
+<ul>
+<li>77 871 headwords, 30 955 complete, 17 822 partially complete, 29 094 incomplete entries</li>
+<li>749 roots, 3 247 root families, 32 063 words derived from roots</li>
+<li>731 122 deconstructed compounds</li>
+<li>1 584 589 unique inflected forms recognised</li>
+<li>1 636 473 cells of Pāḷi word data</li>
+<li>18 173 cells of Pāḷi root data</li>
+<li>100% dictionary recognition in the early texts</li>
+<li>A light version of DPD integrated into <a href="https://thebuddhaswords.net/home/index.html">The Buddha's Words website</a></li>
+<li>Other Pāḷi and Sanskrit dictionaries in GoldenDict and MDict format <a href="https://github.com/digitalpalidictionary/dpd-db/tree/main/other_dictionaries">download here</a></li>
+<li>Idioms button</li>
+<li>Semantic versioning</li>
+<li>Lookup table</li>
+<li>Bold defintions added to db</li>
+<li>DPD SQLite database available for download</li>
+<li>Database refactoring table names and columns</li>
+<li>Improvements to deconstructor: double letters and tissa / tissā</li>
+<li>Improved tests: hypehantion, allowable characters, neg cimmpounds, bahubbihis, dupes in examples, digu compounds</li>
+<li>Improvements to GUI</li>
+<li>Numerous additions and corrections based on user feedback</li>
+</ul>
+<p><strong>new words include</strong>: aggisaraṇa, aggisāla, aññaposī, aññasaraṇa, atipātī 3, attasaññā, attasaññī, anāhariyamāna, anugamāsi, anuseṭṭhi, appalābha 2, abhikkamitukāma, abhikkamituṃ, abhisambhuṇanta, abhiharati 4, asambhīta, assāsika 1, assāsika 2, ahināga, āgāriya, ādariya, ādhātuṃ 2, āpucchanta, āraññika 2, ārādhesi 2, uccāvacasīla, udicchati, upacāraṭṭhāna, upasampadākathā, upasampadāpekkha, uruvelapāṭihāriyakathā, ekakula 2, ohārāpetvā, gata 6, garahiya 2, gihisahāyaka, catugihisahāyakapabbajjā, cittasaṅkhāra 2, cetayanta, chupanta, jaṭilasata, jātippabhava 2, jānanatā, jānapada 3, jīvitasaṅkhāra 2, takkāvacara, tammayatā, thaddhamānasa, dutiyamārakathā, dubbi, dubbhanta, dummocaya, dhammacaraṇa, dhammika 5, dhuvato, nalāṭikaṃ deti, nānājanapada 2, nānādisa, niṭṭhaṅgatatā, niyyānikatta, nissaraṇadassī, nihīna 4, nīcavuttī, paggaṇhāpetvā, pajjota 3, paññāsagihisahāyakapabbajjā, paññāsamatta, pabbajjāpekkha, pabbajjūpasampadākathā, parikkhāra 4, paribhuñjituṃ 2, pavāda 2, puṇṇaji, pubbānupubbaka, phalikavaṇṇa, bhaddavaggiya, bhaddavaggiyavatthu, bhaddavaggiyasahāyaka, bhayamatīta, bhinna 3, bhuñjitabba 2, maccuvasaṃ vaje, manussanāga, mārakathā, yato tato, vattī 1.1, vikesika, vikkheḷika, vuṭṭhāsi 3, sagaṇa, sabbaratti, sumanamanasa, suvaṇṇapādukā, seṭṭhānuseṭṭhī, hatthappatta [95]</p>
+<h2 id="2024-01-26"><a class="header" href="#2024-01-26">2024-01-26</a></h2>
+<ul>
+<li>77 776 headwords, 30 864 complete, 17 780 partially complete, 29 132 incomplete entries</li>
+<li>749 roots, 3 239 root families, 32 019 words derived from roots</li>
+<li>723 335 deconstructed compounds</li>
+<li>1 582 606 unique inflected forms recognised</li>
+<li>1 172 714 cells of Pāḷi word data</li>
+<li>18 173 cells of Pāḷi root data</li>
+<li>100% dictionary recognition up to and including Therīgāthā</li>
+<li>Pass1 complete, added all missing words from earlier texts</li>
+<li>Links to form for users to add words</li>
+<li>Deconstructor recognises Ven. Ānandajoti's chanting books</li>
+<li>Numerous additions and corrections based on user feedback</li>
+</ul>
+<p><strong>new words include</strong>: akari 2, aggikkhandhūpama, aghaṭamāna, aṅgārakāsusadisa, ajapālakathā, ajānaka 2, ajjhagamā 1, ajjhagamā 3, aññataratherīgāthā, aññatarātissā, aṭṭhinhārusaṅghāta,
+aḍḍhakāsi, aṇīkadatta, atosayi, atthayutti, atra 2.1, adhigacchati 2, anagārūpanissaya, anantarāvimokkha, anantādīnava, anīkaratta, anukkamaṇika, anukkamaṇikā, anutiṭṭhati 3, anubhohiti,
+anuyuñjanta, anuvicinanta, anopamā, antodīpa, apakiritvā, apakīritūna, apagacchati 2, aparāuttamā, aparāsāmā, apāpuritvāna 1, apāpuritvāna 2, apucchā 2, apeta 3, abbhudīresi, abhayamātar,
+abhayā 2, abhinandita 2, abhinimmitvā, abhibhavitabba, abhirūpanandā, abhirūhiya, abhivādayitvā, amittajanana, amma 2, amhaṃ, ayācita 2, ayyāyovāda, ariyaṭṭhaṅgika, ariyaddhana, asakāma 2,
+asita 2.2, asitanicitamuduka, asucipuṇṇa, asevi, assuṇi, aho 2.2, āgamati, āgamanīya 2, āṇā 2, āṇādhana, ādahana, ādisitvāna, āpucchitūna, ābādhiyamāna, āmukha 1, āmukha 2, āvahatta, āsaṃ,
+āsīsanaka, āhaniya, ukkaṭṭhamajjhima, ukkaṇṭhi 2, ukkopama, ujjagghanta, uttamaṅgaja, uttamā 1, uttamā 2, uttarā 4, uttarā 5, uttiṭṭha, utrāsita, udahārī, uddisi 2, uddhamukha, upakāsi 1,
+upakūlita 2, upaṭṭhahanta 1, upaḍḍhasuṅka, upanayati, upanissaya 1, upalepa 2, upalepapatita, upasamā, upasevati 2, ubbandha, ubbirī, ummaggapaṭipanna, ullapana 3, ullikhana 2, ekaghara,
+ekacitakā, ekadhītar, ekasāṭikā, ekasāṭī, ekāgāra, ekuttara, etave, etuṃ, edisika, erakaccha, okassa 2, okassayati, okkami 2, okkhita, ogāha 2, oḍḍiya, orambhāga, oruddha 2, orundhati 2,
+oruhati 2, olikhi 2, olokayitvāna, ovaditvāna, kañcanassaphalaka, kaṇṇapāḷi, kaṇhakhandhakasuvaṇṇamaṇḍita, katapāpaka, katipa, kattā 2, kathañci, kanta 2.1, kantasalla, kappa 1.8,
+kammaseṭṭha, kammāradhītar, karihiti, kalyāṇī 3, kāmayutta, kāyakali, kārikā 2, kālaṃ karitvā, kāsikuttamadhārī, kāsijanapada, kāḷī 4, kimahaṃ 2, kimikulālaya, kilissamāna, kiṃme, kuṭumbiya,
+kuṇḍalakesā, kulā kulaṃ, kulika 1, kulika 2, kusumanāma, kesa 2, kokilā, kocchasūcivicitaggasobhita, koṭṭeti 2, koṭṭhika 2, kolaṭṭhimattaguḷikā, khaṇḍita 2, khandhaka 3, khandhāyatanadhātu
+2, khambheti 2, khambheti 3, khambhesi, khaḷopi, khujja 2, khuppipāsāsamappita, khuppipāsika, khepeti 2, khemā, gaṇhāti 7, gantave, gandhika 1, gamissati 2, giridāsa, guttā, gotamī 2,
+govāṇijaka, ghaṭitabba, candā, cari 2.2, cāpā, citakā, cittakārasukata, cittadomanassa, cittā, cullāsītisahassa, cūḷāsītisahassa, cetopariccañāṇa, chaḍḍūna, chamāpatita, chedāpayitvāna,
+janamāraka, janamārakamajjhagata, jarāyabhihata, jātimatta, jātimaraṇappahāna, jātimaraṇasārī, jātimūlaka, jāyitabba, jinadattā, jīvakambavanika, jīvasanāmika, jīvā, jentā,
+jhānajjhāyanarata, ñātigaṇa, ñātigaṇavagga, ñātisaṅghasata, ḍayhanta, taca 5, tāta 2, tātakula, tāpana 3, tiladaṇḍaka, tisatti, tissā 1, tissā 2, tiṃsativassa, tiṃsamattā, tuṅga 2, tunna 2,
+tūlapuṇṇa, tūlapuṇṇasadisopama, daṇḍabhayabhīta, dantikā, dasasatakkhattuṃ, dassanapatti, daḷhapāsa, dāṭhī 2, dālima, dālimalaṭṭhi, dāsakammakara, dukkhasamudayoruddha, dukhapphala,
+dutiyakulika, devakāyābhinandī, dosa 2.5, dvādasanipāta, dvipadaseṭṭha, dhana 4, dhanikapurisapātabahula, dhammadesanākusala, dhammasaṃvega, dhammā, dharī 1.1, dharī 2.1, dhītusoka, dhīrā,
+dhutakilesa, dhotapatta, nadanta 3, nandā 1, nanduttarā, nayidaṃ 3, nāgabhoga, nāgabhogasadisopama, nāccharāsaṅghātamattaṃ, nādhigā, nānābhāva 2, nānuññāta, nikujjiya, ninnamāgata,
+nillacchesi, nissitabba, nīhari 2, nodaka, nohetaṃ, nhāpanucchādana, pakāsaka 1, pakiṇṇakesī, pakkuthiyamāna, pakkhālana, pakkhālayitvāna, paṅkadharī, paccāsīsita, pajahitvāna,
+pañcavaggiyakathā, pañcasatamattā, paññāpayi, paññāsīlaparakkama, paṭācārānusāsanī, paṭigaṇhāti 3, paṭiccharayi, paṭinayi, paṭinissarati, paṭiladdhāna, paṭhamasamodhāna, paṇīdheti, paṇḍu 3,
+pati 3.5, patta 4.1, pattaka 2.1, pattayobbana, pattalī, pattalīmakulavaṇṇasādisa, padadāti, padālana, padāliya, padāhiti, padīpita 2, pabbajjākathā, pamajjita, paramatthasañhita,
+parikammakārikā, parikilesa, parikkhīyati, parigata, paritappayi, pariniṭṭhita 2, paribāhira 2, paribyatta, parivaḍḍhati, parivahitvā, palambati, palambita, pavatta 7, pavapanta, pasāda 4,
+pahūtadhana, pāṭalippalita, pāṭalibbalita, pāta 4, pāpavaddhī, pārametave, pārūta, pāvacana 3, pāsa 2.2, pāḷi 3, pitughara, pidheti, pidhetvā, pītisukhasamappita, pīna, pīnavaṭṭasahituggata,
+pīhayati, pīḷiyamāna, puñjaka, puṇṇā 1, puṇṇā 2, puttakattā, puttakāraṇā, puttadāra 2, puttaphala, puttasata, puttikā, punarāgamati, punarāvattayati, punācarati, pupphapūra, pubbasamudda,
+pubbenivāsacarita, puravara, purāṇagaṇikā, pūtigandhika, poṭṭhi, phalaka 3, phuṭita, phusayi, phuseti, pheṇapiṇḍopama, phoṭana, bandhana 8, bandhanta 3, bandhituṃ 3, bandhiya 2, bahuāyāsa,
+bahukaṇṭaka 1, bahuttha, bahuvighāta, bahuvitta, bahusapatta 1, bahusapatta 2, bahūvatasamādāna, bālā 2, bāḷhadubbala, buddhavaradesita, bodhikathā, byapānudi, byākari 1, byādhimaraṇatunna,
+byāpeti, byāpetvā, byālika, brahmayācana, bhattacoḷa, bhattattha, bhattikata, bhaddā 3, bhaddākāpilānī, bhaddākuṇḍalakesā, bhadrarata, bhadrā, bhamaravaṇṇasādisa, bhavagata, bhavābhavaṃ,
+bhāgimant, bhātusoka, bhīmarūpa, bhujissā, bhoga 2.2, maṇikanakabhūsitaṅga, maṇḍūkakacchapā, manussarūpa, mantāvatī, maraṇabandhana, maraṇabyādhigahita, marituye, mahākapi, mahākhandhaka,
+mahāvisa, maṃsasoṇitupalitta, māmikā, mittarata, mittā 1, mittā 2, mittākāḷī, mucalindakathā, muttā 2, muttā 3, muttika, musala 4, mūlamūlika, mettikā, mohanāmukha, yathāgata, yasmā tasmā,
+yasmiṃ tasmiṃ, yassa tassa, yaṃ taṃ, yāni tāni, yugachidda, yuñjati 4, yesaṃ tesaṃ, yesu tesu, yo so, rajavaḍḍhana, raṇakara, raṇaṃ karitvā, rahita 3, rāgacitta, rāgacittavasānuga,
+rājaggicoraudakappiyā, rājāyatanakathā, rājāyatanamūla, rāhuggaha, riñcitvā 2, rukkhapphalūpama, rukkhaphala 2, rundhanta, rūpasamussaya, rogamāvaha, rocesi 2, rohinī 2, laṭṭhi 3,
+laṭṭhihattha, labhanīya, labhitvāna, lākhātamba, lābhasakkāraussuka, litta 2, lūna 2, lūnakesī, lekhikā 2, lokapajjota, lokāmisa 2, locana 1.3, lobhana, vañcaka 2, vañcaniya,
+vaṭṭapalighasadisopama, vaḍḍhamātar, vadhabandhadukha, vadhabandhapariklesa, vanamantara, vanasaṇḍacārī, vanta 4, vantasama, vanditvāna, varaka 2.1, valibhippalambita, valimant, valīmant,
+vasamāgata, vasita, vahi 2, vāka 2, vācādosabhayaṭṭita, vāraṇavata, vāraṇavati, vārenta 2.1, vāseṭṭhī, vāhaka 3, vāhikā, vikūlaka, vicāri, vicita 3, vicitagga, vijāyitvāna, vijjhāpetuṃ,
+viññātasaddhamma, vidaṃsenta, viddesanā, viddessati, vidhuta 2, vinayadharī, vippalapana, vibandhana 2, vibhūsāmaṇḍanarata, vimadda, vimalā, vimissita, vimokkhasaccadassa, vivaṇṇa 2, visākhā
+4, visūpama, viharamāna 2, viharamāna 3, vihāraka, vīrā, vuṭṭhāsi 2, vuṭṭhimant, vuḍḍhapabbajitasumanā, vuḍḍhikā, vedasampanna 2, vellita 2, vesidvāra, vesī 2, veḷunāḷī, voḍhūna, voharīyi,
+saassuka, sakuṇabhatta, sakyakulakulīna, saṅkiliṭṭhamana, saṅkhamuttā, saṅkhalā, saṅkhalābaddha, saṅghā, saccabrāhmaṇa, saccavādivacana, saccavādī 2, saññāvūpasama, saṇa 2, saṇha 2, saṇha 3,
+saṇha 4, saṇhakambu, saṇhatuṅgasadisa, saṇhanūpurasuvaṇṇamaṇḍita, saṇhamuddikasuvaṇṇamaṇḍita, sata 4.1, sataputta, sattāhajātaka, satthusāsanakāraka, sadisopama, saddhammasobhana, sanāmika,
+santajjana 1, santajjana 2, santappayitvā, santikamāgata, sannihita 2, sapattika, sappasiropama, sabbagarahita, sabbasattānamuttama, sabbābharaṇasañchanna, sabhariyā, samanusoceti,
+samabhihata, samavassari, samaṃ 4, samupagamati, sampaṭivijjhi, sampaṭivijjhituṃ, sampaṭivijjhīyati, sammaṭṭha 2, saloma 1.1, saloma 2.1, salomagandhika, sallabandhana, savana 2.2,
+savanagandha, sassura, sahita 6, sahita 7, saṃkampati, saṃkampi, sākaṭikakula, sāṭī, sāṇavāka, sāṇavākasādisa, sādukāma, sādhubhāvita, sādhumutta, sādhumuttika, sāmā 3, sāmā 4, sāhaṃ 2,
+siddha 3, sindhavārañña, sippī 2.2, sītibhāvābhikaṅkhī, sītuṇha, sīhā, sukata 3, sukkapakkhavisosana, sukkā 2, sukkhaḍāka, sukhato 2, sukhasamappita, sukhumālinī, suṅka 2, suṅka 3, suci 6,
+sucikārī, sujātā 2, suṇitvāna, sutti 2, sudukkhita, suddhavasana, supinopama, suppamajjita, subhasaññānuvattī, subhākammāradhītar, subhājīvakambavanikā, subhāveti, sumaṅgalamātar, sumatta,
+sumanā 4, sumanā 5, sumedhā, surucira, suropita, suvaṇṇamaṇḍita, suvisama, suveṇī, suveṇīhilaṅkata, susamāgata, susānamajjha, sūtaka, sokabhayabhīta, soṇā, sottiya 2, sopalepapatito, sobhana
+1, sobhana 2, sobhasī, soma 2, hatakulika, hanati 4, haricandanalittaṅgī, hiṃseti, hetujāta, hetutaṇhā [663]</p>
+<h2 id="2023-12-27"><a class="header" href="#2023-12-27">2023-12-27</a></h2>
+<ul>
+<li>77 113 headwords, 29 900 complete, 17 818 partially complete, 29 395 incomplete entries</li>
+<li>747 roots, 3 222 root families, 31 685 words derived from roots</li>
+<li>722 137 deconstructed compounds</li>
+<li>1 568 210 unique inflected forms recognised</li>
+<li>1 152 126 cells of Pāḷi word data</li>
+<li>18 124 cells of Pāḷi root data</li>
+<li>100% dictionary recognition up to and including Theragāthā</li>
+<li>8000 Sanskrit cognates updated</li>
+<li>Sanskrit lemmas added</li>
+<li>Sutta links to <a href="https://thebuddhaswords.net">The Buddha's Words</a></li>
+<li>Feedback Form simplified</li>
+<li>Numerous corrections and additions based on user feedback</li>
+</ul>
+<p><strong>new words include</strong>: agahaṇīya, aggapatta, aggikhandha, aṅgaṇika, aṅgaṇikabhāradvāja, accantikatā, acchariyatā, acchidda 3, ajina 4, ajjuna 3, ajjhattasambhava, ajjhupekkhanatā, ajjhossa, añjanavaniya, aññavādī, aññāṇamūla, aññāṇamūlabheda, aṭṭāla, aṭṭhamavagga, aṭṭhikaṅkalakuṭikā, aṭṭhisaṅghātaghaṭita, atideva 2, atināmayi, atibharita, atimānahata, ativattati 3, atītagatasatthu, atuladassana, attavaṇṇa, attavasī, attasamuṭṭhāna, atthatthiya, atthūpanāyika, adissā, adissi, adhārayi, adhiṭṭheti 2, adhiṭṭheti 3, adhimutta 3, adhimutta 4, adhivattamāna 2, anacci, anajjhagā, anajjhottharaṇīya, anadhiṭṭhāya, anasana 1.2, anāgataddhānaṃ, anānīta, anāmantiya, anivārayanta, anissaraṇadassāvī, anuggahi, anuṭṭhahati, anunāsikalopa, anupatana, anupabhāti, anupassana 2, anubrūhayanta, anuvattanta, anusayajālamotthata, anusāsayi, anūpama 2, anoggata, anonamana, anomavīriya, antovaṅkagata, anvāgata 3, aparimitadassī, apasādetvā 2, apetabherava, appappa, appabuddhi, appabhojana, apphoṭenta 2, abbahitvāna, abbuhitvāna, abbhachādita, abbhatītasahāya, abbhantaragata, abbhahata, abyāpajjarata, abhaya 5, abhaya 6, abhāsayi,abhijappappadāraṇa, abhiññāpāramippatta, abhiṇhaso 2, abhibhūta 3, abhibhotvāna, abhiruta 2, abhilakkhita 2, abhisandahitvā, abhisambhonta 1, abhisambhonta 2, abhisāpamāgata, amatamadasaṅghasuppahīna, ambapallava, ambapallavasaṅkāsa, ambāṭakārāma, ambusevālasañchanna, amhākaṃ 4, amhe 3, amhe 4, amhehi 4, amhehi 5, araja 2, araññamāgamma, araññasaññī, ariyavata, aleṇadassī, alocayi, avippayoga, avedayi, asāmikatā, asitā, aseyya, asmā 2.2, ahāriya 2, ahāriyarajamattika, ākula 4, ājīvahetū, ātuma 2, ādissa 1.3, ānāpānasati, ānita, āpagākūla, āpopaggharaṇa, ābādha 2, āma 2.5, āyatanī, āyasasya, āraddhabalavīriya, āropita 7, āropiyamāna 1, āropiyamāna 2, ārohaputta, āvattayati, āvahana 2, āvudha 2, āvunati 2, āsappanā, āsayavant, āsīnasayana, āsūpasampadā, āsevita 2, āhatvā, āhariyamāna 1, āhariyamāna 2, āhitvā, itthirūpasmi, itthisara, itthisota, iddhiguṇa, iddhipāda 2, indriya 3, isidinna, isipaṇḍarasavhaya, issāmāna, ukkhepakatavaccha, ugga 6, ucchinnaka, ujjaya 2, ujjuhāna, ujjhituṃ, uñchāpattāgata, uttara 2.10, uttara 2.11, uttaraṇa 2, uttarapāla, uttiya 3, uttiya 4, udakakumbha, udakāsanabhojana, udagga 2, udaggamegha, udāniya, udiyyati, uddhaccameghathanita, uddhātuṃ, uddhumāyana, unnataonata, unnamenta, upakaṇṇa, upajīvanta, upaṭṭhāna 4, upadaṃsayi, upanāmayi, upanāyika 3, upasamana 2, upasampādesi 2, upasammayati, upādānappamocana, upāyatā, upāli 3, upālitthera, ubbiggamanasa, ubbedha 1, uragaṇḍipisācinī, uragaṇḍī, uruveḷakassapa, ullihanta, usa,usabha 5, usabha 6, ussitaddhaja, ussukī, ekadhammasavanīya, ekadhammika, ekapāda, ekapuppha, ekamantaṃ 2, ekavihāriya, ekādasamavagga, ekudāniya, eṇī, etadattha 3, eraka 2, ogayha 2, oghaniya, oghapāsa, oghasaṃsīdana, ocetuṃ, oṭṭhappahatamatta, odagya, odātamanasaṅkappa, obhāsayati, oruhitvāna, osaṇṭhita, kaṭacchubhikkhahetu, kaṇḍapāta, kaṇḍara, kaṇhadinna, katanta, katapada, kantāraddhānapakkhanda, kappa 1.7, kappaṭakura, kappaṭhāyī, kappāna, kambu 2, karaṇabhūta, karerimālāvitata, kalita, kalyatā 2, kassapa 5, kātiyāna 2, kātumicchati, kāmakopappahīna, kāmajāla, kāmadhātupurakkhata, kāmamaya, kāyaduṭṭhullagaru, kāyamaccheragaru, kārita 3, kāretabba 3, kāretabba 4, kālappavedaka, kālavasa, kāḷigodhāputtabhaddiya, kiṅkāraṇā,kiccamicchaka, kicchanta, kittita 2, kittisilokavaddhanī, kimadhippāya, kimākappa, kimila 2, kimihī, kimbila 2, kilesarajavāhana, kiṃchanda, kuṭika, kuṭikaṇṇatthera, kuṭikaṇṇathera, kuṭivihāritthera, kuṭivihārī, kuṇḍala 3, kuddālā, kumāputta, kumāputtatthera, kumāputtasahāyaka, kula 4, kulāvaka 2, kulla 2.2, kusalaṅkusaggaha, kusumasañchanna, kusumākula, kūṭāgāravarūpama, ketuha, koṭenta, kodhappattamanatthaddha, kosalavihāritthera, kosalavihārī, kosiya 3, koḷivisa 2, khaggavisāṇavant, khaggahattha, khajjanta, khaṇḍasumana, khadiravaniya 2, khadiravaniyarevata, khalagata, khādaniya, khitaka 1, khitaka 2, khīṇasaṃyoga, khīṇasaṃsāra, khīla 1.3, khujjaka 2, khujjasobhita, khuddakuddālā, khura 3, khetta 4, khepesi 2, gaṅgātīriya, gajjī, gaṇḍamūla 2, ganthaniya, ganthita 2, gandhaka, gayaphaggu, gayākassapa, garu 6, garusammata, gahaṇīya, gahvaratīriya, gaḷita, gāḷhita 2, giri 2, girikandara, girinadī, gihigata 2, gihitta, gīva, gūthalitta, gotama 2, gotama 3, gotama 4, gonaṅgulamigāyuta, gosāla 2, gosālathera, ghātana 2, ghosita 2, cakkhupāla, catugantha, candana 4, cammakañcukasannaddha, care 2.1, cāresi 2, cittaka 3, cittanimitta, cittabhaddaka, cittassuppādakovida, cittahetū, cittikāra, cittīkatvāna, cirasaṅkiliṭṭha, cirasaṃkiliṭṭha, cutupapāta, cūlaka, cūlagavaccha, cūḷaka 2, cūḷavaccha, cetopariyakovida, cetosanti, cetosamathakovida, chaḍḍayi, channaka, chaphassāyatanī, chavika, chavipāpaka, chindati 5, chinnasutta, jaṅghabala, jaṭilabhūta, jaṇṇukasandhi, janenattha, jappa 4, jambuka 2, jambugāmikaputta, jarāmaccunivāraṇa, jarāmaccupavāhana, jaḷasamāna, jātijarābhaya, jātimada, jātimaraṇapāragū, jālasaṅkhāta, jigucchaniya, jimhapatha, jīvitattha, jenta 2, jotidāsa, jhānasukhumasampanna, jhānasokhummasampanna, jhāyitukāma, ñāṇadassanapatti, ñāṇavajira, ñāṇavajiranipātana, ñātibandhavapema, ñātibandhavā, ñātibhātar, ṭhānatā, ṭhāyati, taconaddha, tacchanta, taṇhāchādanachādita, taṇhājāla 2, taṇhādhanusamuṭṭhāna, taṇhāmūlavisosana, taṇhāmūlenānugata, tatopari, tathaddasa, tadūna, tapparāyana, taraṇīya 2.1, taruṇajātika, taṃsaṃvaṇṇanā, tāṇa 2, tārayati 2.1, tikicchana, tiṇakaṭṭhasama, tibhavābhinissaṭa, tissa 2.5, tissa 2.6, tissa 2.7, tīragocara, tumhe 3, tumhe 4, tulayitvāna, tekicchakāni, tekicchakārī, tejita 1, tejita 2, telakāni, telacuṇṇa, telasaṇṭha, thambhita, thambhitatta, thāvariya 3, thokaṃ, dadhithālaka, dantavaṇṇika, dantavaṇṇikapāruta, dandhakāla, dandhayati, dandhāyati, dandheti, dabba 1.4, dammaka, dasadevasahassa, dasamavagga, dassana 6, daḷhakhila, daḷhadhanva, daḷhadhanvī, daḷhamaṭṭālakoṭṭhaka, daḷhavīriya, daḷhasallasamappita, dāsaka 2, dāsīgaṇa, dāsīgaṇapurakkhata, dijagaṇa 2, diṭṭhigahanapakkhanda, diṭṭhisandāna, diṭṭhisandānabandhita, dukkhajāta, dukkhanta, dukkhasaṅkhaya, dukkhassāvahana, dukkhūpasamana, duggandhakara, dutiyakuṭivihāritthera, dutiyakuṭivihārī, dutiyadevasabhattheragāthā, dutiyābhisecana, duddinī, dunnīharaṇīya, duppadālaya 2, duppasu, dubbhagalakkhaṇa, duma 2, dumantita, dummantī, duratta, dussa 2, devasaṅghapurakkhata, devasabha 1, devasabha 2, devasahassa, dosasaññā, dvādasamavagga, dvāravivara, dvecaturaṅgagāmī, dhaniya 2, dhamana 2, dhamanta 2, dhami 2, dhamitvā 2, dhammakaṭamatta, dhammaṭṭha 2, dhammatthasahita, dhammatthasaṃhita, dhammapāla, dhammappati, dhammaviññāṇa, dhammasavapitar, dhammasāramaya, dhammika 4, dhara 2.2, dhāra 1.1, dhārākula, dhuvappayāta, dhenu 3, nakkhambhayati, nagagga, nagamuddha, nagavivara, nagavivaragata, naṅgalā, nacchera, nadanta 2, naditvāna, nadīkassapa, nanda 6, nandaka 3, nandaka 4, nappaṭibhāsati 2.1, nappamajjituṃ, nayakovida, naravīra 2, naravīrakata, navamavagga, nahi, nājja, nājjhossa, nātta, nānappayāta, nānākula 2, nānākulamalasampuṇṇa, nānājanapada, nānājanasaṅgaha, nānādijagaṇākiṇṇa, nālābha, nāvarajjhati, nāvarujjhati, nāsati, nāsana 2, nāhāra, nikkhamitūna, nigāḷhita, nigrodha 3, nitaka, nitaraṇattha, nidahitvā 2, nidānagāthā, ninnādayati, ninhātasabbapāpa, nipātana 2, nippapañcapatha, nipphādesi 2, nibandhana 2, nibandhita, nibandhisaṃ, nimiyi, niyametabba, niyojayi, nirāsaṅga, nivattayati, nivāraṇa 3, nisabha 2,nissarituṃ, nissukka, nihīna 3, nīta 4, nīlacīvarapāruta, nīlabbhakūṭasadisa, nīlabbhavaṇṇa, nīharaṇīya, nūpanikkhami, nūpalabbhati, nekkhammaninna, netara, nesādaka, nhātakamuni, nhātakamunitthera, nhātamuni, nhārusuttanibandhana, pakkha 7, pakkhanda 3, pakkhayati, pakkhāti, pakkhimant, paggahita 2, paggahīta, paggharaṇa 2, paṅkapalipā, pacalati, pacālesi, paccaya 5,paccuggantuṃ, paccupaṭṭhāti 2, paccupaṭṭhāna 4, pañcatālīsā, pañcadvāra 2, pañcapaññāsavassa, pañcavīsativassa, paññāpāramitā, paññābalī, paññāvibhava, paññāvudha 2, paññāsahita, paññāsīsa, paṭigaṇhi, paṭigamissati, paṭiggahi, paṭiccuppannadhamma, paṭijaggita 2, paṭisaṅkhayanta, paṭisaññuta, paṭisaññutta, paṭisallānakāraṇa, paṭisallānavuṭṭhita, paḍayhati, paṇipati, paṇītāhāra, paṇḍara 4, paṇḍaraketu, paṇḍarasagotta, patisutta, pattadaṇḍa, pattapiṇḍī, patthaṭayasa, patthaddha 2, patthaddhagīva, patthaddhamānasa, pathavāpaggisamāna, padakkhiṇakamma, padāraṇa, padālenta, padīpadhāra, padhaṃsayi, padhārita, panādayati, pannaginda, pannarasāyuta, papajji, papañcasaṅghātadukhādhivāhī, pabodhana 2, pabodhetabba, pabbājayi, pabbājetvāna, pabbājesi 2, pabbhāragata, pabhāvita 4, pabhāsayati, pamajjati 2, pamuccituṃ, pamocana 2, payāta 3, payojeti 3, payojesi 3, paragatta, paracittaññū, parapāṇa 1, parapāṇa 2, paraporisa, paramatara, paramatthavijānana, paramahitānukampī, paralābha, parāmasitabba 2, paricari 2, paricari 3, paricāretvā 2, paricchada, parittaraṃsa, paridhassati, parinīta, paripaccana, paripālana, paripuṇṇaka, pariyosānabhaddaka, parivajjayi, parisappanā 2, palālacchannaka, pallava 2, pavaḍḍhanta, pavanagata, pavāretvā 2, pavāhaka 2, pavāhana 2, pavāhayi, paviṭṭhagocara, paviddha 1, paviddhagocara, pavibhajja, pavivekadukkha, pavedaka, pavedayi, pavesayi, pasakka, pasaṃsanā, pasākhajāta, pasāresi 2, pasitta, pasibbita, passaya 2, passika, passitva, pahāyaka, pahiṇi 2, pahissati, paṃsukūlī, pāṭaliputtavāsī, pātukaritvāna, pāpacitta, pāparata, pāpuṇitvāna, pāramesanta, pārāpariya 3, pārāsariya 1, pārāsariya 2, pāruta 2, pāvusaabbhamālī, pāsaṃsiyatā, pāsaṃsiyatta, pāsādachāyā, piṇḍapātī, piṇḍola 2, piyañjaha, piyanibandhana, pilakkharajana, pilindivaccha, pisācinī, pītikara, pītvāna, puṅgava 2, puṇṇatthera, puṇṇamāsa 2, putta 4, puthujjanatā, punabbhavesī, pubbaruhirasampuṇṇa, pubbalohitasampuṇṇa, pubbāparaññū, pubbāpararattaṃ, purakkhata 6, purāṇiya, purohitaputta 2, purohitaputtajenta, pūjanāraha, poṭakila, poṭiriya, poṭṭhila, posiya, phaggu 2, pharamāna, pharāpenta, pharusūpakkama, phalamāsasāna, phassapañcama, phuṭasarīra, phussa 2.4, phussasavhaya, bandhana 7, bandhura, bavhodaka, bahivaṇṇa,bahukuṭajasallakika, bahuttara, bahuvidhānuvattana, bahvodaka, bākkula, bādhayitvā, bādhika, bālappasaṃsanā, bujjhituṃ, buddhakhetta, buddhavaṇṇita, belaṭṭhānika, belaṭṭhi, bojjhaṅga 2, bojjhaṅgabala, bojjhaṅgasamādhibhāvanā, boddhumicchatā, boddhuṃ, byāpita, brahmadatta 4, brahmāli, bhagu 3, bhagutthera, bhaggava 2, bhañjituṃ, bhaddajitthera, bhayajanana, bhayajāta, bharata 2, bhalliya, bhavagāmī, bhavanettippabhāvita, bhavamūlopagāmī, bhavarāgappahāna, bhavarāgahata, bhavābhavavasa, bhāradvāja 5, bhāvayitvāna, bhāvetva, bhikkhabhojī, bhinnasira, bhūta 9, bhūmibhāgatā, bhūsanā, bhūsanārata, bhedavant, bhojana 4, magguttama, maññatī, maṇḍalipākāra, matasāyikaṃ, matikusala, mattakuñjarasevita, mattabhāṇī, mattika 2.1, madamatta, madhupāyasa,madhurassāda, manasīkāra, mantī 3, manteti 2, mandavant, mayaṃ 2, mayūrakoñcābhiruta, malakhilasokanāsana, malitavambha, mahappabha, mahāukkārasambhava, mahākāḷa, mahāketu, mahākhemaṅgama, mahāgaṇḍa, mahāgavaccha, mahāghora, mahājuti, mahājhāyī, mahānāga 4, mahānāma 3, mahārasa, mahāleṇa, mahāvaccha, mahāvaṇa, mahāvasī, mahāsamuddavega, mahāhita, mahindaghosa, mahindapāsa, maṃsanhārupasibbita, maṃsalepanalepita, māṇava 2, mātaṅgaputta, mātuka, mānavidha, māyanāma, māyāusūyasārambha, mārakhitta, mārapakkha, māravisaya, māladhārī, mālukya, mālukyaputta 2, migasaṅghanisevita, migasira, micchājīvarata, milakkhurajana, mihitapubbaṃ, mīḷhasallitta, mukhanaṅgalī, muñjapabbaja, mutyapekha, mudita 2, mūsikasobbha, meghadundubhi, meghasadda, meṇḍasira, mettaji, meḷajina, moggallānagotta 2, mohacchādanachādita, mohapāruta, mhitapubba, mhitapubbaṃ, yatasaṅkappajjhāyi, yathācārī, yathātthato, yathādhamma 2, yathādhammavihārī, yathādhimutta, yathāvā, yathāvālokadassana, yathāvedi, yathāsata, yantita, yasa, yasadatta, yāthāvaka, yogakāma, yogakkhemapatha, yogīpītikara, rakkhita 3, rajayi, rajetave, rajjamakārayi, raṭṭhacariyā, ramaṇīyakuṭika, ramaṇīyavihāritthera, ramaṇīyavihārī, rammatala, rasānugiddha, rājadatta, rājādhirāja, rājivant, rāmaṇeyyaka 3, rāhulabhadda, rūpadhātu 3, ropetva, rohinī, lakuṇḍa, lakuṇḍabhaddiya, lavitta 1, lābhasakkāramucchita, luñcāpesi, luvati, lekhā 4, lokya, vakkalitthera, vaggati, vagganta, vacanaññū, vacchagotta 2, vacchapāla, vajjita 3, vajjiputta 2,vajjiputta 3, vaṭaṃsa, vaṭṭi 5, vaḍḍha 3, vaḍḍhamāna 2, vaḍḍhitagga, vaṇṇabala, vaṇṇika, vatacariyā, vatthapasuta, vaddhanī, vadhitvāna, vanapuppha, vanavaccha 1, vanavaccha 2, vandanapūjanā, vappa 4, varavimutti, varahayadamakusala, varāhaeṇeyyavigāḷhasevita, varuttama, valliya 1, valliya 2, valliya 3, vavatthapetabba, vasabha 2, vasānayati, vassakoṭi, vassika 3, vassupeta, vākyānusāsanī, vācana 2, vātarogābhinīta, vāneyya, vāraṇa 3, vāraṇa 4, vāraṇābhiruda, vārayi, vārisīta, vārī, vālavedhisamāgata, vāhana 3, vāḷamiganisevita, vighātudaya, vicaraṇaka, vicikicchākaṅkhāganthita, vijaṭi, vijaṭetvā 2, vijaya 2, vijāyi 2, vijitasena, vitata 1, vittaparikkhaya, vittavant, vittilābha, viddesī, vidhuta, vinaddhamāna, vinadhita, vinamyati, vināsana 2, vinicchayī, vinicchī, vipatyanta, vippavāsasamaya, vipphoṭita, vibhava 3, vibhūta 4, vibhūtanandī, vimala 4, vimala 5, vimalakoṇḍañña, vimuttikusumasañchanna, vimokkha3, vimocayi, vivekapaṭisaññuta, vivekamanubrūhayanta, visadosappavāhaka, visadosappavāhana, visaṃhata, visākhapañcālaputta, visiyati, visīyati, visuddhañāṇa, visuddhiñāṇa, visodhayi, visosana 2, vihagapatha, vihārakusala, viheṭhayati, vītakhila, vītasoka 2, vītaṃsa, vīra 3, vīriyadhura, vīriyadhuraniggahita, vīriyaparakkama, vīriyasātaccasampanna, vīsuttarasata, veṭhamissa, veṇu 2, vedayitāsu, vedasampanna, vesikā, veḷuvagāma, vohari 2, sakaputta, sakkajāti, saṅkappaparatejita, saṅkalita, saṅkārapuñja, saṅkiccattheragāthā, saṅkiccathera, saṅkilissamāna, saṅkhārasantati, saṅgatībhāva, saṅgātīta, saṅgharakkhita 2, saṅghalābha, saṅghāṭikhuramuṇḍabhikkhabhojī, saṅghāṭita, sacchikāhiti, sañcintayati, sañjaya 3, saññuta, saññojanabandhanacchida, saṭṭhikaṇḍarasambandha, saṭṭhisita, saṇṭha 1, saṇṭhānavaṇṇarūpa, satageṇḍu, satajāti, satadassī, satapala, satarasa, satalakkhaṇadhārī, sataliṅga, satipaññā, satipaṭṭhānagīva, satipaṭṭhānagocara, satipaṭṭhānapāsāda, sattatimhi, sattayuga, sattavassa 2, satthānukampita, satthugarahita, saddhammadhāraka, saddhammasesaka, santharitvāna, sandhita, sannivāraṇa, sappaka, sappadāsa, sappadāsaka, sabbakāmi, sabbakāmitthera, sabbakārukasippa, sabbakilesasodhana, sabbaganthapamocana, sabbaññutaññāṇavara, sabbaṭhiti, sabbadisā, sabbadukhakkhayogadha, sabbamitta 2, sabbalokatikicchaka, sabbalokānukampaka, sabbavaṭṭa, sabbavaṭṭavināsana, sabbasakha, sabbasubha, sabbābharaṇabhūsita, sabbāsavaparikkhīṇa, sabbogha, sabrahmakappa, samaṇaphāsutā, samaṇasādhutā, samappita 3, samassita, samādhivijjāvasipāramīgata, samitigutta, samiddhitthera, samucchedana 2, samunnamayanta, samūhani, samodhāya, sampaṭicchi2, sampuṇṇa 2, sambandha 2, sambahulakaccāna, sambulakaccāna, sambhāsati, sambhūta 2, sammatāḷappabodhana, sammappadhāna 2, sammappadhānasampanna, sammita, sammitabhāṇī, sayamāna 2, sayamāna3, saraṇavaraggagāmī, sarabhaṅga 3, sarīraja, sarīrasukhagiddha, savanīya 2, savāhana 2, savāhanī, sasaṅgāma, sahasokitā, sahassakaṇḍa, sahāvasi, saṃkiccathera, saṃkilissamāna, saṃkuṭita, saṃgati 2, saṃgatībhāva, saṃgāma, saṃgāmasīsa, saṃyuga, saṃyojanavalāhaka, saṃvirūḷha, saṃsīdana 2, saṃsevita 2, saṃsevitavuddhasīlī, sāṭimattiya, sādhukārita, sādhutā, sānu 3, sānutthera, sānunāsika, sāmaññakāni, sāmaññakānitthera, sāmidatta, sārakkhanta, sārambhabalasaññuta, sikkhāsājīvasampanna, siṅgālapitar, siṅgālapitika, siddha 2, sippācariya, sippika 2.1, sippikābhiruta, sira, sirimaṇḍa, sirimant 2, sirimanda, sirimitta, sirivaḍḍha 3, sivaka 2, sivaka 3, sivika, sīgālapitar, sītavaniya, sītavātakīḷita, sītavātaparitta, sītavārī, sīlava, sīvaka 2, sīvalitthera, sīha 3, sukara 2, sukkhagūtha 2, sukhenanvāgata, sugajjī, sugatavara, sugandha 3, sugambhīra, sugīva, suggahīta, suggahītanimitta, sucikāma, sucitta 2, sucittakānana,sucindhara, sucipaṇḍaracchada, sutavaddhanī, sutavinicchī, suttanipātaṭṭhakathā, sudīpa, suddhacitta, suddhikāma, suddhimanvesanta, sudhanna, sunāga, sunikkama, sunisinna, sunīta 2, sunīharaṇīya, sundarasamudda, supituṃ, supitvāna, supekhuṇa, suppiya 2, subāhu 2, subāhutthera, subuddhasāsana, subyāpita, subyāpitambu, subhūta, sumaṅgala 3, sumañju, sumañjughosa, sumana 3, sumana 4, sumuttika, summana, suyāmana, suramma, suvaṇṇaya, suvalāhaka, suvisuddhapaṇḍara, suvihita, susaṅgīta, susaddala, susamāhitacitta, susamucchita, susaṃvirūḷha, susārada, susukkasukka, susukhuma, susukhumanipuṇatthadassī, suhemanta, sekhabhūta, setuccha, senaka 2, seyyasamāna, selaguhā, selissariya, soṇa 4, soṇakuṭikaṇṇa, soṇakoḷivisa, soṇapoṭiriya, sotadhātuvisuddhi, sodhana 2, sopāka 2, sopāka 3, sobhita 4, somanassita, somamitta, soḷasubbedha, svadhiṭṭhita, ha 3.1, hatanetta, hatthārohaputta 2, haritāmaya, haritobhāsa, hasi 2, hārita2, hārita 3, hitesī 2, hīnakamma, heṭhayitvā, hemantikakālaratti, hemantikasītakālaratti, heraññakāni, heraññakānitthera [1296]</p>
+<h2 id="2023-11-27"><a class="header" href="#2023-11-27">2023-11-27</a></h2>
+<ul>
+<li>75 817 headwords, 28 935 complete, 17 418 partially complete, 29 464 incomplete entries</li>
+<li>746 roots, 3 205 root families, 31 211 words derived from roots</li>
+<li>723 963 deconstructed compounds</li>
+<li>1 536 962 unique inflected forms recognised</li>
+<li>1 119 333 cells of Pāḷi word data</li>
+<li>18 099 cells of Pāḷi root data</li>
+<li>100% dictionary recognition in the first two books of Vinaya, 4 Nikāyas, and Khuddakanikāya up to and including Suttanipāta</li>
+<li>Improved recognition of phonetic changes (ongoing)</li>
+<li>Improved analysis of compound types (ongoing)</li>
+<li>Improved recognition of compounds ending in abstract suffixes like tā, tta, etc.</li>
+<li>Removed spaces in most sutta codes</li>
+<li>Re-zipped GoldenDict and MDict for easy download and installation</li>
+<li>Kindle version: improvements to recognition of inflections and -ṁ niggahīta</li>
+<li>Numerous additions and corrections based on user feedback</li>
+</ul>
+<p><strong>new words include</strong>: akampaniya, agaha, aṅguttarabhāṇaka, acāvayi, accantasuddhi, ajakaraṇī, ajānamevāhaṃ, ajita 9, ajjhattabahiddha, ajjhattasanti, ajjhapatta, ajjhāvasati 3, ajjhāvasi 2, aññasita, aññāṇapakkha, aññātumicchati, aṭṭhannaṃ 2, aṭṭhasālinī, aṭṭhika 2.1, aṭṭhikatvāna, atakkanīya, atāru, atiandha, aticcasuddhipañña, atisāradiṭṭhi, atihattha, attañjaha, attamānī, atthadasa, adhigaccheyya 2, adhiṭṭhahi 2, adhimānasa, adhimutti 3, anambila, anāruḷha, anāsisāna, anugīyati, anucināti 2, anucini 2, anubodhaka 2, anumāna 2, anussarati 1.2, anoghatiṇṇa, anomapañña, anomavaṇṇa, anomavīra, antakaroti, andha 2.1, andhakāra 2, apagamana, apanodana, apānudi, apucchā, apekkhana 1, appamāṇaka 2, abbhanujānāti 2, abbhamutta, abbhuṭṭhāna 2, abbhudīrayi, abhiṇhasaṃvāsa, abhipatthayanta, abhipatthayāna, abhipassanta 2, abhibhū 3, abhiyuñji 3, abhiyutta 2, abhiyutta 3, abhiropita, abhisaṅkhata 2, amānasatta, ayaji 2, ayomayakuṭa, ayomayakūṭa, ayosaṅkusamāhataṭṭhāna, ariyapavedita, aruṇaka, alāta 2, allīyana 2, avajānati, avibhāvayitvā, avivādabhūmi, avisajjetvā, avisāhaṭa, avekallatta, avedha, avedhadhamma, avokkamanta, avosita, asaṅkilesika, asamadhura, asampassanta, asambhuṇanta 1, asambhuṇanta 2, asammāna, asaraṇībhūta, asitāvhaya, asīti 2.1, asutāmuta, asuddhidhamma, ahāsi 1.2, aḷaka, ākiñcaññasambhava, ākiṇṇa 2, ākiṇṇavaralakkhaṇa, ākirasī, ādānagantha, āpapāyī, ārambhati 2.2, āruppavāsī, ārocana, āropeti 5, ālaya 5, āvahanta, āvudhahattha, āsavakhīṇa, āsina, iccabravi, isidāsī, isinisabha, uṭṭhahana, uṇṇameti 2, uttamavedanā, uddissana, uddhaṃmukhaṃ, upakilesa, upacitapuññasañcaya, upacchinna 2, upacchedana, upachindati, upajīvana, upadisitabba, upaddava 3, upayaññū, uparimagga, upavāhana, upasevamāna, upāgamā, upādānakhaya, upāhanārūḷha, upekkhamārabbha, ummagga 1.2, usseḷana, ūnaka 3, evañcetaṃ 2, okāsakammamatta, okāsamatta, okkākarāja, okkhāyana, oghatamagā, otarati 3, ona, onahiyāna, onīyati 2, opama, orenaḍḍhamāsa, katī, kantitvā, kapila 4, kappañjaha, kappamupeti, kappātīta, kalala 2, kalahavivāda, kalya 2, kalya 3, kalyarūpa, kaḷāyamatta, kākolagaṇa, kāmapaṅka, kāmesvādīnava, kiccākiccappahīna, kimassa 2, kiṃsū, kukkucca 4, kuṭa 2.1, kulati, kusalakiriya, koṭisata, kodhātimāna, kosalamandira, klesamala, khanitvā, khiyyana, khiyyanadhamma, khila 3, khīla 1.2, khuddakabhāṇaka, khuradhārūpama, khemābhipassanta, kheḷassuccāra, gaṇaseṭṭha, gantha 2, gabbhinīyā, gahaṭṭhavatta, gaḷayati, gāmiya 2.1, ginisampajjalita, gihīsamārambha, gīveyya, guhaṭṭhaka, guḷodaka, gottapañha, godhāvarīkūla, gonaddha, grīmekhala, ghana 1.3, ghammatatta, cakkavattana, catuvīsatakkhara, carātha, cittaja, citti, cūḷakavagga, cūḷaviyūhasutta, cokkha, chandagū, chandavīriya, jaṭājina, jaṭājinadhara, jatu 2.1, jatukaṇṇī 2, janiya, jarāmaccu, jarāmaccuparikkhaya, jarāmaccupareta, jātippabhavānupassī, jātimaraṇakovida, jātīmaraṇa, jāyatī, jigīsaka, jīvitasesa, juhanta, jūhanta, jotāpeti, ñāṇapatha, ṭha 2, taca 2, taca 4, tacas 2, tacas 4, taccarita, tattaayoguḷasannibha, tadakubbamāna, tanu 4, tamaddasā, tareti, tasmi, tassapāpiyyasikā, taṃkhaṇikā, tārayati, tārayetuṃ, tārāsabha, tālumāhacca, tiṇhadhāramayasūla, tiṇhadhārā, tidasagaṇa, tissametteyya, todeyyakappā, thāmaka, dakkhiṇā 2, dasamāsa, dahantī, daḷhadhamma 2.1, daḷhadhammadassī, diṭṭhiyāyaka, diṭṭhisārī, dipadānamuttama, disaka, dugga 3, duccaritamala, duṭṭhaka, dutiyapāda, dutiyapādanta, dutīya, dubbalathāmaka, dubbītivatta, duvidhatā, dūtavacana, devasaṅgha, desavara, dosamala, dvittiṃsā, dvipadagga, dhanavīriya, dhammavitakka 2, dhammavinicchayaññū, dhammasandosavāda, dhammādhigata, dhāriyanta, dhitīmā, dhotaka, naccayati, nandiñjaha, nandopananda, nāganāga, nāgasaṅghapurakkhata, nāgāramāvasati, nātari, nātitarati, nātuma, nānupadassati, nānupassati, nāpara 2, nāpekkhati, nāpeti, nābhijavati, nāyika, nāradapabbatā, nāvābhirūhana, nāvābhirūhanasamaya, nāḷā, nāḷāgiri, nigūhaṇa, nicchārayati, nijjhapayati, nijjhapetuṃ, nittejatā, nidosa, nidhimapālayi, ninahāya, nipuṇattha, nippakāsayi, nibbānamanasa, nimantayi, niyāmadassī, niyuñjati 2, nirassatī, nivāsana 2.1, niviṭṭha 2, nivedayi, nuṇṇameti, nunnameti, nupasussayati, pakāsetuṃ, paggayha 5, paṅkadanta, paccuṭṭhāsi 3, paccekagaṇī, paccekacīvaracetāpana, pacchāgamana, pacchima 1, pajappatī, pañcaseṭṭha, paññakappī, paññāpanā, paṭinissajati, paṭipaviṭṭha, paṭilabhati 2, paṭividdha 2, paṭivedayi, paṭisatena, paṭīghasaññā, paṭṭhapanā, paṭhamapāda, paṭhamapādanta, paṭhamuppatti, paṭhamuppattika, paṇāmita 2, paṇḍavapabbata, paṇhika, patari, patikkhanta, patilīnacara, patītarūpa, panāyasmante, panūda, panūdita, papañcanāmarūpa, pabbajitānulomika, pabbajitvāna, pabyākāsi, pamohamāgā, parabhojana, paramaṭṭhaka, paramavisuddhadassī, parikittana 2, parikkhayāna, pariññacārī, paridevayamāna, paridevasokā, parinibbayati, parinibbānagata, paripucchamāna, paripuṇṇamānī, paribbājaniya, pariyodāta 2, parivaṭṭa 2, parisodhayi, parissayavinaya, paliveṭhetvā, pavattiyamāna, pavattesi 3, pavineyya, pavedhatī, pasaṃsalābhā, pasākhā 2, pasūra, pācīnaka, pācīnā, pātabyatā 2, pādukārūḷha, pāyayati, pāraṅgamanīya, pāsāṇaka, pāsādavara, piyappahūta, piyaṃ karoti, pītaraṃsī, pītisukha 2, puññakhetta, puthavimaṇḍala, punañña, punarāgami, pubbamantamanissita, pubbalohitamissa, pubbavāsanavāsita, pubbāsava, puratthato, purābheda, purābhedana, purisanta, puruttama, purekkhata, puḷavāvasatha, pūjana, pūjā 1, pūtika 2, pūraḷāsa 1, pūraḷāsa 2, posāla, phassetuṃ, phoṭeti 1, phoṭeti 2, bahujanahitānukampī, bahupphala, bahubhāṇi, bālakanta, bāvarī, byagghusabha, byasanaṃgata, brahmakosa, brahmakhetta, bhaddayāna, bhamayati, bhavarāgaratta, bhavābhava 2, bhavūpanīta, bhāṇayati, bhāṇi, bhikkhudhamma, bhūtārocana, bhūripaññāṇa, bhedanapariyanta, bhottuṃ 2, makkhaligosāla, maṅgala 2, maṅgaladosavippahīna, majjhimabhāṇaka, manasābhisitta, manopañha, mantadhara 2, mantapāraga, mahattara 2, mahāisi, mahodaka, mānameti, mānasatta 2.1, mārasaṃyoga, migābhibhū, micchāladdha, mukhadugga, muttakarīsapuṇṇa, muttasaddha, mutyapekkha, muddhapāta, muddhādhipātī, munipavara, musā bhaṇanta, mūgasammata, mūladassāvī, mettagū, methunūpasaṃhita, merumuddhavāsī, monamajjhagā, monamarahati, moneyyaseṭṭha, mohantara, mohamagga, mohamala, yatacārī, yathākara, yathānudhammaṃ, yada, yadattagarahī, yadatthikaṃ, yadicchati, yadūnaka, yāga 2, yāyaka, yiṭṭha 2, yonika, rakkhitindriya, rajassāyatana, rajassira, rattamahaṃ, ramayati, rasatta, raṃsī, rāgamala, rāgūpasañhita, rāhuggahaṇa, ritta 3, rittāsana, rogamūla, lakkhaṇamantapāragū, laṭṭhikā 2, lippatī, lihanta, līna 3, līnattha, lokahita, locana 1.2, lobhakodha, lobhaguṇa, lobhapāpa, lola 2, va 5.1, vaḍḍhana 3, vaṇṇāroha, vattana 5, vattayanta, vanasa, vandanā 2, vandiya 2, vamitvāna, varapaññasāvaka, varayāna, varovara, vasamāgamma, vasīkatvā, vasīkaritvā, vākurā, vācābhikaṅkhati, vādasīla, vāribindu, vi 1.2, vikkhepakara, vighātabhūmi, vicikicchaṭhāna, vijānati, viññāṇūpasama, viññātadhamma, viññātasamādhisāra, viññātasāra, vinayitvāna, vinassati 2, vinicchaya 3, vinetar 2, viparakkamma, vippasādeti, vibudha, vibhūta 3, vibhūtarūpasaññī, vimalagga, vimānadassī, vimutta 2, viyākata, virājayanta 2, vivaseti, vivāda 2, vivekadhamma, visaṅkharitvā 2, visajjita, visajjetvā, visosayati, vihanati 2, vihāne, vītamada, vītivatti, veṇigāha, vedisā, vesa 2.1, vessāyana, vodāpeti, vyāpādavitakka, sakaṃsakaṃ, sakeṭubha, sakkāyassuparodhana, sakkhidhamma, sakyapuṅgava, sakhettavatthu, saṅkappayanta, saṅkhāranirodhañāṇakusala, saṅgara 3, saṅgahitattabhāva, saṅghāṭirajūpavāhana, saṅghāṭivāsī, saccavhaya, sachanda, sajjatī, saññakkharasaññanissita, saññaja, saññānidāna, saṇantatā, saṇṭhāna 4, saṇṭhāsi 2, satasahassī 2, saddhamma 2.1, saddhammapūjā, saddhāsatisamādhi, sadhamma 2.1, sanighaṇḍu, santisoraccasamādhisaṇṭhita, santhambhitvāna, sandiṭṭhirāga, sandūseti, sapaṇṇaka, sabbakāyappahāyī, sabbakosamūlabandhana, sabbadhī, sabbapajānamuttama, sabbarogamūlabandhana, sabbavedanā, sabbasaṅgamūlabandhana, sabbasattuttama, sabbasama, sabbasaṃyojanabandhanacchida, sabbasaṃyojanayogavītivatta, sabbasaṃyojanavippamutta, sabbasaṃyojaniya, sabbasaṃsaya, sabbasoka, sabbābhiññābalappatta, sabbāyatana, sabbāhāra, sabbāhāramanissita, sabbupadhi, samaṇappavādanissita, samaṇappavādasita, samantakapalla, samavaṭṭhita, samāgata 2, samāsana, samāsanna, samucchida, samucchidagatta, samujju, samujjupañña, samuppilava, samokkhāyana, sampannacaraṇa, sampannaveyyākaraṇa, samphusamāna, sambodhikāma, sambodhipatta, sambodhiyagga, sammadayati, sammāneti, sammāparibbājanīya, saraṇamāgā, sallitta, sasaṅgha 2, sahassabhāga, saṃkappayanta, saṃyuttabhāṇaka, saṃyojaniya 2, saṃsuddhajina, saṃsuddhapañña, sāṇa 2.1, sādhusamāhita, sāramajjhagā, sāri, sāvajjanavajja, sāvayati, siṅgīvera, sīmanta 2.1, sukkhāpenta, sucipesalasādhuguṇa, suttadhara 1, suttadhara 2, suttavara, suddhānupassī, supaṭicchanna, suppaṇāmita, suppavutta, suvāmī, susaññatatta, susamattarūpa, sussūsamāna, sūpatiṭṭhita, seḷeti, sokaparidevamacchara, sokamala, sokasallasamappita, sotāvadhānūpanisūpapanne, sobhayanta, hantar 2, hantvā 2, hassatī, hassāpekkha, hārika 2, hitamana, hitasukhattha, hemaka [704]</p>
 <h2 id="2023-08-01"><a class="header" href="#2023-08-01">2023-08-01</a></h2>
 <ul>
 <li>75 113 headwords, 28 322 complete, 17 281 partially complete, 29 510 incomplete entries</li>
@@ -145,7 +324,7 @@
 <li>1 101 906 cells of Pāḷi word data</li>
 <li>18 095 cells of Pāḷi root data</li>
 <li>100% dictionary recognition up to and including the first two books of Vinaya, 4 Nikāyas, and Khuddakanikāya up to and including the first vagga of Suttanipāta</li>
-<li>Numerous additions and corrections based on user feedback </li>
+<li>Numerous additions and corrections based on user feedback</li>
 </ul>
 <p><strong>new words include</strong>: akusītavutti, aggipakkika, aggihuttassupasevanā, aghātayi, acāri 2.1, ajjavamaddava, ajjhattacintī, ajjhattasaññī, ajjhāyakakula, ajjhena 2, ajjhenakutta, aññamagami, aṭṭhinahāru, aṭṭhinahārusaṃyutta, aṭṭhinhāru, aḍḍharatanika, atitariya, atimaññeti, atimānitā, attaṭṭhapañña, attadatthamacāri, adūsika, adhimuttikālakiriyā, adhimuttimaraṇa, anaggapāka, anaggipakkika, anatthamanusāsati, ananugata 2, ananubujjhana, ananvayanta, anapekkhamāna, anavajjatta, anavajjapada, anavajjabhojī, anavasita, anavasīdana, anādiyanta 2, anāpajjamāna, anivattamāna, anugantvā, anudīpanī, aneyyatā, anodhissaka, antapūra, anvayanta, aparacchā, apālayi 2.1, appamatta 1.2, appiyavacana, abyāmissa 1, abyāmissa 2, abyāmissatā, abhinikkhamitvā, abhinibbajjiyātha, abhibhava, abhimukhībhūta 2, abhimukhībhūtatta, ayamuṭṭhika 1, ayamuṭṭhika 2, avaṭṭhitasamādāna, avatti, avalittatta, avasita, avasīdana, aviheṭhayanta, avedhamāna, avocāsi, asama 4, asampaduṭṭha, asātaccakāritā, asāma, asāmapāka, asucibhāvamissita, asurarakkhasā, asnamāna, asmamuṭṭhi, asmamuṭṭhika, assaka 2, assamāna, āgatapāka, ājaññasaṃyutta, ānisaṃsa 3, ānisaṃsadassāvitā, āpādita 1, āpādita 2, āyuta, āsevamāna, icchāvatiṇṇa, iṇaghātasūcakā, ucchijja, uṇṇametave, unnamati 4, unnamatī, upakappanta, upanibajjhati, upavissa, upasama 2, upasīva, upasevanā 2, upāvisi 2, upekkhatī, uppannañāṇa, ogahaṇa, odhissaka, oropayitvā, ohārayitvā 1, ohārayitvā 2, kaṇhasiri, kapilasutta, kappanatā, kappāyana, kalanda, kalahābhirata, kaḷīraka, kāmakāma 2, kāraṇattha, kiccatta, kiñcikkhakamyatā, kiñcikkhamādeti, kiṃpakka, kiṃphala 2, kīḷaka 2, kukkuṭavatī, kuladvāra, kusinagara, khandhaja 2, khara 3, khīṇabyappatha, gavampati 1, gavi, gihibyañjana, gopika, gomaṇḍalaparibyūḷha, ghanamaṭṭhaka, ghātayi, caṇḍapajjota, caṇḍālaputta, candabhāga, candabhāgā, cākāra, cāraṇa 2, ciṅgūlaka, cittasibbana, cīnaka, cuṇṇa 3, cuṇṇadāna, cūḷagandhāravijjā, cūḷagandhārā, cūḷagandhārī, cha 1.1, chandarāgaviratta, chetuṃ, jaṅghapesaniya, jaṭājalla, jātamucchijja, jātikatta, jhānamariñcamāna, ñāṇa 1, ṭhānanāma, ḍaṃsasiriṃsapa, tacamaṃsa, taṇhamudacchidā, tada, tadamaññi, tambadāṭhika, tavāhamasmi, tivassa, telapanāḷi, tvā, thaddhatā, thāmabalūpapanna, thutuṃ, thomiyamāna, dajja 2, dantakaṭṭhadāna, dantaluyyaka, dantavakkalika, dabba 2.1, daḷhanikkama, dāṭhabalī, dātave, dāraposī, dārudāna, dālayitvā, diṭṭhīvisūka, dipādaka 2, dibya, duggaccā, duppaṭinissaggitā, durannaya 3, durācāra, durācāratta, dussaṅgaha, dussīlaludda, dūravihāravuttī, devorohaṇa, desanākkama, desantara, desī, dvipaduttama, dhanadhāniya, dhammaṭṭaṭṭhāna, dhammādhiṭṭhāna, dharaṇa 1, dhariyanta, natthikadiṭṭhī, nānākuṇapaparipūra, nānādhañña, nānukaroti, nārīvaragaṇāyuta, nikativañcana, nikkāraṇa 2, nigama 2, nigghātaka, niccuyyuta, nijigīsāna, nippakka 2, nippipāsa, nimmakkha, nisīdanakatā, nisīditvāna, nīcamana, nīlavāhinī, nopanibajjhati, pakkandi, accalattha 3, paccavekkhaṇatā, paccuṭṭhāpanā, paccupaṭṭhāpanā, pañcāvaraṇa, paṭipiṇḍaka, paṭirūpakatta, paṭiladdhamagga, paṭivera, paṭiseniyati, pattadāna, pattapphala, pattuṇṇa 1, patthanaka, pathavindhara, padatta 2.1, padabhājanīya, padālayitvā, padālayitvāna, paduma 6, padumī 2, pabbajjamarocayi, payata 2, parapāṇarodha, parapiṭṭhimaṃsika, paramatthadassī, paramatthapatti, parittāyitvā, parivajjanatā, parihīrati, pavattinī, pasajati, pasaṃsāvahana, pahīnapaṭighatta, pahīnānunayatta, pahūtavitta, paṃsukīḷaka, pāṭirūpika, pāṇitā, pādaparicārikā, pāpasīla, pāmujjakaraṇa, pārichatta, pāribhaṭya, pāribhaṭyatā, piṇḍapaṭipiṇḍaka, pīṭhamaddikatā, puggalādhiṭṭhāna, puṇṇavaḍḍhana, punamupāgami, punupeti, pupphadāna, pūrayanta, pesaniya 1, pesaniya 2, peḷa, porāṇapāṭha, porisa 5, pharusavacana 2, phala 1.3, phaladāna, phalānisaṃsa, phussayati, baddha 6, bandhavāni, bahigata 2, bimbijāla, biḷāla, biḷālapādaka 1, biḷālapādaka 2, buddhasāsana 2, byagghapajja 2, byapanujja, byākkhāta, byāpāratā, bhaddavatī, bhadrāvudha, bhassasamussaya, bhāṇa, bhuñjasī, bhumma 5, bhedāsaṅkī, maggajīvī, maggadesī, maṭṭhaka, matīmant, mattikādāna, maddika, manussadhamma 2, mantapāragū, mantāhutī, mahāgandhāravijjā, maṃsabhojana, māgaṇḍi, milindapañha, missakatā, mukharajātika, muggasūpatā, muggasūpyatā, munidassana, mūlapāṭha, mūlaphala, yakanapeḷa, yakapeḷa, yaññamakappayi, yaññamutūpasevanā, yathāmedaṃ, yathodhika, yadagga, yadasnamāna, yasapparamappatta, yāciya, yāyitvā, rakkhitamānasāna, rajananippakka, rūpasārī, ropayati, laddhānupekkhaṃ, lumbini, lumbineyya, luyyaka, lūkhasa, lomatta, vaṅkahāra, vattamanusikkhanta, vatthī, vadhachedabandhana, vanoti, vasalakaraṇa, vasalādhama, vasu 2, vasuttama, vaṃsakkaḷīra, vācāpariyanta, vācābhilāpa, vārivaha 2, vāretvā 2.1, vāsāyāḷavimāgamā, vāsuladattā, vicchandaniya, vijigucchanta 2, vijjācaraṇapariyeṭṭhi, viññujātika, viditindriya, vidhunana, vipassanābhūmi, vipiṭṭhikatvāna, vimuttatā, viyākāra,viyāpanna, viyuha, virājayati, viruddhātipātī, virūpekasesa, vivajjayitvā, visodha, vissavant, vihesamuyyuta, vihesābhirata, vedattaya, veḷudāna, voharīyati 2, vohārakūṭa, sakuntamaṃsa, sakhāhamasmi, saṅkappatā, saṅkhittarucipuggala, saṅkheyya 2, saṅkheyyakāra, saṅghaṭṭayanta, sajjhāyadhanadhañña, sañchannapatta 1.1, sañchannapatta 2.1, sañchinnapatta, sañjāta 2, sañjātakhandha, saññatatta 2.1, satasahassī, saddhāpakata, santhavāto, sandālayitvāna, sabbadukkhappanūdana, sabbadukkhappahīna, sabbamoha, samarocayi 2, samāniya, samiñjeti, samīpūpacāra, sampaggāha, samphassatta, sambandhatta, sambhoti 2, sammasanacāra, sarabhāṇaṃ, sarikkhaka, salilambucārī, sahāyamajjhe, sahāyasampadā, saṃsaggajāta, saṃsappati 2, saṃsīnapatta, saṃsuddhacāraṇa, sātāgira 2, sāma 3.1, sāmaṃ 3, sāmākaciṅgūlakacīnaka, sālavatī 2, sāhasa 2, siṅgālamātar, sināna 2, sinānadāna, sinehadosa 1.1, sinehadosa 2.1, sukhamedhi, sucibhojana, suttavibhaṅga, suddavessikā, suniṭṭhita 1, suniṭṭhita 2, supaṇihita, suvaṇṇabhūmi, susamāhitindriya, sūciloma 2, sūcetvā, sūpya, snehadosa 1.1, snehadosa 2.1, snehanvayanta, hatthighaṭā, hāpeti 2, hemavata 2 [456]</p>
 <h2 id="2023-07-02"><a class="header" href="#2023-07-02">2023-07-02</a></h2>
@@ -160,7 +339,7 @@
 <li>Synonyms added for sets of word with identical parts of speech and two matching meanings</li>
 <li>Variants updated</li>
 <li>Database merged with DPS</li>
-<li>Numerous additions and corrections based on user feedback </li>
+<li>Numerous additions and corrections based on user feedback</li>
 </ul>
 <p><strong>new words include</strong>: akkheyyasampanna, agghāpanika, accatāri, acchijji, ajjhabhi, ajjhabhū, ajjheti 2, añjanī 3, añña 2.1, aññajana, aññātakoṇḍañña, aññoññanissita, aḍayhamāna, atikkamitvā 4, atimatta 2, atthamāgamā, adhigama 2, adhiggahetvā, adhicittavant, adhicetas, anantaritatta, anallakesa, anallavattha, anavaññattisaṃyutta, anavabodha, anavasesa 3, anādara 3, animittatta, anuggamati, anucchavikakamma, anupakkhandanta, anupassitā, anupubbūpasanta, anuvattaka 4, anekarasabyañjana, anta 8, antarāamitta, antarāpaccatthika, antarāmala, antarāvadhaka, antarāsapatta, andhakamakasā, apatāsi, apanayana 3, aparipāka, apassamāna 2, apātubhūta 2, appassutāpuññakara, appodakapāyasa, appodakapāyāsa, abhāvitattatā, abhāsiya, abhivassī, abhisandanta, abhisandenta, abhihacca, ayoghanahata, ayomuṭṭhi, ariyapaññā, alagganta, alittamupalimpati, avaṇṇayi, avantidakkhiṇāpatha, avaseka, avahasitabba, avahasitabbatā, avijjānīvaraṇa 2, avijjāmūlika, avippamutta, avīciniraya, avuṭṭhikasama, asajjanta, asanta 1.6, asaṃvibhajitvā, asippajīvī, asubhasaññī, assasippa, ahaṅkārapasuta, āneñjasamādhi, āpāta, āpodhātu 3, ārūḷha 4, ālokakara, ālokajāta, āvadati, āsaṅkati 2, icchālobhasamussaya, itivutta, itthambhūtalakkhaṇa, uggamati, utena, udīrayanta, unnamati 2, unnamati 3, upakkitakavāda, upadisiyamāna, upadhippaṭinissagga, upadhibandhana, upadhisambandhana, upalepabhaya, upasantasantacitta, upahāra 2, upāti, uppaṇḍana, uppilavati 2.1, uppilavati 2.2, uppilāva, ulati, ussukkāpetvā, ekanīvaraṇa, ekavihāra 2, ekasaṃyojana, obhāsakara, obhāsita 2, oropita 2, osādeti 2, kakkhaḷatā, kathina 2, kathīyati, kapaṇaddhikavanibbakā, kapotakandarā, kābya, kābyasippa, kāmakaṇṭaka, kāmakāmī 2, kāmanissaraṇa, kāmabandhoghatārī, kāmayogayutta, kāmayogavisaṃyutta, kāmasaṅgasatta, kāyindriya 2, kālavipassī, kāveyyasippa, kittitabba, kimi 2, kilamatha 2, kukuṭṭhā, kuṭṭhicīvara, kulagandhana, khīṇamānapunabbhava, khemaka 3, gaṇanāsippa, ganthitatta, gandhana, gabbhokkantika, gocaratā, ghānindriya 2, ghāyituṃ, cakkhundriya 2, catuyogātigata, candapabhā,cālā, cālika, ciraṭṭhiti, cullavagga, cūlavagga, chadana 3, jaccandha 2, jarāmaraṇamanveti, jarāmaraṇasaṅghāṭa, jātavedas, jātikkhayamabhiññāya, jātibhava, jātibhavaparikkhaya, jātimaraṇamaccagā, jātīmaraṇagāmī, jālasañchanna, jivhindriya 2, jotipāla 2, taṇhāchadanachādita, taṇhāsaṃyojana 2, tārī, tejodhātu 2, thanayitvā, tharusippa, thinamiddhabahula, thīnamiddhabahula, thīnamiddhābhibhū, thulla 3, thūnā, dāruṇatā, dīpīyati, dukka, dukkhamaccagā, dujjaya 2, dujjayamajjhabhū, dutiyajananakuhanasutta, dussīla 3, devāsana, dosaneyya, dosasañhita, dosasaṃhita, dvayadhamma, dvāsīti, dhaja 3, dhammamabhiññāya, dhammānudhammapaṭipanna, dhaṃsana, nakuhanā, nappakāsati 2, navoropita, nāññamaññassa, nātivassati, nānātitthiyasamaṇabrāhmaṇaparibbājakā, nānādiṭṭhinissayanissita, nānupakampati, nāmaññi, nāmapada 2, nikkhipanta 2, nikhanitvā, nicca 2, ninnaga, nibbedhagāmī, nimittatta, nirantaratā, nirujjhi 2, nirutti 4, niruddhatta, nirodhi, netticchinna, nedisa, pakatisandhi, pakkodana, paccabyi, pajahāti, paṭaṅga 2, paṭipassambhi 2, paṭibaddha 4, paṭilabhitabba, paṭisaṃsāmetvā, paṭuppādana, paṭhamajananakuhanasutta, pattamānasa, patthayasī, pathavīdhātu 3, padālayi, padūsituṃ, padesavassī, panuṇṇakodha, papañcasaññāsaṅkhāpahāna, pabbajjābhisaṅkhāra, pabhaṅgutā, pamāṇamanuciṇṇa, pamādamanuciṇṇa, paraṅkāra, paraṅkārūpasaṃhita, paramadāna, paravediya 2, paraṃkārūpasaṃhita, parānuddayatāpaṭisaṃyutta, parikhā 2, parikhākūpa, paricaraṇaka, paridhaṃsamāna, paripāta, paripuṇṇasikkha, paripuṇṇasekkha, parissayavinodana, parihata 2.1, palāsapuṭa, paluṭṭhamakkaṭī, pavatta 6, pahaṃsana, pahiyyati, pahīyati 3.1, pāṭaligāmavagga, pāṭaligāmiya, pāṭibhogavagga, pāpaka 1.3, pāmojjakaraṇa, piyarūpasātagadhita, piyarūpasātarūpa, pilinda, puṇṇaka 2, punāyāti, pubbaṅgamatta, purisakicca 2, purekkhāra 3, pesakāravaṇṇa, phassayati, phassayitvā, phusayitvā, phussayitvā, bālūpasevanā, bāvīsā, byanta 2, brūhayati 2, bhaṇīyati, bhatakavāda, bhavapareta, bhavayogayutta, bhavayogavisaṃyutta, bhavavippahāna, bhāvitattatā, bhāsiya, bhikkha, bhikkhatā, bhijjana 2, bhidura, bhindati 4, bhindanta 2, bhisī, bhusaṃ 3, bhūtapariñña, bhūtarata, bhesma, maggamanukkamati, maggamanuggamati, mattaka 2.1, manomuni, mant, mahāudara, mānaganthābhibhū, mānajaha, mānatā, mānamudabbadhi, mānavinibaddha, mānavinibandha, mānasaṅkhaya, mānupeta, micchādassana 1, micchādassana 2, micchādiṭṭhigata, mīyana, muttaharītaka, muddā 3, muddāsippa, mettabhāvanā, mohasambandhana, yathānikkhitta 2, yamhī, yasatā, yasoja, yasojappamukha, yuttatara, rakkhitacitta, rakkhitavanasaṇḍa, rajānukiṇṇa, rathasippa, ramatī, rāgamudacchidā, rājīsi, labbhati 4, lābhimhi, lipi 2, luddha 3, lekhāsippa, lokāyatasippa, lobhaneyya, vajjamapassamāna, vaḍḍhaka 2, vaḍḍhayati, vaḍḍhi 4, vaṇi, vaṇibbakayācakā, vani, vant, vavatthita 3, vavatthitavibhāsā, vasalavāda, vasā 2.1, vassī, vāyodhātu 2, vāseṭṭha 4, vijātā 2, vijjhitvā 3, vitakkayamāna, vitakkāsaya, viniddisati, vinibaddhatta, vinivijjhanta, vipallāsatā, vipphālesi, vimuttiñāṇa, viyojita, virajjana 2.1, virūḷhabrahmacariya, visakumbha, visama 5, visāradappatta, visukkha, vūpasami, vedas, verocana 2,sakavediya, sagaha, saggagata, saṅkhānasippa, saṅkhāyasevī, saṅgamaticca, saṅghāṭikaṇṇa, sañchanna 3, saññoga 1, sattasaṅgappahīna, sattāhavaddalikā, saddasilokanissita, saddhudhātu, sadha, sadhati, sadhana 2.1, sadhāyamāna, sadhāyamānarūpa, sadhu, sadhudhātu, santavutti, santaṃyeva 2, santikā 2.1, sandeha 1, sapati 2, sabbajāni, sabbatthatā, sabbatthatāya, sabbatthā, sabbatthābhivassī, sabbadukkhamupaccagā, sabbapariññā, sabbapahāyī, sabbabhūtānukampaka, sabbalokavisaṃyutta, sabbasattānukampī, sabhāvatta, samagga 3, samassāsenta, samānamanuciṇṇa, samāvajjana, samucchinnatta, samudāciṇṇa 2, samussaya 2, sampatvā, sampavārita, sambodhigāmī, sambhata 3, sammajjanī 2, sammattaka, sammattakajāta, sammādiṭṭhipurekkhāra, sarabhaññapariyosāna, savīci, saṃyujjhi, saṃyojanasaṅga, saṃyojanasaṅgasatta, saṃvaratī, saṃvāsiya, saṃvibhājeti, saṃvejanīya 2, saṃvejanīyaṭṭhāna, saṃsumbhi, saṃhara, saṃharitvāna, saṃhāraka 2, sādhu 6, sāmāvatī 2, sāmāvatīpamukha, sāyituṃ, sārameti, sārenta, sāvasesa 2, sikkhānisaṃsa 2, sikkhāsāra, sītibhavi, sīmantarikā, sukkamūla, sukhuccāraṇa, sugatigamanasaṅkhāta, sugandhatā, suci 5, suttasaṅgaha, suppatiṭṭhitasaṅkhāta, suppabuddha, suppahīnatta, subhikkhavāca, suladdhalābha, suladdhalābhasaṅkhāta, sūpaṭṭhititā, selūpama, soṇatheravagga, sota 1.3, sotindriya 2, hatappabha, hananta 2 [480]</p>
 <h2 id="2023-06-03"><a class="header" href="#2023-06-03">2023-06-03</a></h2>
@@ -174,7 +353,7 @@
 <li>100% dictionary recognition up to and including the 4 Nikāyas, Khuddakapāṭha and Dhammapada</li>
 <li>DPD now available as an <a href="https://digitalpalidictionary.github.io/kindle.html">Amazon Kindle dictionary</a></li>
 <li><a href="https://digitalpalidictionary.github.io/deconstructor.html">DPD Deconstructor</a>: deconstructing all compounds and splitting all sandhis in the Chaṭṭha Saṅgāyana corpus, <em>mūla</em>, <em>aṭṭhakathā</em>, <em>ṭīkā</em> and <em>aññā</em>, as well as Sutta Central texts.</li>
-<li>Numerous additions and corrections based on user feedback </li>
+<li>Numerous additions and corrections based on user feedback</li>
 </ul>
 <p><strong>new words include</strong>: akkulapakkulika, accharāsata, ajakalāpaka 1, ajakalāpaka 2, ajjhāyī, adesesi, adhipātetvā 1, adhivāsenta, anatthapadasañhita, anantagocara, anantaradhāyamāna, anavaṭṭhitacitta, anavassutacitta, anukaraṇasadda, anupariyāya 2, anubbigga, anekajātisaṃsāra, apetakaddama, apoṭhayanta, appaṭighātī, appevanāmimassa, abalassa, abhiramamāna, avaṅka 2, avaṅkatā 1, avaṅkatā 2, avacana 2, avacanakara, avacanīya 2, avajjha 2, avaṭuma, avaḍḍhana, avaḍḍhanaka, avaḍḍhi 2, avaḍḍhikara, avaḍḍhetvā, avaṇa, avaṇṭa, avaṇṭaka, avaṇṇanīya, avaṇṇanīyasobha, avattabbatā, avattha 1, avattha 2, avada, avadaññū, avadamāna 1, avadamāna 2, avaddhi, avana, avanatha, avantataṇha, avandiya, avambhanā, avaya, avalañjita, avalañjiyamāna, avavatthāna, avavatthita, avasamāna, avasala, avasavattaka, avasavattī 2, avasiya, avasī, avasīkata, avassa, avassaka, avassana 2, avaḷañjana, avaḷañjita, avaḷañjitabba, avāka, avācayi, avātapānaka, avādita, avāyima 2, avārita, avāvaṭa 1, avāhana, avāhayi, avikampana, avikampayanta, avikampita, avikampitatta, avikarī, avikalatā, avikalatta, avikopana, avikopiya, avikopī, avikkhitta 2, avikkhittatā, avikkhittabhojitā, avikkhittamana, avikkhittamānasa, avikkhittasota, avikkhipanta, avigacchamāna, aviggaha 2, aviggahaka 1, aviggahaka 2, aviggahatta, avighatī, avicarissa, avicala, avicalita, avicārabhūmi, avicāretvā, avicāliya, avicintiya, aviccamāna, avicchijja, avicchijjamāna, avicchinna, aviccheda, avicchedatā, avicchedanattha, avijahanta 2, avijahita 2, asadisatā, āgantvāna, ājīvī, ādhipaccaparivāra, āyāmena 3, āraddhavīriya 2, āvaṭṭamāna, icchālobhasamāpanna, itibhavābhavatā, idaṃ 3, idhūpasaṅkamanta, indakhilupama, indakhīlūpama, uggiritvāna, ucchaḍḍitvāna, ucchadditvāna, udānenta, upaṭṭhapetvā 3, usīrattha, ekacāra, ekatālīsā, okaya, kakuṭa, kapaṇavisikhā, kammakiliṭṭha, kammapaccayā, kammavisuddhi, kayokaya, karavīkabhāṇitā, kahāpaṇavassa, kāyikaṃ, kālagata, kāḷīgodhā, kīḷāpana, kuṇḍadhānavana, kuṇḍikā 2, kuṇḍiṭṭhānavana, kuṇḍiyā, kusīta 2, khandhādisa, khīrapāna, khuddaputta, gāthādvaya, gihīpabbajitā, cakkavattisukha, catussata, chandaso, jālamutta, jighacchāparama, jīvitamāhu, jīvitenūpapanna, ñāṇūpapanna, tagaracandana, taṇhakkhayarata, taṇhakkhayasukha, tamanussaramāna, tikicchitabba, tirokuṭṭa, thulla 2, dakkhiṇodaka, daliddavisikhā, dassanasampadā, daharamāṇavikā, dārujapabbaja, divasatta, dukkhamanveti, dukkhamupeti, dukkhānupatitaddhagū, duddina 2, durakkha, dvattiṃsasaṅkhya, dhātuso 2, dhutavata, dhunamāna, nagarūpama, nayatī, nayidaṃ 2, nāccodātatā, nātikāḷatā, nātikisatā, nātithūlatā, nātidīghatā, nātirassatā, nāruḷha, nikāmaseyyā, niḍḍha, nibbānameti, niyāmeti 1, niyāmeti 2, nihuṃhuṅka, nīharitabba 2, nevassa 2, pakkula, paccāyāsi, paccekabodhi, paññāpāsādamāruyha, paṭipassambhana, paṭibandharūpa, paṭhavissita, paṇḍitamānī, papañcasamatikkanta, papīyana, pamuñcanta 2, payuñjanta, paradārūpasevī, paradukkhūpadhāna, paravajjānupassī, paravasa, parijunna, pariplavapasāda,parivaṭṭati, parivaṭṭamāna, pahassati 1, pahassati 2, paṃsukūladhara, pādasaṃyata, pābhata 2, pābhata 3, pāsādavāsa, piṇḍapātapaṭilābha, pipphaliguhā, piyarūpassādagadhita, pukkusāti 2, puññapāpapahīna, puññasampadā, putta 3, puttapasusammatta, purāṇakammavipākaja, pesakāravisikhā, plavatī, pheṇūpama, bāhitapāpadhamma, brahmavāda, brahmassaratā, brāhmaṇajātika, bhāṇitā, macchakacchapabhakkha 1, macchakacchapabhakkha 2, mattāsukhapariccāga, madhuvant, mahatthika, mahaddhanatara, mahabbalatara, mahākosatara, mahābhogatara, mahāvāhanatara, mahāvijitatara, maṃsalohitalepana, māṇavakavaṇṇa, mānussika, micchāsaṅkappagocara, mittasampadamāgamma, mittasampadā, mucalinda 3, mucalindamūla, yatthakāmanipātī, yatraṭṭhita, yadajjhagā, yadatītampahīnantaṃ, yasobhogasamappita, yuñjati 3, yoga 7, yoni 1, yobbanārogya, rajatapaṭiggahaṇa, rajjasukha, rājarathūpama, roganiḍḍha, lapetave, lahumeti, lābhūpanisā, lohitakumbhī, vaddhāpacāyī, vadhitvā 3, vanasmi, vapayāti, vavatthita 2, vācāsaṃyata, vigatabhaya, vijeti, vijjamānatā, vijjāvimuttivasībhāva, vitamiddha, vitiṇṇaparaloka, videsapotthaka, vinimutta 1, vinimutta 2, vippamuñcati, vibbhamituṃ, vibhūsanaṭṭhāna, vimuyhati, vivittasayana, visibbetvā 2, issāsaparama, vihacca, vihesati, vīriyamārabhanta, vūsita, vūsitabrahmacariya, veramaṇisikkhāpada, veramaṇīsikkhāpada, verasaṃsaggasaṃsaṭṭha, sakakamma, sakabhavana, sakavaṇṇa, sagandhaka, saṅkāradhāna, saṅkhāraparama, saṅgāmaji 2, saṅgāmajuttama, sacittapariyodāpana, sata 2.2, sattabbīsā, sadatthapasuta, sadisatā, sadisāsadisa, sadisāsadisatā, santuṭṭhiparama, sandhisiṅghāṭaka, sabbakammajaha, sabbakāmadada, sabbadāna, sabbapāṇā, sabbarati, sabbalokasmi,sabbavositavosāna, samādhimadhigacchati, samādhimānantarikaññamāhu, samādhilābha, sampha 2, sammāsaṅkappagocara, sayana 3, saratā, sahetudhamma, saṃphusanta 2, saṃyatuttama, saṃyojanasaṅgasattaka, sādhuvihāridhīra, sāvakapāramī, sīghassa, sītavātaduddinī, sīlabbatamatta, sukhamanveti, sukhamicchati, sukhamesāna, suchanna, suddhājīvī, sunihita, suppāraka, surūpatā, susaṇṭhānasurūpatā, susaratā, hatthasaṃyata, hurā, huṃhuṅka, huṃhuṅkajātika, hemantagimhi [377]</p>
 <h2 id="2023-05-04"><a class="header" href="#2023-05-04">2023-05-04</a></h2>
@@ -249,7 +428,7 @@
 <ul>
 <li>69 322 headwords, 25 997 complete, 14 886 partially complete, 28 439 incomplete entries</li>
 <li>743 roots, 2 845 root families, 28 140 words derived from roots</li>
-<li>22 031 deconstructed compounds </li>
+<li>22 031 deconstructed compounds</li>
 <li>1 368 689 unique inflected forms</li>
 <li>1 213 274 cells of Pāḷi data</li>
 <li>100% dictionary recognition in Saṃyutta Nikāya books 4 &amp; 5, Aṅguttara Nikāya Books 1 &amp; 2</li>
@@ -265,7 +444,7 @@
 <li>1 342 860 unique inflected forms</li>
 <li>1 193 219 cells of Pāḷi data</li>
 <li>100% dictionary recognition in Pācittiyapāḷi and Saṃyutta Nikāya book 3</li>
-<li>Improved recognition of Sinhala, Devanagari and Thai scripts. </li>
+<li>Improved recognition of Sinhala, Devanagari and Thai scripts.</li>
 <li>Many corrections and additions based on user feedback.</li>
 </ul>
 <h2 id="2022-10-10"><a class="header" href="#2022-10-10">2022-10-10</a></h2>
@@ -300,7 +479,7 @@
 <li>1 239 710 unique inflected forms</li>
 <li>Added Root Matrix. <a href="https://digitalpalidictionary.github.io/rootdict.html#root-matrix">more info here</a></li>
 <li>100% dictionary recognition of words in Dīgha Nikāya Mūla, Majjhima Nikāya Mūla and MN2 Aṭṭhakathā.</li>
-<li>Changed word frequency generation process to reduce file size </li>
+<li>Changed word frequency generation process to reduce file size</li>
 <li>Inflection table words not in CST are grayed out.</li>
 <li>Stylist changes to html of roots families, compound families, sets, inflection tables, frequency tables</li>
 <li>Many corrections and additions based on user feedback</li>
@@ -308,8 +487,8 @@
 <h2 id="2022-07-13"><a class="header" href="#2022-07-13">2022-07-13</a></h2>
 <ul>
 <li>62 816 headwords, 1 211 561 unique inflected forms, 25 883 complete entries, 736 roots, 2 711 root families, 14 639 deconstructed compounds</li>
-<li>Added DPD Grammar Dictionary <a href="https://digitalpalidictionary.github.io/grammardict.html">more info here</a> </li>
-<li>Improvements to Sandhi Splitting Algorithm <a href="https://digitalpalidictionary.github.io/sandhi.html">more info here</a> </li>
+<li>Added DPD Grammar Dictionary <a href="https://digitalpalidictionary.github.io/grammardict.html">more info here</a></li>
+<li>Improvements to Sandhi Splitting Algorithm <a href="https://digitalpalidictionary.github.io/sandhi.html">more info here</a></li>
 <li>Updates to DPD MDict for <a href="https://digitalpalidictionary.github.io/install_ios.html">iOS</a> and <a href="https://digitalpalidictionary.github.io/install_android_mdict.html">Android</a></li>
 <li>100% dictionary recognition of words in Dīgha Nikāya Mūla Books 1-3, Majjhima Nikāya Mūla Book 2 and Aṭṭhakathā Book 2</li>
 <li>Many corrections and additions based on user feedback.</li>
@@ -333,7 +512,7 @@
 <li>Added recognition of Thai script.</li>
 <li>Added Sets to display a list of words grouped by a theme, e.g. bodyparts.</li>
 <li>Added click-to-display for all abbreviations.</li>
-<li>Added click-to-display for all help topics. </li>
+<li>Added click-to-display for all help topics.</li>
 <li>Corrections and additions based on user feedback.</li>
 </ul>
 <h2 id="2022-03-17"><a class="header" href="#2022-03-17">2022-03-17</a></h2>
@@ -368,9 +547,11 @@
                             <a rel="prev" href="setup_advanced.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="bibliography.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+
+                            <a rel="next prefetch" href="bibliography.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
+
                         <div style="clear: both"></div>
                     </nav>
                 </div>
@@ -380,23 +561,33 @@
                     <a rel="prev" href="setup_advanced.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="bibliography.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+
+                    <a rel="next prefetch" href="bibliography.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
-        <script type="text/javascript">
+
+
+
+        <script>
             window.playground_copyable = true;
         </script>
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+
+
+    </div>
     </body>
 </html>
