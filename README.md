@@ -1,3 +1,3 @@
-Digital Pāḷi Dictionary
+Цифровой Пали Словарь
 
-<https://digitalpalidictionary.github.io/>
+<https://digitalpalidictionary.github.io/rus>

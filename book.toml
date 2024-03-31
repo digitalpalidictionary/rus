@@ -1,9 +1,9 @@
 [book]
-authors = ["Bodhirasa"]
-language = "en"
+authors = ["Bodhirasa, Devamitta"]
+language = "ru"
 multilingual = false
 src = "src"
-title = "Digital Pāḷi Dictionary"
+title = "Цифровой Пали Словарь"
 
 [output.html]
 additional-css = ["src/custom.css"]

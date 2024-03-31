@@ -2,9 +2,9 @@
 
 GoldenDict на Android можно получить, выделяя слово в тексте и нажимая **Поделиться** в контекстном меню. Он также имеет **темный режим**.
 
-### В кратце
+### Вкратце
 
-1. Скачайте последнюю версию DPD [здесь](https://github.com/digitalpalidictionary/digitalpalidictionary/releases)
+1. Скачайте последнюю версию DPD [здесь](https://github.com/digitalpalidictionary/rus-release/releases)
 2. Установите GoldenDict из [Google Play Store](https://play.google.com/store/apps/details?id=mobi.goldendict.android.free)
 3. Скопируйте DPD в папку GoldenDict
 
@@ -12,7 +12,7 @@ GoldenDict на Android можно получить, выделяя слово �
 
 ### Загрузить DPD
 
-Прежде всего, загрузите последнюю версию Цифрового Пали Словаря с [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases)
+Прежде всего, загрузите последнюю версию Цифрового Пали Словаря с [Github](https://github.com/digitalpalidictionary/rus-release/releases)
 
 ### Загрузить GoldenDict
 

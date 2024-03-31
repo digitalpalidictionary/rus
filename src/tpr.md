@@ -25,18 +25,27 @@ Tipitaka Pali Reader позволяет вам загрузить различн
 Чтобы получить самую последнюю версию DPD:
 
 1. Откройте **Меню** и нажмите **Настройки**.
+
 2. Нажмите **Расширения**.
-   ![extension](pics/tpr/tpr_open_extensions.png)
+
+![extension](pics/tpr/tpr_open_extensions.png)
+
 3. Выберите **DPD**. Это шестой элемент в списке.
-   ![select_dpd](pics/tpr/tpr_select_dpd.png)
+
+![select_dpd](pics/tpr/tpr_select_dpd.png)
+
 4. Файл загрузится, а затем установится сам.
-   ![downloading](pics/tpr/tpr_downloading.png)
+
+![downloading](pics/tpr/tpr_downloading.png)
+
 5. **ПОЖАЛУЙСТА, ОБРАТИТЕ ВНИМАНИЕ!** Подождите, пока вы снова не увидите меню Дополнений, это означает, что DPD установлен правильно.
-   ![extensions](pics/tpr/tpr_extensions.png)
+
+![extensions](pics/tpr/tpr_extensions.png)
 
 Пока вы здесь, можете скачать что-то еще, что может быть вам полезно!
 
 ## Бета-версия DPD
 
 Я лично использую TPR для чтения палийских текстов, поэтому иногда нам нужна более актуальная версия DPD, чем ежемесячный релиз в день Упосатха. Чтобы получить самую последнюю / передовую / не проверенную / без каких-либо гарантий / бета-версию, прокрутите вниз до конца списка Дополнений, нажмите на **DPD Beta** и установите точно так же, как описано выше.
+
 ![beta_version](pics/tpr/tpr_dpd_beta.png)

@@ -2,19 +2,19 @@
 
 ## Вкратце
 
-1. Загрузите последнюю версию DPD для MDict (dpd.mdx) [здесь](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+1. Загрузите последнюю версию DPD для MDict (ru-dpd-mdict.mdx) [здесь](https://github.com/digitalpalidictionary/rus-release/releases).
 2. Установите MDict из [App Store](https://apps.apple.com/us/app/mdict-ad/id894362875).
-3. Переместите файл dpd.mdx в папку MDict на вашем устройстве iOS.
+3. Переместите файл ru-dpd-mdict.mdx в папку MDict на вашем устройстве iOS.
 
 Ниже приведены подробные инструкции *anupubba*.
 
 ## Загрузка DPD
 
-Прежде всего, загрузите последнюю версию Цифрового Палийского Словаря для MDict с [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+Прежде всего, загрузите последнюю версию Цифрового Словаря Пали для MDict с [Github](https://github.com/digitalpalidictionary/rus-release/releases).
 
 ## Загрузка MDict
 
-Найдите приложение **MDict** в App Store на вашем устройстве и нажмите **GET**, чтобы установить.
+Найдите приложение **MDict** в App Store на вашем устройстве и нажмите **Скачать**, чтобы установить.
 
 ![search mdict](pics/ios/1search_mdict.JPG)
 
@@ -22,7 +22,7 @@
 
 Есть 2 способа установки.
 
-Поместите файл dpd.mdx в вашу **Библиотеку**, он установится автоматически.
+Поместите файл ru-dpd-mdict.mdx в вашу **Библиотеку**, он установится автоматически.
 
 ![library](pics/ios/2library.JPG)
 
@@ -30,7 +30,7 @@
 
 ![files](pics/ios/3files.JPG)
 
-И переместите файл dpd.mdx в папку **MDict** в разделе **На моем iPhone**.
+И переместите файл ru-dpd-mdict.mdx в папку **MDict** в разделе **На моем iPhone**.
 
 ![onmyios](pics/ios/4onmyios.JPG)
 

@@ -4,23 +4,23 @@
 
 Обновление очень простое. Вкратце:
 
-1. **Скачайте последнюю версию DPD**
-2. **Скопируйте ее в папку GoldenDict, полностью заменив старую версию**
+1. Скачайте последнюю версию DPD
+2. Скопируйте ее в папку GoldenDict, полностью заменив старую версию
 
 ## Обновление на Windows
 
-1. Скачайте последний zip-файл DPD с [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+1. Скачайте последний zip-файл DPD с [Github](https://github.com/digitalpalidictionary/rus-release/releases).
 2. Распакуйте папку DPD и скопируйте ее в папку GoldenDict. `\Documents\GoldenDict`
 3. Убедитесь, что все содержимое старой папки DPD заменено.
 4. ЛИБО полностью закройте GoldenDict и снова откройте его (убедитесь, что он не активен в системном трее) 
-   ЛИБО перейдите в Меню > Словари (Шорткат F3) и нажмите **пересканировать сейчас** и **ОК**. 
+   ЛИБО перейдите в Меню > Словари (Клавиша F3) и нажмите **пересканировать** и **ОК**. 
    ЛИБО может также сработать комбинация клавиш **Ctrl-F5** для повторного сканирования.
 
 ![rescan now](pics/update/rescan%20now.png)
 
 ## Обновление на Mac
 
-1. Скачайте последний zip-файл DPD с [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+1. Скачайте последний zip-файл DPD с [Github](https://github.com/digitalpalidictionary/rus-release/releases).
 2. Распакуйте
 3. Скопируйте папку DPD в вашу папку `/Documents/GoldenDict`, полностью заменив старую.
 4. Выходите из GoldenDict и перезапустите его 

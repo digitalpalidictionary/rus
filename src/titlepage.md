@@ -2,7 +2,7 @@
 
 DPD - это богатый возможностями словарь палийского языка на английском и русском, который работает в GoldenDict, MDict и [Kindle](kindle.html), или в любом другом приложении, поддерживающем эти форматы.
 
-Скачайте последнюю версию с [этой страницы на GitHub](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+Скачайте последнюю версию с [этой страницы на GitHub](https://github.com/digitalpalidictionary/rus-release/releases).
 
 Это работа в процессе, предоставленная для тестирования и обратной связи.
 
@@ -22,4 +22,4 @@ DPD - это богатый возможностями словарь палий
 
 Цифровой Пали Словарь распространяется под [лицензией Атрибуция-Некоммерчески 4.0 Всемирная](http://creativecommons.org/licenses/by-nc/4.0/deed.ru).
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-nc/4.0/deed.ru88x31.png)](http://creativecommons.org/licenses/by-nc/4.0/deed.ru)
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />

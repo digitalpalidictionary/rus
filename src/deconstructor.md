@@ -4,11 +4,11 @@
 
 В настоящее время он содержит около 700 000 разобранных слов, охватывая все книги в **тексте Chaṭṭha Saṅgāyana**, *mūla*, *aṭṭhakathā*, *ṭīkā* и *aññā*, а также все палийские тексты на **Sutta Central**. Это число будет уменьшаться по мере добавления новых сочетаний в DPD.
 
-![deconstructor_example](pics/deconstructor/dinnanti%C4%81dik%C4%81p%C4%ABti.png)
+![deconstructor_example](pics/deconstructor/dinnantiādikāpīti.png)
 
 ## Как установить
 
-Скачайте последнюю версию деконструктора DPD для GoldenDict или MDict с [этой страницы на GitHub](https://github.com/) и поместите его в ту же папку, что и DPD.
+Скачайте последнюю версию деконструктора DPD для GoldenDict или MDict с [этой страницы на GitHub](https://github.com/digitalpalidictionary/digitalpalidictionary/releases) и поместите его в ту же папку, что и DPD.
 
 ![deconstructor_folder](pics/deconstructor/dpd_deconstructor_folder.png)
 
@@ -26,10 +26,10 @@
 
 ## Новый подход
 
-Один из полезных продуктов Цифрового Палийского Словаря - это список склонений для каждого слова в словаре. Вместе с набором [правил трансформации букв](https://github.com/bdhrs/sqlite-db/blob/d9da7d1ae69dd9dec0aef37d7c6bbc48871ab555/sandhi/sandhi_related/sandhi_rules.tsv) этот список был использован для создания нового алгоритма разделения сандхи.
+Один из полезных продуктов Цифрового Словаря Пали - это список склонений для каждого слова в словаре. Вместе с набором [правил трансформации букв](https://github.com/bdhrs/sqlite-db/blob/d9da7d1ae69dd9dec0aef37d7c6bbc48871ab555/sandhi/sandhi_related/sandhi_rules.tsv) этот список был использован для создания нового алгоритма разделения сандхи.
 
 Это все еще в процессе и далеко не идеально - для понимания контекста всегда требуется интеллект, - но это лучше, чем все, что существует в настоящее время, давая более точные результаты и, самое главное, меньше ложных срабатываний.
 
 Например, если вы откроете *bahalamadhukatelanāgabalapicchillādīnaṃ* в DPD, он покажет разбиение, по которому можно перейти к соответствующим словам.
 
-![deconstructor](pics/deconstructor/bahalamadhukatelan%C4%81gabalapicchill%C4%81d%C4%ABna%E1%B9%83.png)
+![deconstructor](pics/deconstructor/bahalamadhukatelanāgabalapicchillādīnaṃ.png)

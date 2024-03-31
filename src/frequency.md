@@ -30,11 +30,17 @@
 
 ## Vinaya Ṭīkā
 
+![image](pics/frequency/vinaya-ṭīkā.png)
+
 Некоторые из подкомментариев Винаи (Vinaya Ṭīkā) содержат перекрывающийся материал, который нельзя сразу отнести к определенной книге Винаи, поэтому все Vinaya Ṭīkā перечислены в разделе Vinaya Pārājika.
 
 Этот раздел включает в себя Sāratthadīpanī-ṭīkā, Dvemātikāpāḷi, Vinayasaṅgaha-aṭṭhakathā, Vajirabuddhi-ṭīkā, Vimativinodanī-ṭīkā, Vinayālaṅkāra-ṭīkā, Kaṅkhāvitaraṇīpurāṇa-ṭīkā, Vinayavinicchaya-uttaravinicchaya, Vinayavinicchaya-ṭīkā, Pācityādiyojanāpāḷi и Khuddasikkhā-mūlasikkhā.
 
+---
+
 ## Кхуддака Никая
+
+![image](pics/frequency/khuddaka.png)
 
 Кхуддака Никая содержит много материала, который отличается не только по языковому стилю, но и по смысловому содержанию. Он был разделен на три соответствующих раздела для удобства ссылок:
 
@@ -62,11 +68,17 @@ Mahāniddesapāḷi, Cūḷaniddesapāḷi, Paṭisambhidām
 
 aggapāḷi, Nettippakaraṇapāḷi, Milindapañhapāḷi, Peṭakopadesapāḷi.
 
+---
+
+Благодарим Дост. Анандаджоти с [Ancient Buddhist Texts](https://www.ancient-buddhist-texts.net/) за его предложения относительно разделения Кхуддака Никая.
+
+---
+
 ## Aññā
 
 Раздел Aññā содержит огромный объем материала с комментариев и до современности.
 
-![image](pics/frequency/a%C3%B1%C3%B1%C4%81.png)
+![image](pics/frequency/aññā.png)
 
 ### Aññā Abhidhamma
 
@@ -76,7 +88,7 @@ aggapāḷi, Nettippakaraṇapāḷi, Milindapañhapāḷi, Peṭakopadesapāḷ
 
 ### Aññā Visuddhimagga
 
-![image](pics/frequency/a%C3%B1%C3%B1%C4%81-visuddhimagga.png)
+![image](pics/frequency/aññā-visuddhimagga.png)
 
 Висуддхимагга включена в раздел Aññā под *aṭṭhakathā*, а его комментарий под *ṭīkā*.
 

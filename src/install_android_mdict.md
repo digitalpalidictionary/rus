@@ -4,9 +4,9 @@
 
 Если вы все еще предпочитаете использовать MDict, вот как его настроить.
 
-## В кратце
+## Вкратце
 
-1. Скачайте последнюю версию MDict DPD с [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+1. Скачайте последнюю версию MDict DPD с [Github](https://github.com/digitalpalidictionary/rus-release/releases).
 2. Скачайте и установите MDict из [Google Play Store](https://play.google.com/store/apps/details?id=cn.mdict&amp;hl=en&amp;gl=US) или с [сайта MDict](https://www.mdict.cn/wp/?page_id=5325&amp;lang=en).
 3. Скопируйте DPD в папку MDict.
 
@@ -14,7 +14,7 @@
 
 ## Загрузить DPD
 
-Прежде всего, загрузите последнюю версию MDict DPD с [Github](https://github.com/digitalpalidictionary/digitalpalidictionary/releases).
+Прежде всего, загрузите последнюю версию MDict DPD с [Github](https://github.com/digitalpalidictionary/rus-release/releases).
 
 ## Загрузить MDict
 
@@ -29,7 +29,7 @@
 Используя любой файловый менеджер, создайте папку **MDict/doc** на вашей SD-карте.  
 (Это папка с названием **MDict** и подпапка с названием **doc**.)
 
-**Скопируйте** файл dpd.mdx в папку **MDict/doc**.
+**Скопируйте** файл ru-dpd-mdict.mdx в папку **MDict/doc**.
 
 ![mdict folder](pics/mdict/folder.jpg)
 
