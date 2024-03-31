@@ -1,6 +1,19 @@
+
+cd project-path
+
+git checkout main
+
+copy content of .git folder into folder "../rus-digitalpalidictionary-dot-git" which correspond DOT_GIT_DIR from build.sh
+
+git checkout source
+
+---
+
 View the file in browser
 
 mdbook watch -o
+
+---
 
 Make edits, commit and push to ’source’ branch.
 
