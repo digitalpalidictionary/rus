@@ -22,15 +22,15 @@
 
 ![select language](pics/win-install/select%20language.png)
 
-Нажмите Далее.
+Нажмите **Далее >**.
 
 ![setup welcome](pics/win-install/setup%20welcome.png)
 
-Нажмите Я согласен.
+Нажмите **Принимаю**.
 
 ![gd license](pics/win-install/gd%20license.png)
 
-Выберите место установки и нажмите **Далее**.
+Выберите место установки и нажмите **Далее >**.
 
 ![choose default install location](pics/win-install/choose%20default%20install%20location.png)
 
@@ -86,13 +86,9 @@
 
 Перейдите в `\Documents\GoldenDict` и нажмите Выбрать папку.
 
-Установите флажок **Рекурсивно** (это гарантирует добавление всех подпапок).
+Установите флажок **Рекурсивно** (это гарантирует добавление всех подпапок). И нажимите **Пересканировать**
 
 ![recursive](pics/win-install/recursive.png)
-
-Нажмите ОК.
-
-![ok](pics/win-install/ok.png)
 
 Подождите, пока словарь будет проиндексирован.
 

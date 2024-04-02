@@ -27,13 +27,13 @@ DictTango использует файлы MDict, но предлагает го�
 
 ### Скачать DPD
 
-Скачайте последнюю версию **dpd-mdict.zip** с [Github](https://github.com/digitalpalidictionary/rus-release/releases)
+Скачайте последнюю версию **ru-dpd-mdict.zip** с [Github](https://github.com/digitalpalidictionary/rus-release/releases)
 
-![github mdict](pics/dicttango/github-mdict.jpg)
+![github mdict](pics/dicttango/github-mdict.png)
 
 ### Скопируйте файлы DPD в папку DictTango
 
-Используя ваш файловый менеджер на выбор, **распакуйте** dpd-mdict.zip.
+Используя ваш файловый менеджер на выбор, **распакуйте** ru-dpd-mdict.zip.
 
 **Скопируйте** три файла DPD в эту папку: **`/Android/data/cn.jimex.dict/files/Dictionaries`**
 
