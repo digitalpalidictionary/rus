@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="ru" class="light" dir="ltr">
     <head>
+        <!-- java for russian search -->
+        <script src="../js/lunr.stemmer.support.js"></script>
+        <script src="../js/lunr.ru.js"></script>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Цифровой Пали Словарь</title>
@@ -90,7 +93,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="titlepage.html">Главная</a></li><li class="chapter-item expanded affix "><a href="features.html">Особенности</a></li><li class="chapter-item expanded affix "><a href="rootdict.html">Словарь корней</a></li><li class="chapter-item expanded affix "><a href="frequency.html">Частота слов</a></li><li class="chapter-item expanded affix "><a href="deconstructor.html">Деконструктор</a></li><li class="chapter-item expanded affix "><a href="grammardict.html">Словарь грамматики</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="tpr.html">Tipitaka Pali Reader</a></li><li class="chapter-item expanded affix "><a href="tbw.html">The Buddha's Words</a></li><li class="chapter-item expanded affix "><a href="simsampa.html">Simsapa Dhamma Reader</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="install_win.html">Установка на Windows</a></li><li class="chapter-item expanded affix "><a href="install_mac.html">Установка на Mac</a></li><li class="chapter-item expanded affix "><a href="install_ios.html">Установка на iOS</a></li><li class="chapter-item expanded affix "><a href="install_linux.html">Установка на Linux</a></li><li class="chapter-item expanded affix "><a href="install_android_dicttango.html">Установка на Android (DictTango)</a></li><li class="chapter-item expanded affix "><a href="install_android_goldendict.html">Установка на Android (GoldenDict)</a></li><li class="chapter-item expanded affix "><a href="install_android_mdict.html">Установка на Android (MDict)</a></li><li class="chapter-item expanded affix "><a href="kindle.html">Установка на Kindle</a></li><li class="chapter-item expanded affix "><a href="update.html">Обновление</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="setup_hotkey.html">Настройка горячей клавиши</a></li><li class="chapter-item expanded affix "><a href="setup_scan_popup.html">Настройка всплывающего окна</a></li><li class="chapter-item expanded affix "><a href="setup_advanced.html">Настройка расширенных функций</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="bibliography.html">Библиография</a></li><li class="chapter-item expanded affix "><a href="thanks.html">Благодарности</a></li><li class="chapter-item expanded affix "><a href="feedback_form.html">Форма обратной связи</a></li><li class="chapter-item expanded affix "><a href="coding_help.html">Помощь в программировании</a></li><li class="chapter-item expanded affix "><a href="contact.html">Контакты</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="titlepage.html">Главная</a></li><li class="chapter-item expanded affix "><a href="features.html">Особенности</a></li><li class="chapter-item expanded affix "><a href="rootdict.html">Словарь корней</a></li><li class="chapter-item expanded affix "><a href="frequency.html">Частота слов</a></li><li class="chapter-item expanded affix "><a href="deconstructor.html">Деконструктор</a></li><li class="chapter-item expanded affix "><a href="grammardict.html">Словарь грамматики</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="tpr.html">Tipitaka Pali Reader</a></li><li class="chapter-item expanded affix "><a href="tbw.html">The Buddha's Words</a></li><li class="chapter-item expanded affix "><a href="simsampa.html">Simsapa Dhamma Reader</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="install_win.html">Установка на Windows</a></li><li class="chapter-item expanded affix "><a href="install_mac.html">Установка на Mac</a></li><li class="chapter-item expanded affix "><a href="install_ios.html">Установка на iOS</a></li><li class="chapter-item expanded affix "><a href="install_linux.html">Установка на Linux</a></li><li class="chapter-item expanded affix "><a href="install_android_dicttango.html">Установка на Android (DictTango)</a></li><li class="chapter-item expanded affix "><a href="kindle.html">Установка на Kindle</a></li><li class="chapter-item expanded affix "><a href="update.html">Обновление</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="setup_hotkey.html">GoldenDict: Настройка горячей клавиши</a></li><li class="chapter-item expanded affix "><a href="setup_scan_popup.html">GoldenDict: Настройка всплывающего окна</a></li><li class="chapter-item expanded affix "><a href="setup_advanced.html">GoldenDict: Настройка расширенных функций</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="bibliography.html">Библиография</a></li><li class="chapter-item expanded affix "><a href="thanks.html">Благодарности</a></li><li class="chapter-item expanded affix "><a href="feedback_form.html">Форма обратной связи</a></li><li class="chapter-item expanded affix "><a href="coding_help.html">Помощь в программировании</a></li><li class="chapter-item expanded affix "><a href="contact.html">Контакты</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -125,10 +128,10 @@
                                 <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Содержание" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
                         </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <button id="theme-toggle" class="icon-button" type="button" title="Сменить тему" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
@@ -138,7 +141,7 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Поиск. (Клавиша: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -146,7 +149,7 @@
                     <h1 class="menu-title">Цифровой Пали Словарь</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print book" aria-label="Print this book">
+                        <a href="print.html" title="Напечатать" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         <a href="https://digitalpalidictionary.github.io/" title="English" aria-label="English">
@@ -158,7 +161,7 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Поиск по данному руководству ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -182,6 +185,7 @@
 <p>DPD - это богатый возможностями словарь палийского языка на английском и русском, который работает в GoldenDict, MDict и <a href="kindle.html">Kindle</a>, или в любом другом приложении, поддерживающем эти форматы.</p>
 <p>Скачайте последнюю версию с <a href="https://github.com/digitalpalidictionary/rus-release/releases">этой страницы на GitHub</a>.</p>
 <p>Это работа в процессе, предоставленная для тестирования и обратной связи.</p>
+<p>Часть информации в словаре была <a href="https://digitalpalidictionary.github.io/rus/features.html#%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8-%D1%81%D0%B5%D1%82%D1%8F%D0%BC%D0%B8">переведена автоматически</a> и еще не корректировалась вручную, <a href="contact.html">свяжитесь с нами</a> если хотите поучаствовать в процессе.</p>
 <p>Вот удобное руководство по некоторым <a href="features.html">возможностям</a>, доступным в DPD.</p>
 <p>Прежде всего, вам нужно установить и настроить GoldenDict или MDict на вашем компьютере (<a href="install_win.html">Win</a> / <a href="install_mac.html">Mac</a> / <a href="install_ios.html">iOS</a> / <a href="install_linux.html">Linux</a> / <a href="install_android_dicttango.html">Android</a>) или <a href="update.html">обновить</a> раз в месяц, если вы уже установили их.</p>
 <p>Затем можно <a href="setup_hotkey.html">настроить горячую клавишу</a>, если вы используете Windows или Mac, или попробовать <a href="setup_scan_popup.html">всплывающее окно</a>, если вы используете Linux. Это позволит вам щелкнуть любое слово в любом тексте на пали, и автоматически открыть его в GoldenDict.</p>
@@ -232,7 +236,7 @@
 <p><img src="pics/features/complete_no.png" alt="half_complete" /></p>
 <p><span style='color:gray'>✗</span> серый крестик означает, что данные о слове все еще находятся в процессе создания и содержат только таблицу измененных форм, таблицу частотности и очень базовую информацию.</p>
 <h2 id="Перевод-нейронными-сетями"><a class="header" href="#Перевод-нейронными-сетями">Перевод нейронными сетями</a></h2>
-<p>Важно отметить, что часть информации в нашем словаре была частично переведена с использованием передовых технологий искусственного интеллекта, таких как нейронные сети (например <a href="https://openai.com/">GPT</a>). Этот процесс позволяет нам расширять словарь и обновлять его с более высокой скоростью. Однако, такие переводы требуют дополнительной проверки для обеспечения точности и достоверности информации. Поэтому, записи, полученные с помощью искусственного интеллекта, помечены как <strong>[пер. ИИ]</strong>. Если вы обнаружите явно некорректный перевод ИИ, пожалуйста, сообщите нам через <a href="https://docs.google.com/forms/d/1iMD9sCSWFfJAFCFYuG9HRIyrr9KFRy0nAOVApM998wM/viewform?">Google форму.</a></p>
+<p>Важно отметить, что часть информации в словаре была частично переведена с использованием технологий искусственного интеллекта, нейронными сетями <a href="https://platform.openai.com/overview">GPT 4o</a>. Этот процесс позволяет нам расширять словарь и обновлять его с более высокой скоростью. Однако, такие переводы требуют дополнительной проверки для обеспечения точности и достоверности информации. Поэтому, записи, полученные с помощью искусственного интеллекта, помечены как <strong>[пер. ИИ]</strong>. Если вы обнаружите явно некорректный перевод ИИ, пожалуйста, сообщите нам через <a href="https://docs.google.com/forms/d/1iMD9sCSWFfJAFCFYuG9HRIyrr9KFRy0nAOVApM998wM/viewform?">Google форму.</a></p>
 <p><img src="pics/features/ai_translation.png" alt="half_complete" /></p>
 <h2 id="Грамматика"><a class="header" href="#Грамматика">Грамматика</a></h2>
 <p>Щелкните кнопку <strong>грамматика</strong>, чтобы получить более подробную грамматическую информацию о слове.</p>
@@ -445,15 +449,15 @@
 <h2 id="Вкратце"><a class="header" href="#Вкратце">Вкратце</a></h2>
 <ol>
 <li>Скачайте последнюю версию DPD <a href="https://github.com/digitalpalidictionary/rus-release/releases">здесь</a>.</li>
-<li>Установите версию 1.5 <a href="https://sourceforge.net/projects/goldendict/files/early%20access%20builds/GoldenDict-1.5.0-RC2-372-gc3ff15f-Install.exe/download">GoldenDict</a>.</li>
+<li>Установите свежую версию <a href="https://github.com/xiaoyifang/goldendict-ng/releases/download/v24.05.05-LiXia.ecd1138c/6.7.0-GoldenDict-ng-Installer.exe">GoldenDict</a>.</li>
 <li>В настройках укажите GoldenDict папку с DPD.</li>
 </ol>
 <p>Вот <a href="https://www.youtube.com/watch?v=KZ4CecdVL0k">видео</a>, чтобы помочь вам с установкой на Windows от <a href="https://www.youtube.com/channel/UC73nNRzMzvweRb52ArFG3Gg">канала Learn Pali на Youtube</a>.</p>
 <p>Ниже приведены подробные <em>anupubba</em> инструкции в текстовом формате.</p>
 <h2 id="Установка-goldendict"><a class="header" href="#Установка-goldendict">Установка GoldenDict</a></h2>
-<p>Скачайте последнюю версию GoldenDict с <a href="https://sourceforge.net/projects/goldendict/files/early%20access%20builds/GoldenDict-1.5.0-RC2-372-gc3ff15f-Install.exe/download">Sourceforge</a>.</p>
-<p>Перейдите в вашу папку <code>Загрузки</code> и дважды щелкните <code>GoldenDict-1.5.0-RC2-372-gc3ff15f-Install.exe</code>.</p>
-<p><img src="pics/win-install/gd%20exe.png" alt="gd exe" /></p>
+<p>Скачайте последнюю версию GoldenDict NG с <a href="https://github.com/xiaoyifang/goldendict-ng/releases/download/v24.05.05-LiXia.ecd1138c/6.7.0-GoldenDict-ng-Installer.exe">Github</a>.</p>
+<p>Перейдите в вашу папку <code>Загрузки</code> и дважды щелкните <code>6.7.0-GoldenDict-ng-Installer.exe</code>.</p>
+<!-- [gd exe](pics/win-install/gd%20exe.png) -->
 <p>Выберите ваш язык. Нажмите <strong>OK</strong>.</p>
 <p><img src="pics/win-install/select%20language.png" alt="select language" /></p>
 <p>Нажмите <strong>Далее &gt;</strong>.</p>
@@ -499,17 +503,17 @@
 <h2 id="Кратко"><a class="header" href="#Кратко">Кратко</a></h2>
 <ol>
 <li>Скачайте последнюю версию DPD <a href="https://github.com/digitalpalidictionary/rus-release/releases">здесь</a>.</li>
-<li>Установите версию 1.5 GoldenDict для <a href="https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_563%29.dmg/download">OS X 10.9 Mavericks и выше</a> или <a href="https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_5121%29.dmg/download">OS X 10.12 Sierra и выше</a>.</li>
+<li>Установите версию GoldenDict NG для <a href="https://github.com/xiaoyifang/goldendict-ng/releases/download/v24.05.05-LiXia.ecd1138c/GoldenDict-24.05.05-Qt6.7.0-arm64.dmg">Apple Silicon M1 и выше</a> или <a href="https://github.com/xiaoyifang/goldendict-ng/releases/download/v24.05.05-LiXia.ecd1138c/GoldenDict-24.05.05-Qt6.7.0-x86_64.dmg">Intel AMD64</a>.</li>
 <li>В настройках направьте GoldenDict в папку DPD.</li>
 </ol>
 <p>Ниже подробные инструкции <em>anupubba</em>.</p>
 <h2 id="Скачать-goldendict"><a class="header" href="#Скачать-goldendict">Скачать GoldenDict</a></h2>
-<p>Если вы используете OS X 10.9 Mavericks или более позднюю версию, <a href="https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_563%29.dmg/download">скачайте эту версию GoldenDict с Sourceforge</a>.</p>
-<p>Если вы используете OS X 10.12 Sierra или более позднюю версию, <a href="https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_5121%29.dmg/download">скачайте эту версию GoldenDict с Sourceforge</a>.</p>
-<p>Более подробную информацию о последней версии GoldenDict для Mac можно найти <a href="https://github.com/goldendict/goldendict/wiki/Early-Access-Builds-for-Mac-OS-X">здесь</a>.</p>
+<p>Если вы используете an Apple Silicon M1 или более позднюю версию, <a href="https://github.com/xiaoyifang/goldendict-ng/releases/download/v24.05.05-LiXia.ecd1138c/GoldenDict-24.05.05-Qt6.7.0-arm64.dmg">скачайте эту версию GoldenDict NG с GitHub</a>.</p>
+<p>Если вы используете Intel AMD64, <a href="https://github.com/xiaoyifang/goldendict-ng/releases/download/v24.05.05-LiXia.ecd1138c/GoldenDict-24.05.05-Qt6.7.0-x86_64.dmg">скачайте эту версию GoldenDict NG с Github</a>.</p>
+<!-- Более подробную информацию о последней версии GoldenDict для Mac можно найти [здесь](https://github.com/goldendict/goldendict/wiki/Early-Access-Builds-for-Mac-OS-X).-->
 <h2 id="Установка-goldendict-1"><a class="header" href="#Установка-goldendict-1">Установка GoldenDict</a></h2>
-<p>Дважды щелкните файл .dmg GoldenDict в папке Загрузки.</p>
-<p><img src="pics/mac-install/download%20gd.png" alt="download gd" /></p>
+<p>Дважды щелкните файл <code>GoldenDict.dmg</code> в папке Загрузки.</p>
+<!-- [download gd](pics/mac-install/download%20gd.png)-->
 <p>Дважды щелкните установщик.</p>
 <p><img src="pics/mac-install/goldendict%20install.png" alt="goldendict install" /></p>
 <p>Вероятно, вы получите предупреждение безопасности. Нажмите "Открыть в любом случае".</p>
@@ -710,73 +714,6 @@ sudo apt-get install goldendict
 <p>Переместите словари вверх и вниз, <strong>нажимая стрелки</strong>.</p>
 <p><img src="pics/dicttango/sort-up-down2.jpg" alt="dictionary order" /></p>
 <p>Наслаждайтесь чтением на пали с этим отличным приложением для Android!</p>
-<div style="break-before: page; page-break-before: always;"></div><h2 id="Установка-goldendict-на-android"><a class="header" href="#Установка-goldendict-на-android">Установка GoldenDict на Android</a></h2>
-<p>GoldenDict на Android можно получить, выделяя слово в тексте и нажимая <strong>Поделиться</strong> в контекстном меню. Он также имеет <strong>темный режим</strong>.</p>
-<h3 id="Вкратце-2"><a class="header" href="#Вкратце-2">Вкратце</a></h3>
-<ol>
-<li>Скачайте последнюю версию DPD <a href="https://github.com/digitalpalidictionary/rus-release/releases">здесь</a></li>
-<li>Установите GoldenDict из <a href="https://play.google.com/store/apps/details?id=mobi.goldendict.android.free">Google Play Store</a></li>
-<li>Скопируйте DPD в папку GoldenDict</li>
-</ol>
-<p>Ниже приведены подробные инструкции <em>anupubba</em>.</p>
-<h3 id="Загрузить-dpd"><a class="header" href="#Загрузить-dpd">Загрузить DPD</a></h3>
-<p>Прежде всего, загрузите последнюю версию Цифрового Пали Словаря с <a href="https://github.com/digitalpalidictionary/rus-release/releases">Github</a></p>
-<h3 id="Загрузить-goldendict"><a class="header" href="#Загрузить-goldendict">Загрузить GoldenDict</a></h3>
-<p>Скачайте и установите GoldenDict из <a href="https://play.google.com/store/apps/details?id=mobi.goldendict.android.free">Google Play Store</a></p>
-<p><img src="pics/android-install/google%20play%20store.jpg" alt="google play store" /></p>
-<h3 id="Скопировать-папку-dpd"><a class="header" href="#Скопировать-папку-dpd">Скопировать папку DPD</a></h3>
-<p>Используя любой файловый менеджер, скопируйте папку DPD в папку GoldenDict. Вы можете найти ее в корневом каталоге или на SD-карте, если у вас она установлена.</p>
-<p><img src="pics/android-install/copy%20dpd%20to%20goldendict%20folder.jpg" alt="image" /></p>
-<h3 id="Запустить-goldendict"><a class="header" href="#Запустить-goldendict">Запустить GoldenDict</a></h3>
-<p>Когда вы запускаете приложение GoldenDict, появится сообщение о необходимости индексации словарей. Нажмите <strong>Начать</strong>.</p>
-<p><img src="pics/android-install/scan%20dicts.jpg" alt="image" /></p>
-<p>Дождитесь окончания индексирования и нажмите <strong>Готово</strong>.</p>
-<p><img src="pics/android-install/scanning.jpg" alt="image" /></p>
-<p>Все готово!</p>
-<p>Вы можете получить доступ к DPD в любое время из любого приложения, выбрав слово, удерживая его до появления меню опций, и нажав <strong>Поделиться &gt; GoldenDict</strong>.</p>
-<p><img src="pics/android-install/dpd%20in%20goldendict.jpg" alt="dpd in goldendict" /></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="Установка-mdict-на-android"><a class="header" href="#Установка-mdict-на-android">Установка MDict на Android</a></h1>
-<p>Пользователям Android рекомендуется использовать приложение <a href="install_android_dicttango.html">DictTango</a> вместо MDict. Оно предлагает намного лучший пользовательский опыт и имеет множество дополнительных опций.</p>
-<p>Если вы все еще предпочитаете использовать MDict, вот как его настроить.</p>
-<h2 id="Вкратце-3"><a class="header" href="#Вкратце-3">Вкратце</a></h2>
-<ol>
-<li>Скачайте последнюю версию MDict DPD с <a href="https://github.com/digitalpalidictionary/rus-release/releases">Github</a>.</li>
-<li>Скачайте и установите MDict из <a href="https://play.google.com/store/apps/details?id=cn.mdict&amp;hl=en&amp;gl=US">Google Play Store</a> или с <a href="https://www.mdict.cn/wp/?page_id=5325&amp;lang=en">сайта MDict</a>.</li>
-<li>Скопируйте DPD в папку MDict.</li>
-</ol>
-<p>Ниже приведены подробные инструкции <em>anupubba</em>.</p>
-<h2 id="Загрузить-dpd-1"><a class="header" href="#Загрузить-dpd-1">Загрузить DPD</a></h2>
-<p>Прежде всего, загрузите последнюю версию MDict DPD с <a href="https://github.com/digitalpalidictionary/rus-release/releases">Github</a>.</p>
-<h2 id="Загрузить-mdict"><a class="header" href="#Загрузить-mdict">Загрузить MDict</a></h2>
-<p>Скачайте и установите MDict из <a href="https://play.google.com/store/apps/details?id=cn.mdict&amp;hl=en&amp;gl=US">Google Play Store</a> ИЛИ с <a href="https://www.mdict.cn/wp/?page_id=5325&amp;lang=en">сайта MDict</a>.</p>
-<p><img src="pics/mdict/playstore.jpg" alt="google play store" /></p>
-<p><img src="pics/mdict/mdict_website.jpg" alt="mdict website" /></p>
-<h2 id="Скопировать-файл-dpd-в-папку-mdict"><a class="header" href="#Скопировать-файл-dpd-в-папку-mdict">Скопировать файл dpd в папку MDict</a></h2>
-<p>Используя любой файловый менеджер, создайте папку <strong>MDict/doc</strong> на вашей SD-карте.<br />
-(Это папка с названием <strong>MDict</strong> и подпапка с названием <strong>doc</strong>.)</p>
-<p><strong>Скопируйте</strong> файл ru-dpd-mdict.mdx в папку <strong>MDict/doc</strong>.</p>
-<p><img src="pics/mdict/folder.jpg" alt="mdict folder" /></p>
-<h2 id="Настройка-mdict"><a class="header" href="#Настройка-mdict">Настройка MDict</a></h2>
-<p>Вы увидите этот экран при первом запуске MDict</p>
-<p><img src="pics/mdict/splash.jpg" alt="splash" /></p>
-<p>Откройте <strong>Библиотеку</strong>.</p>
-<p><img src="pics/mdict/library.jpg" alt="library" /></p>
-<p>Проверьте, что <strong>DPD</strong> - это ваша библиотека.</p>
-<p><img src="pics/mdict/dpd_library.jpg" alt="dpd library" /></p>
-<p>Выберите <strong>Группы &gt; Все</strong>. Это важно, если вы хотите видеть <strong>все определения</strong> слова.</p>
-<p><img src="pics/mdict/groups.jpg" alt="groups" /></p>
-<p>Откройте <strong>Настройки</strong>.</p>
-<p><img src="pics/mdict/settings.jpg" alt="settings" /></p>
-<p>Нажмите на <strong>Поиск</strong>.</p>
-<p><img src="pics/mdict/lookup.jpg" alt="lookup" /></p>
-<p>Убедитесь, что <strong>Глобальный монитор буфера обмена</strong> включен. Это позволяет открывать в MDict все, что было скопировано в буфер обмена.</p>
-<p><img src="pics/mdict/global_clipboard_monitor.jpg" alt="clipboard monitor" /></p>
-<p>Удерживайте любое палийское слово в любом тексте, чтобы его <strong>выделить</strong>, нажатие на <strong>копировать</strong> откроет его в MDict.</p>
-<p><img src="pics/mdict/select_copy.jpg" alt="select copy" /></p>
-<h2 id="Настройки-dpr"><a class="header" href="#Настройки-dpr">Настройки DPR</a></h2>
-<p>Как дополнительный бонус, если вы используете Цифровой Пали Читатель, откройте <strong>Настройки</strong> и включите <strong>Копировать слова в буфер обмена по щелчку</strong>. Теперь просто щелкнув по любому слову, вы должны увидеть его в MDict.</p>
-<p><img src="pics/mdict/dpr_preferences.jpg" alt="dprsettings" /></p>
-<p>Вы настроили все на Android!</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="dpd-на-kindle"><a class="header" href="#dpd-на-kindle">DPD на Kindle</a></h1>
 <p>Теперь доступна легкая версия DPD для Amazon Kindle.</p>
 <h2 id="Установка"><a class="header" href="#Установка">Установка</a></h2>

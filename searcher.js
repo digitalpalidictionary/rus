@@ -127,11 +127,11 @@ window.search = window.search || {};
     
     function formatSearchMetric(count, searchterm) {
         if (count == 1) {
-            return count + " search result for '" + searchterm + "':";
+            return count + " найдено по запросу '" + searchterm + "':";
         } else if (count == 0) {
-            return "No search results for '" + searchterm + "'.";
+            return "Ничего не найдено по запросу '" + searchterm + "'.";
         } else {
-            return count + " search results for '" + searchterm + "':";
+            return count + " найдено по запросу '" + searchterm + "':";
         }
     }
     
@@ -258,6 +258,24 @@ window.search = window.search || {};
         searchbar_outer = config.searchbar_outer;
         doc_urls = config.doc_urls;
         searchindex = elasticlunr.Index.load(config.index);
+        // TODO Russian search not working, java from https://github.com/rust-lang/mdBook/issues/1081#issuecomment-2030246067 
+        // searchindex = elasticlunr(function() {
+        //     // adding (multi)language
+        //     this.use(elasticlunr.multiLanguage('en', 'ru')); 
+            
+        //     // fields to index.
+        //     this.addField('title');
+        //     this.addField('body');
+        //     this.addField('breadcrumbs');
+
+        //     // Identify documents field
+        //     this.setRef('id');
+            
+        //     // Get all documents stored in prebuilded index
+        //     for (let key in config.index.documentStore.docs) {
+        //         this.addDoc(config.index.documentStore.docs[key]);
+        //     }
+        // });
 
         // Set up events
         searchicon.addEventListener('click', function(e) { searchIconClickHandler(); }, false);
@@ -316,7 +334,7 @@ window.search = window.search || {};
     
     // Eventhandler for keyevents on `document`
     function globalKeyHandler(e) {
-        if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey || e.target.type === 'textarea' || e.target.type === 'text' || !hasFocus() && /^(?:input|select|textarea)$/i.test(e.target.nodeName)) { return; }
+        if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey || e.target.type === 'textarea' || e.target.type === 'text') { return; }
 
         if (e.keyCode === ESCAPE_KEYCODE) {
             e.preventDefault();

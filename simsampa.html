@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="ru" class="light" dir="ltr">
     <head>
+        <!-- java for russian search -->
+        <script src="../js/lunr.stemmer.support.js"></script>
+        <script src="../js/lunr.ru.js"></script>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Simsapa Dhamma Reader - Цифровой Пали Словарь</title>
@@ -89,7 +92,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="titlepage.html">Главная</a></li><li class="chapter-item expanded affix "><a href="features.html">Особенности</a></li><li class="chapter-item expanded affix "><a href="rootdict.html">Словарь корней</a></li><li class="chapter-item expanded affix "><a href="frequency.html">Частота слов</a></li><li class="chapter-item expanded affix "><a href="deconstructor.html">Деконструктор</a></li><li class="chapter-item expanded affix "><a href="grammardict.html">Словарь грамматики</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="tpr.html">Tipitaka Pali Reader</a></li><li class="chapter-item expanded affix "><a href="tbw.html">The Buddha's Words</a></li><li class="chapter-item expanded affix "><a href="simsampa.html" class="active">Simsapa Dhamma Reader</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="install_win.html">Установка на Windows</a></li><li class="chapter-item expanded affix "><a href="install_mac.html">Установка на Mac</a></li><li class="chapter-item expanded affix "><a href="install_ios.html">Установка на iOS</a></li><li class="chapter-item expanded affix "><a href="install_linux.html">Установка на Linux</a></li><li class="chapter-item expanded affix "><a href="install_android_dicttango.html">Установка на Android (DictTango)</a></li><li class="chapter-item expanded affix "><a href="install_android_goldendict.html">Установка на Android (GoldenDict)</a></li><li class="chapter-item expanded affix "><a href="install_android_mdict.html">Установка на Android (MDict)</a></li><li class="chapter-item expanded affix "><a href="kindle.html">Установка на Kindle</a></li><li class="chapter-item expanded affix "><a href="update.html">Обновление</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="setup_hotkey.html">Настройка горячей клавиши</a></li><li class="chapter-item expanded affix "><a href="setup_scan_popup.html">Настройка всплывающего окна</a></li><li class="chapter-item expanded affix "><a href="setup_advanced.html">Настройка расширенных функций</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="bibliography.html">Библиография</a></li><li class="chapter-item expanded affix "><a href="thanks.html">Благодарности</a></li><li class="chapter-item expanded affix "><a href="feedback_form.html">Форма обратной связи</a></li><li class="chapter-item expanded affix "><a href="coding_help.html">Помощь в программировании</a></li><li class="chapter-item expanded affix "><a href="contact.html">Контакты</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="titlepage.html">Главная</a></li><li class="chapter-item expanded affix "><a href="features.html">Особенности</a></li><li class="chapter-item expanded affix "><a href="rootdict.html">Словарь корней</a></li><li class="chapter-item expanded affix "><a href="frequency.html">Частота слов</a></li><li class="chapter-item expanded affix "><a href="deconstructor.html">Деконструктор</a></li><li class="chapter-item expanded affix "><a href="grammardict.html">Словарь грамматики</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="tpr.html">Tipitaka Pali Reader</a></li><li class="chapter-item expanded affix "><a href="tbw.html">The Buddha's Words</a></li><li class="chapter-item expanded affix "><a href="simsampa.html" class="active">Simsapa Dhamma Reader</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="install_win.html">Установка на Windows</a></li><li class="chapter-item expanded affix "><a href="install_mac.html">Установка на Mac</a></li><li class="chapter-item expanded affix "><a href="install_ios.html">Установка на iOS</a></li><li class="chapter-item expanded affix "><a href="install_linux.html">Установка на Linux</a></li><li class="chapter-item expanded affix "><a href="install_android_dicttango.html">Установка на Android (DictTango)</a></li><li class="chapter-item expanded affix "><a href="kindle.html">Установка на Kindle</a></li><li class="chapter-item expanded affix "><a href="update.html">Обновление</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="setup_hotkey.html">GoldenDict: Настройка горячей клавиши</a></li><li class="chapter-item expanded affix "><a href="setup_scan_popup.html">GoldenDict: Настройка всплывающего окна</a></li><li class="chapter-item expanded affix "><a href="setup_advanced.html">GoldenDict: Настройка расширенных функций</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="bibliography.html">Библиография</a></li><li class="chapter-item expanded affix "><a href="thanks.html">Благодарности</a></li><li class="chapter-item expanded affix "><a href="feedback_form.html">Форма обратной связи</a></li><li class="chapter-item expanded affix "><a href="coding_help.html">Помощь в программировании</a></li><li class="chapter-item expanded affix "><a href="contact.html">Контакты</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -124,10 +127,10 @@
                                 <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Содержание" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
                         </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <button id="theme-toggle" class="icon-button" type="button" title="Сменить тему" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
@@ -137,7 +140,7 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Поиск. (Клавиша: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
@@ -145,7 +148,7 @@
                     <h1 class="menu-title">Цифровой Пали Словарь</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print book" aria-label="Print this book">
+                        <a href="print.html" title="Напечатать" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         <a href="https://digitalpalidictionary.github.io/" title="English" aria-label="English">
@@ -157,7 +160,7 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Поиск по данному руководству ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
