@@ -3,24 +3,24 @@
 ## Кратко
 
 1. Скачайте последнюю версию DPD [здесь](https://github.com/digitalpalidictionary/rus-release/releases).
-2. Установите версию 1.5 GoldenDict для [OS X 10.9 Mavericks и выше](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_563%29.dmg/download) или [OS X 10.12 Sierra и выше](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_5121%29.dmg/download).
+2. Установите версию GoldenDict NG для [Apple Silicon M1 и выше](https://github.com/xiaoyifang/goldendict-ng/releases/download/v24.05.05-LiXia.ecd1138c/GoldenDict-24.05.05-Qt6.7.0-arm64.dmg) или [Intel AMD64](https://github.com/xiaoyifang/goldendict-ng/releases/download/v24.05.05-LiXia.ecd1138c/GoldenDict-24.05.05-Qt6.7.0-x86_64.dmg).
 3. В настройках направьте GoldenDict в папку DPD.
 
 Ниже подробные инструкции *anupubba*.
 
 ## Скачать GoldenDict
 
-Если вы используете OS X 10.9 Mavericks или более позднюю версию, [скачайте эту версию GoldenDict с Sourceforge](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_563%29.dmg/download).
+Если вы используете an Apple Silicon M1 или более позднюю версию, [скачайте эту версию GoldenDict NG с GitHub](https://github.com/xiaoyifang/goldendict-ng/releases/download/v24.05.05-LiXia.ecd1138c/GoldenDict-24.05.05-Qt6.7.0-arm64.dmg).
 
-Если вы используете OS X 10.12 Sierra или более позднюю версию, [скачайте эту версию GoldenDict с Sourceforge](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/MacOS/GoldenDict-1.5.0-RC2-372-gc3ff15f%28Qt_5121%29.dmg/download).
+Если вы используете Intel AMD64, [скачайте эту версию GoldenDict NG с Github](https://github.com/xiaoyifang/goldendict-ng/releases/download/v24.05.05-LiXia.ecd1138c/GoldenDict-24.05.05-Qt6.7.0-x86_64.dmg).
 
-Более подробную информацию о последней версии GoldenDict для Mac можно найти [здесь](https://github.com/goldendict/goldendict/wiki/Early-Access-Builds-for-Mac-OS-X).
+<!-- Более подробную информацию о последней версии GoldenDict для Mac можно найти [здесь](https://github.com/goldendict/goldendict/wiki/Early-Access-Builds-for-Mac-OS-X).-->
 
 ## Установка GoldenDict
 
-Дважды щелкните файл .dmg GoldenDict в папке Загрузки.
+Дважды щелкните файл `GoldenDict.dmg` в папке Загрузки.
 
-![download gd](pics/mac-install/download%20gd.png)
+<!-- [download gd](pics/mac-install/download%20gd.png)-->
 
 Дважды щелкните установщик.
 

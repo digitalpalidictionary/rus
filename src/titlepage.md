@@ -6,6 +6,8 @@ DPD - это богатый возможностями словарь палий
 
 Это работа в процессе, предоставленная для тестирования и обратной связи.
 
+Часть информации в словаре была [переведена автоматически](https://digitalpalidictionary.github.io/rus/features.html#%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8-%D1%81%D0%B5%D1%82%D1%8F%D0%BC%D0%B8) и еще не корректировалась вручную, [свяжитесь с нами](contact.html) если хотите поучаствовать в процессе.
+
 Вот удобное руководство по некоторым [возможностям](features.html), доступным в DPD.
 
 Прежде всего, вам нужно установить и настроить GoldenDict или MDict на вашем компьютере ([Win](install_win.html) / [Mac](install_mac.html) / [iOS](install_ios.html) / [Linux](install_linux.html) / [Android](install_android_dicttango.html)) или [обновить](update.html) раз в месяц, если вы уже установили их.

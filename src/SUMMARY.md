@@ -20,16 +20,16 @@
 [Установка на iOS](install_ios.md)
 [Установка на Linux](install_linux.md)
 [Установка на Android (DictTango)](install_android_dicttango.md)
-[Установка на Android (GoldenDict)](install_android_goldendict.md)
-[Установка на Android (MDict)](install_android_mdict.md)
+<!-- [Установка на Android (GoldenDict)](install_android_goldendict.md) -->
+<!-- [Установка на Android (MDict)](install_android_mdict.md) -->
 [Установка на Kindle](kindle.md)
 [Обновление](update.md)
 
 -----------
 
-[Настройка горячей клавиши](setup_hotkey.md)
-[Настройка всплывающего окна](setup_scan_popup.md)
-[Настройка расширенных функций](setup_advanced.md)
+[GoldenDict: Настройка горячей клавиши](setup_hotkey.md)
+[GoldenDict: Настройка всплывающего окна](setup_scan_popup.md)
+[GoldenDict: Настройка расширенных функций](setup_advanced.md)
 
 -----------
 

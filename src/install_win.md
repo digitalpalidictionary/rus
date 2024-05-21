@@ -3,7 +3,7 @@
 ## Вкратце
 
 1. Скачайте последнюю версию DPD [здесь](https://github.com/digitalpalidictionary/rus-release/releases).
-2. Установите версию 1.5 [GoldenDict](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/GoldenDict-1.5.0-RC2-372-gc3ff15f-Install.exe/download).
+2. Установите свежую версию [GoldenDict](https://github.com/xiaoyifang/goldendict-ng/releases/download/v24.05.05-LiXia.ecd1138c/6.7.0-GoldenDict-ng-Installer.exe).
 3. В настройках укажите GoldenDict папку с DPD.
 
 Вот [видео](https://www.youtube.com/watch?v=KZ4CecdVL0k), чтобы помочь вам с установкой на Windows от [канала Learn Pali на Youtube](https://www.youtube.com/channel/UC73nNRzMzvweRb52ArFG3Gg).
@@ -12,11 +12,11 @@
 
 ## Установка GoldenDict
 
-Скачайте последнюю версию GoldenDict с [Sourceforge](https://sourceforge.net/projects/goldendict/files/early%20access%20builds/GoldenDict-1.5.0-RC2-372-gc3ff15f-Install.exe/download).
+Скачайте последнюю версию GoldenDict NG с [Github](https://github.com/xiaoyifang/goldendict-ng/releases/download/v24.05.05-LiXia.ecd1138c/6.7.0-GoldenDict-ng-Installer.exe).
 
-Перейдите в вашу папку `Загрузки` и дважды щелкните `GoldenDict-1.5.0-RC2-372-gc3ff15f-Install.exe`.
+Перейдите в вашу папку `Загрузки` и дважды щелкните `6.7.0-GoldenDict-ng-Installer.exe`.
 
-![gd exe](pics/win-install/gd%20exe.png)
+<!-- [gd exe](pics/win-install/gd%20exe.png) -->
 
 Выберите ваш язык. Нажмите **OK**.
 
