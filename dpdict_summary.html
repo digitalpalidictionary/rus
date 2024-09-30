@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html lang="ru" class="light" dir="ltr">
+    <head>
+        <!-- java for russian search -->
+        <script src="../js/lunr.stemmer.support.js"></script>
+        <script src="../js/lunr.ru.js"></script>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Сводка - Цифровой Пали Словарь</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="src/custom.css">
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="titlepage.html">Главная</a></li><li class="chapter-item expanded affix "><a href="features.html">Особенности</a></li><li class="chapter-item expanded affix "><a href="rootdict.html">Словарь корней</a></li><li class="chapter-item expanded affix "><a href="frequency.html">Частота слов</a></li><li class="chapter-item expanded affix "><a href="deconstructor.html">Деконструктор</a></li><li class="chapter-item expanded affix "><a href="grammardict.html">Словарь грамматики</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="dpdict.html">www.dpdict.net</a></li><li class="chapter-item expanded "><a href="dpdict_search.html"><strong aria-hidden="true">1.</strong> Поиск</a></li><li class="chapter-item expanded "><a href="dpdict_summary.html" class="active"><strong aria-hidden="true">2.</strong> Сводка</a></li><li class="chapter-item expanded "><a href="dpdict_dictionary_display.html"><strong aria-hidden="true">3.</strong> Отображение словаря</a></li><li class="chapter-item expanded "><a href="dpdict_settings.html"><strong aria-hidden="true">4.</strong> Настройки</a></li><li class="chapter-item expanded "><a href="dpdict_api_gd.html"><strong aria-hidden="true">5.</strong> API в GoldeDict</a></li><li class="chapter-item expanded "><a href="dpdict_api_dt.html"><strong aria-hidden="true">6.</strong> API в DictTango</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="tpr.html">Tipitaka Pali Reader</a></li><li class="chapter-item expanded affix "><a href="tbw.html">The Buddha's Words</a></li><li class="chapter-item expanded affix "><a href="simsampa.html">Simsapa Dhamma Reader</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="install_win.html">Установка на Windows</a></li><li class="chapter-item expanded affix "><a href="install_mac.html">Установка на Mac</a></li><li class="chapter-item expanded affix "><a href="install_ios.html">Установка на iOS</a></li><li class="chapter-item expanded affix "><a href="install_linux.html">Установка на Linux</a></li><li class="chapter-item expanded affix "><a href="install_android_dicttango.html">Установка на Android (DictTango)</a></li><li class="chapter-item expanded affix "><a href="kindle.html">Установка на Kindle</a></li><li class="chapter-item expanded affix "><a href="update.html">Обновление</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="setup_hotkey.html">GoldenDict: Настройка горячей клавиши</a></li><li class="chapter-item expanded affix "><a href="setup_scan_popup.html">GoldenDict: Настройка всплывающего окна</a></li><li class="chapter-item expanded affix "><a href="setup_advanced.html">GoldenDict: Настройка расширенных функций</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="bibliography.html">Библиография</a></li><li class="chapter-item expanded affix "><a href="thanks.html">Благодарности</a></li><li class="chapter-item expanded affix "><a href="feedback_form.html">Форма обратной связи</a></li><li class="chapter-item expanded affix "><a href="coding_help.html">Помощь в программировании</a></li><li class="chapter-item expanded affix "><a href="contact.html">Контакты</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Содержание" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Сменить тему" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Поиск. (Клавиша: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Цифровой Пали Словарь</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Напечатать" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://digitalpalidictionary.github.io/" title="English" aria-label="English">
+                            <i class="fa fa-language">Eng</i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Поиск по данному руководству ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="Сводка"><a class="header" href="#Сводка">Сводка</a></h2>
+<p>Краткое изложение результатов поиска отображается вверху.</p>
+<p><img src="pics/dpdict.net/dpdict_summary.png" alt="summary" /></p>
+<p>Нажмите на <strong>подсвеченное слово</strong> или <strong>стрелку</strong>, чтобы перейти непосредственно к записи.</p>
+<p>Это краткое изложение результатов поиска можно отключить в настройках.</p>
+<p><img src="pics/dpdict.net/dpdict_settings_summary_hide.png" alt="hide summary" /></p>
+<p>ДАЛЕЕ: <a href="dpdict_settings.html">Настройки</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="dpdict_search.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="dpdict_dictionary_display.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="dpdict_search.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="dpdict_dictionary_display.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
