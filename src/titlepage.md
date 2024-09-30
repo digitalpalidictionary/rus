@@ -16,7 +16,7 @@ DPD - это богатый возможностями словарь палий
 
 Есть некоторые [продвинутые функции для GoldenDict](setup_advanced.html), которые могут быть полезны для вас.
 
-Пока вы занимаетесь этим, вот еще несколько [словарей на пали и санскрите](https://github.com/digitalpalidictionary/dpd-db/tree/main/exporter/other_dictionaries) для установки в GoldenDict или MDict. Среди них Критический Пали Словарь и Объединенный Словарь Симсапа, который содержит PTS, DPPN и NCPED и другие.
+Пока вы занимаетесь этим, вот еще несколько [словарей на пали и санскрите](other_dicts.md) для установки в GoldenDict или MDict. Среди них Критический Пали Словарь и Объединенный Словарь Симсапа, который содержит PTS, DPPN и NCPED и другие.
 
 Если вы заметили ошибку в DPD или заметили что-то отсутствующее, пожалуйста [сообщите об этом](https://docs.google.com/forms/d/1iMD9sCSWFfJAFCFYuG9HRIyrr9KFRy0nAOVApM998wM/viewform?usp=pp_url&entry.1433863141=digitalpalidictionary.github.io). Обычно на это уходит менее минуты.
 

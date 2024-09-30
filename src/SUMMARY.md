@@ -9,6 +9,16 @@
 
 -----------
 
+[www.dpdict.net](dpdict.md)
+1. [Поиск](dpdict_search.md)
+2. [Сводка](dpdict_summary.md)
+3. [Отображение словаря](dpdict_dictionary_display.md)
+4. [Настройки](dpdict_settings.md)
+5. [API в GoldeDict](dpdict_api_gd.md)
+6. [API в DictTango](dpdict_api_dt.md)
+
+-----------
+
 [Tipitaka Pali Reader](tpr.md)
 [The Buddha's Words](tbw.md)
 [Simsapa Dhamma Reader](simsampa.md)
