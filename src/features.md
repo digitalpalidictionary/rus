@@ -4,7 +4,7 @@
 
 ### Словарь палийского языка на русский (зеленый)
 
-![pali2english](pics/features/1pali2english.png)
+![pali2english](pics/features/1pali2rus.png)
 
 ### Словарь корней палийского языка (оранжевый)
 
@@ -14,7 +14,7 @@
 
 ### Словарь русского на палийский язык (фиолетовый)
 
-![english2pali](pics/features/3english2pali.png)
+![english2pali](pics/features/3rus2pali.png)
 
 ### Словарь сокращений и помощи (зеленый)
 
