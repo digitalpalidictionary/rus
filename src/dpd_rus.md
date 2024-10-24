@@ -1,5 +1,9 @@
 # Совмещенная версия DPD Английский + Русский
 
+[GoldenDict версия](https://github.com/digitalpalidictionary/rus-release/releases/latest/download/dpd+rus-goldendict.zip)
+
+[MDict версия](https://github.com/digitalpalidictionary/rus-release/releases/latest/download/dpd+rus-mdict.zip)
+
 ## DPD+RUS содержит пять различных словарей
 
 ### Словарь палийского языка на анлийский (синий)
