@@ -9,6 +9,10 @@
 
 -----------
 
+[Совмещенный словарь](dpd_rus.md)
+
+-----------
+
 [www.dpdict.net](dpdict.md)
 1. [Поиск](dpdict_search.md)
 2. [Сводка](dpdict_summary.md)
