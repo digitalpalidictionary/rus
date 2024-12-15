@@ -1,6 +1,6 @@
 ## Отображение словаря
 
-[www.dpdict.net](https://www.dpdict.net) отображает все словари DPD, включая:
+[www.dpdict.net/ru](https://www.dpdict.net/ru) отображает все словари DPD, включая:
 
 ### 1. Основной DPD
 

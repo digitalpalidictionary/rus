@@ -18,8 +18,8 @@
 
 Добавьте следующую информацию в раздел **Edit Dictionary Detail** (**Редактировать информацию о словаре**):
 
-Dictionary Name: www.dpdict.net\
-Dictionary URL: https://www.dpdict.net/gd?search=#KEYWORD#
+Dictionary Name: www.dpdict.net/ru\
+Dictionary URL: https://www.dpdict.net/ru/gd?search=#KEYWORD#
 
 ![Edit Dictionary Details](pics/dpdict.net/dpdict_api_dicttango_dictionary_detail.jpg)
 

@@ -13,7 +13,7 @@
 
 -----------
 
-[www.dpdict.net](dpdict.md)
+[www.dpdict.net/ru](dpdict.md)
 1. [Поиск](dpdict_search.md)
 2. [Сводка](dpdict_summary.md)
 3. [Отображение словаря](dpdict_dictionary_display.md)
