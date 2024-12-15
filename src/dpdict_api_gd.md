@@ -26,7 +26,7 @@
 Enable: checked\
 As Link: unchecked\
 Name: www.dpdict.net/ru\
-Address: https://dpdict.net/gd?search=%GDWORD%
+Address: https://dpdict.net/ru/gd?search=%GDWORD%
 
 (1) Перейдите на вкладку **Словари**
 
